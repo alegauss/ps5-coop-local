@@ -22,6 +22,8 @@
 
 ## Block C — Publishing and docs
 
+- ✅ **CL19 (the workflow, not the setting)** **the site is published nowhere, so the list exists only on the developer's machine** — A workflow publishes the repository to Pages on every push to main with no build step, refusing to deploy a dataset that no longer matches its sources.
+
 ## Block D — Visual design and polish
 
 - ✅ **CL15** **the site has no identity: with no palette, type scale or grid it reads as a test page** — A blue-black ground with near-neutral chrome, one accent on focus, active filters and the count, a four-step type scale and spacing in eights (design recorded in `assets/site/styles.css`).

@@ -11,7 +11,7 @@
 
 ## Block C — Publishing and docs
 
-- 📋 **CL19** (deps: CL7 ✅) **the site is published nowhere, so the list exists only on the developer's machine** — The point of a catalog is sending the link to whoever is coming over to play. → §CL19
+- ⏳ **CL19** (deps: CL7 ✅) **the site is published nowhere, so the list exists only on the developer's machine** — Pages still has to be switched to the GitHub Actions source in repository settings, which no workflow file can do, and this branch has to reach main. → §CL19
 - 📋 **CL20** (deps: —) **the repository never says what the project is, where the list came from, or how to run it** — With no README a cloner cannot tell a site from a dataset from a scratch note. → §CL20
 - 📋 **CL21** (deps: CL1 ✅) **nothing validates the dataset: broken JSON or a missing field surfaces in the user's browser** — A static site has no server to catch bad data, so it has to be refused before shipping. → §CL21
 
