@@ -86,12 +86,13 @@ SOURCE = ROOT / "data" / "source-list.txt"
 COOP = ROOT / "data" / "coop.csv"
 CATALOG = ROOT / "data" / "catalog.csv"
 CANONICAL = ROOT / "data" / "canonical.csv"
+COVERS = ROOT / "data" / "covers.csv"
 TARGET = ROOT / "data" / "games.json"
 
 SCHEMA_VERSION = 1
 
-# Filled by later tasks; declared here so every reader sees one record shape.
-DEFERRED_FIELDS = ("cover",)
+# The generated fallback card, which every game has until a packshot replaces it.
+GENERATED_COVER = "assets/covers/{id}.svg"
 
 # One genre per game, closed on purpose (CL4): an open vocabulary becomes thirty
 # labels holding one game each, which filters nothing.
@@ -220,6 +221,28 @@ def read_catalog(path: Path) -> dict[str, dict]:
     return rows
 
 
+def read_covers(path: Path) -> dict[str, dict]:
+    """Packshot path and provenance, keyed by game id.
+
+    A file without a source is refused. An image whose origin nobody wrote down is
+    one nobody can re-fetch, re-license or replace, and a cover grid is the part of
+    this repository most likely to be asked where it got something.
+    """
+    rows: dict[str, dict] = {}
+    for row in read_rows(path):
+        game_id = (row.get("id") or "").strip()
+        if not game_id:
+            continue
+        file = (row.get("file") or "").strip()
+        source = (row.get("source") or "").strip()
+        if file and not source:
+            raise ValueError(f"{path.name}: {game_id} has a cover with no source")
+        if source and not file:
+            raise ValueError(f"{path.name}: {game_id} has a source with no cover")
+        rows[game_id] = {"cover": file or None, "cover_source": source or None}
+    return rows
+
+
 def read_coop(path: Path) -> dict[str, dict]:
     """The curated couch-coop worksheet, keyed by game id.
 
@@ -266,7 +289,7 @@ def parse_line(raw: str) -> dict:
     record = {"id": slugify(name), "name": name, "aliases": [], "source": source}
     record.update({"max_players": None, "screen": None, "scope": None})
     record.update({"genre": None, "year": None, "publisher": None})
-    record.update({field: None for field in DEFERRED_FIELDS})
+    record.update({"cover": None, "cover_source": None})
     record["source_note"] = note
     return record
 
@@ -323,13 +346,20 @@ def build(text: str) -> dict:
     games = reconcile(apply_canonical(parsed, read_canonical(CANONICAL)))
 
     ids = {g["id"] for g in games}
-    for path, reader in ((COOP, read_coop), (CATALOG, read_catalog)):
+    for path, reader in ((COOP, read_coop), (CATALOG, read_catalog), (COVERS, read_covers)):
         rows = reader(path)
         unknown = sorted(set(rows) - ids)
         if unknown:
             raise KeyError(f"{path.name} names id(s) the dataset does not have: {unknown}")
         for game in games:
             game.update(rows.get(game["id"], {}))
+
+    # Every record ends up with a cover: a packshot where one exists, and otherwise
+    # the generated card, so the grid never has a hole to lay out around.
+    for game in games:
+        if game["cover"] is None:
+            game["cover"] = GENERATED_COVER.format(id=game["id"])
+            game["cover_source"] = "generated"
 
     return {
         "schema_version": SCHEMA_VERSION,

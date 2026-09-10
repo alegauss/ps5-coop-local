@@ -5,7 +5,7 @@
 - ⏳ **CL3** (deps: —) **no title says how many players fit on the couch, or whether the screen splits or is shared** — 58 titles still carry no player count or screen mode, so the couch question stays unanswerable for them until somebody checks the store. → §CL3
 - ⏳ **CL4** (deps: —) **games carry no genre, year or publisher, so there is no axis to group the grid by** — 14 titles have no genre the ten labels honestly fit, year is blank throughout, and 111 titles still have no publisher. → §CL4
 - ⏳ **CL5** (deps: —) **entries like 'Bleed 1 e 2', 'Trine Series' and 'King of Fighters' name a collection, not a game** — Diablo III e IV still names two products at once, and Minigolf, Runner and TOGETHER match no store listing anybody has checked yet. → §CL5
-- 📋 **CL6** (deps: —) **no game has cover art, and a game grid without art is a text table** — Cover art is how a player recognizes a title; without it there are 190 lines to read. → §CL6
+- ⏳ **CL6** (deps: —) **no game has cover art, and a game grid without art is a text table** — No game has a real packshot yet, so all 184 covers are the generated fallback and a licensed image source still has to be chosen. → §CL6
 
 ## Block B — Catalog site
 
@@ -29,7 +29,7 @@
 - 📋 **CL15** (deps: CL7) **the site has no identity: with no palette, type scale or grid it reads as a test page** — A PS5 catalog wants a dark surface, high contrast and the feel of a console shelf. → §CL15
 - 📋 **CL16** (deps: CL3 ⏳) **the grid cannot tell two-player coop from four-player, and that is what decides the night** — The fact that settles the choice has to be readable on the card, not two clicks away. → §CL16
 - 📋 **CL17** (deps: CL8) **a search that matches nothing returns a blank screen explaining nothing** — An empty screen reads as a fault; emptiness has to name its cause and offer a way out. → §CL17
-- 📋 **CL18** (deps: CL6) **loading all 190 covers at once delays the first paint of the grid** — A grid that waits for its images wastes the seconds the user could have been reading. → §CL18
+- 📋 **CL18** (deps: CL6 ⏳) **loading all 190 covers at once delays the first paint of the grid** — A grid that waits for its images wastes the seconds the user could have been reading. → §CL18
 
 ## Done when — Block A
 
