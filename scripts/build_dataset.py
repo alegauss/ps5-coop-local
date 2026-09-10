@@ -15,10 +15,9 @@ The conversion is mechanical on purpose. It parses; it does not curate:
 * Collection names survive it (CL5). "Trine Series" and "Bleed 1 e 2" name a set
   rather than a product, and picking the canonical title is a judgement about the
   PSN catalog that this script has no way to make.
-* ``genre``, ``year``, ``publisher`` and ``cover`` are emitted as null (CL4, CL6).
-  The schema carries them from the first commit so the readers can be written
-  against a stable shape, but a value invented here would be a guess wearing the
-  costume of data.
+* ``cover`` is emitted as null (CL6). The schema carries it from the first commit
+  so the readers can be written against a stable shape, but a value invented here
+  would be a guess wearing the costume of data.
 
 What the source puts in parentheses is kept verbatim in ``source_note`` -- the
 "(modo Zombies)" and "(Tela dividida)" caveats are what CL11 surfaces, and they
@@ -46,6 +45,20 @@ A blank stays null. Local coop is not one field -- Streets of Rage 4 and Overcoo
 are both four players and play nothing alike -- and the number here is what decides
 a purchase, so an unverified entry is left for somebody with the store open rather
 than filled with a plausible guess.
+
+Grouping axes (CL4)
+-------------------
+``genre``, ``year`` and ``publisher`` come from ``data/catalog.csv``, read the same
+way. Genre is one label from a closed set of ten, checked on read for the same
+reason the coop vocabulary is: an open vocabulary becomes thirty labels holding one
+game each, and filters nothing.
+
+Two gaps are deliberate. ``year`` is blank throughout -- the axis wanted is the PS5
+release year, and most of this list is PS4 software played through back-compat,
+which has no PS5 release date to carry; the column stays so the answer has somewhere
+to land. And a handful of titles have no genre because the ten labels have no honest
+home for them: "A Way Out" is a co-op cinematic adventure, and calling it a
+platformer to avoid a blank would put it under a filter nobody would find it in.
 """
 
 from __future__ import annotations
@@ -61,12 +74,20 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "data" / "source-list.txt"
 COOP = ROOT / "data" / "coop.csv"
+CATALOG = ROOT / "data" / "catalog.csv"
 TARGET = ROOT / "data" / "games.json"
 
 SCHEMA_VERSION = 1
 
 # Filled by later tasks; declared here so every reader sees one record shape.
-DEFERRED_FIELDS = ("genre", "year", "publisher", "cover")
+DEFERRED_FIELDS = ("cover",)
+
+# One genre per game, closed on purpose (CL4): an open vocabulary becomes thirty
+# labels holding one game each, which filters nothing.
+GENRES = {
+    "beat-em-up", "platformer", "party", "shooter", "rpg",
+    "sports", "racing", "puzzle", "survival", "fighting",
+}
 
 # The couch-coop vocabulary (CL3). A value outside these sets is a typo in the
 # worksheet, and a typo that reaches the grid renders a badge nobody can filter on.
@@ -99,6 +120,46 @@ def slugify(name: str) -> str:
     return re.sub(r"-{2,}", "-", re.sub(r"[^a-z0-9]+", "-", lowered)).strip("-")
 
 
+def read_rows(path: Path) -> list[dict]:
+    """A worksheet's data rows, with the leading `#` commentary stripped."""
+    if not path.exists():
+        return []
+    text = "\n".join(
+        line for line in path.read_text(encoding="utf-8").splitlines()
+        if not line.lstrip().startswith("#")
+    )
+    return list(csv.DictReader(text.splitlines()))
+
+
+def read_catalog(path: Path) -> dict[str, dict]:
+    """Genre, year and publisher, keyed by game id.
+
+    ``year`` is the PS5 release year and is blank throughout for now: most of this
+    list is PS4 software played through back-compat, which has no PS5 release date
+    to carry. The column stays so the answer has somewhere to land.
+    """
+    rows: dict[str, dict] = {}
+    for row in read_rows(path):
+        game_id = (row.get("id") or "").strip()
+        if not game_id:
+            continue
+        if game_id in rows:
+            raise ValueError(f"{path.name} lists {game_id} twice")
+
+        genre = (row.get("genre") or "").strip()
+        year = (row.get("year") or "").strip()
+        publisher = (row.get("publisher") or "").strip()
+        if genre and genre not in GENRES:
+            raise ValueError(f"{path.name}: {game_id} has genre {genre!r}, not one of {sorted(GENRES)}")
+
+        rows[game_id] = {
+            "genre": genre or None,
+            "year": int(year) if year else None,
+            "publisher": publisher or None,
+        }
+    return rows
+
+
 def read_coop(path: Path) -> dict[str, dict]:
     """The curated couch-coop worksheet, keyed by game id.
 
@@ -107,15 +168,8 @@ def read_coop(path: Path) -> dict[str, dict]:
     to answer is how many people can play, and a fabricated answer is worse than an
     honest gap, which CL21's validator can still refuse.
     """
-    if not path.exists():
-        return {}
-
     rows: dict[str, dict] = {}
-    text = "\n".join(
-        line for line in path.read_text(encoding="utf-8").splitlines()
-        if not line.lstrip().startswith("#")
-    )
-    for row in csv.DictReader(text.splitlines()):
+    for row in read_rows(path):
         game_id = (row.get("id") or "").strip()
         if not game_id:
             continue
@@ -151,6 +205,7 @@ def parse_line(raw: str) -> dict:
 
     record = {"id": slugify(name), "name": name, "aliases": [], "source": source}
     record.update({"max_players": None, "screen": None, "scope": None})
+    record.update({"genre": None, "year": None, "publisher": None})
     record.update({field: None for field in DEFERRED_FIELDS})
     record["source_note"] = note
     return record
@@ -206,12 +261,14 @@ def read_entries(text: str) -> list[str]:
 def build(text: str) -> dict:
     games = reconcile([parse_line(entry) for entry in read_entries(text)])
 
-    coop = read_coop(COOP)
-    unknown = sorted(set(coop) - {g["id"] for g in games})
-    if unknown:
-        raise KeyError(f"{COOP.name} names id(s) the dataset does not have: {unknown}")
-    for game in games:
-        game.update(coop.get(game["id"], {}))
+    ids = {g["id"] for g in games}
+    for path, reader in ((COOP, read_coop), (CATALOG, read_catalog)):
+        rows = reader(path)
+        unknown = sorted(set(rows) - ids)
+        if unknown:
+            raise KeyError(f"{path.name} names id(s) the dataset does not have: {unknown}")
+        for game in games:
+            game.update(rows.get(game["id"], {}))
 
     return {
         "schema_version": SCHEMA_VERSION,
@@ -254,6 +311,13 @@ def main() -> int:
     print(
         f"build-dataset: couch-coop known for {len(known)}/{dataset['count']}, "
         f"{dataset['count'] - len(known)} still blank",
+        file=sys.stderr,
+    )
+
+    genred = [g for g in dataset["games"] if g["genre"] is not None]
+    print(
+        f"build-dataset: genre known for {len(genred)}/{dataset['count']}, "
+        f"{dataset['count'] - len(genred)} still blank",
         file=sys.stderr,
     )
 

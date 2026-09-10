@@ -3,7 +3,7 @@
 ## Block A — Game data
 
 - ⏳ **CL3** (deps: —) **no title says how many players fit on the couch, or whether the screen splits or is shared** — 58 titles still carry no player count or screen mode, so the couch question stays unanswerable for them until somebody checks the store. → §CL3
-- 📋 **CL4** (deps: —) **games carry no genre, year or publisher, so there is no axis to group the grid by** — Genre is what separates a beat 'em up from a party game across two hundred titles. → §CL4
+- ⏳ **CL4** (deps: —) **games carry no genre, year or publisher, so there is no axis to group the grid by** — 14 titles have no genre the ten labels honestly fit, year is blank throughout, and 111 titles still have no publisher. → §CL4
 - 📋 **CL5** (deps: —) **entries like 'Bleed 1 e 2', 'Trine Series' and 'King of Fighters' name a collection, not a game** — A non-canonical name matches no cover, no PSN listing and nothing the user types. → §CL5
 - 📋 **CL6** (deps: —) **no game has cover art, and a game grid without art is a text table** — Cover art is how a player recognizes a title; without it there are 190 lines to read. → §CL6
 
@@ -11,7 +11,7 @@
 
 - 📋 **CL7** (deps: CL1 ✅) **there is no page at all: the repository holds no site that shows the catalog** — It is the deliverable — seeing the whole local-coop list in a browser. → §CL7
 - 📋 **CL8** (deps: CL7) **with nearly two hundred titles on one page, finding a game means scrolling or Ctrl+F** — Instant name search is what makes a catalog this size usable at all. → §CL8
-- 📋 **CL9** (deps: CL3 ⏳, CL4) **there is no way to filter by player count, genre or screen type** — The real question is what four of us can play tonight, and the grid cannot answer it. → §CL9
+- 📋 **CL9** (deps: CL3 ⏳, CL4 ⏳) **there is no way to filter by player count, genre or screen type** — The real question is what four of us can play tonight, and the grid cannot answer it. → §CL9
 - 📋 **CL10** (deps: CL7) **the grid has no ordering: not alphabetical, not by year, not by player count** — A fixed order buries the recent releases and forces a full sweep to compare. → §CL10
 - 📋 **CL11** (deps: CL3 ⏳) **opening a game leads nowhere: no detail view with its coop mode and the list's caveats** — Caveats like Zombies-only or split-screen-only decide the purchase and are lost today. → §CL11
 - 📋 **CL12** (deps: CL9) **the page never says how many games exist, or how many survived the current filter** — Without a count the user cannot tell whether a filter worked or quietly broke. → §CL12

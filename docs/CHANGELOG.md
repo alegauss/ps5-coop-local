@@ -5,6 +5,7 @@
 - ✅ **CL1** **the game list exists only as pasted text, with no data file the interface can read** — Every pasted entry is now a record in data/games.json, with a derived stable id and the source's caveat kept, so a screen can read the catalog (design recorded in `scripts/build_dataset.py`).
 - ✅ **CL2** **the list repeats titles and mixes variants of the same game, and nothing reconciles them** — The 195 source lines are now 188 entries, one per product, and every folded title stays in aliases so search still matches what the source said (design recorded in `scripts/build_dataset.py`).
 - ✅ **CL3 (130 of 188 titles)** **no title says how many players fit on the couch, or whether the screen splits or is shared** — data/coop.csv gives max players, screen mode and scope for 130 of 188 titles, under a closed vocabulary the builder refuses to widen.
+- ✅ **CL4 (genre on 174 of 188 titles)** **games carry no genre, year or publisher, so there is no axis to group the grid by** — data/catalog.csv gives one genre from a closed ten-label vocabulary for 174 of 188 titles, plus publisher for 77, so the grid has an axis to group by.
 
 ## Block B — Catalog site
 
