@@ -24,13 +24,6 @@ Trine Series, King of Fighters, Street Fighter, Bomberman, Final Fight, Minigolf
 Spelunky. Each resolves to the exact title sold on PS5 — Trine 4, The King of Fighters
 XV — or drops out, when all that exists is emulation inside another collection.
 
-### §CL6 Cover art
-
-Covers in 2:3 portrait, the PS5 packshot ratio, served locally as WebP so no third-party
-domain can move the path out from under the page. Where no art exists, a typographic
-card with the initials and the genre color — better than a gray rectangle, and it keeps
-the grid aligned. Each image records where it came from.
-
 ## Block B — Catalog site
 
 ## Block C — Publishing and docs

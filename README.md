@@ -60,6 +60,34 @@ python3 scripts/validate_dataset.py  # refuse a broken catalogue
 CI runs all three and refuses to publish if the committed output no longer matches
 its sources.
 
+A fourth script fills `data/covers.csv`, and is deliberately not part of that loop:
+
+```sh
+python3 scripts/fetch_covers.py --dry-run  # report what it would match
+python3 scripts/fetch_covers.py            # download the packshots
+```
+
+It goes to the network, so CI cannot run it and a build must never depend on it.
+Run it when titles are added; it leaves a row that already has a file alone unless
+you pass `--force`.
+
+## Where the covers come from
+
+The packshot is Steam's portrait capsule, 600×900, converted to WebP at 300×450 and
+600×900 — Steam's own two sizes, so nothing is upscaled. It is the PC key art, not
+the PSN packshot: the PlayStation Store renders search client-side behind a rotating
+query hash, which no script here can reach without driving a browser. Every row in
+`data/covers.csv` records the store page its image came from, which is why a file
+without a source is refused outright.
+
+148 of the 184 games have one. The other 36 are titles Steam does not carry, or
+carries without a portrait capsule — the annual sports games, the PlayStation
+exclusives, a few delisted ones — and they keep the generated typographic card.
+That split is printed on every run, and the matching is deliberately strict: the
+store's name has to equal the catalogue's name once typography is stripped, or the
+id has to be listed in the script's `ALIASES` with a reason. A cover is what a
+reader recognises before they read the title, so a wrong one is worse than a blank.
+
 | File | What it holds |
 | --- | --- |
 | `data/source-list.txt` | The received list, verbatim. Provenance, never corrected. |

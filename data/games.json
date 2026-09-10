@@ -14,9 +14,9 @@
       "genre": null,
       "year": null,
       "publisher": "Electronic Arts",
-      "cover": "assets/covers/a-way-out.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/a-way-out.webp",
+      "cover_2x": "assets/covers/a-way-out@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1222700/",
       "source_note": null
     },
     {
@@ -30,9 +30,9 @@
       "genre": "sports",
       "year": null,
       "publisher": "THQ Nordic",
-      "cover": "assets/covers/aew-fight-forever.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/aew-fight-forever.webp",
+      "cover_2x": "assets/covers/aew-fight-forever@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1913210/",
       "source_note": null
     },
     {
@@ -46,9 +46,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/aegis-defenders.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/aegis-defenders.webp",
+      "cover_2x": "assets/covers/aegis-defenders@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/371140/",
       "source_note": null
     },
     {
@@ -78,9 +78,9 @@
       "genre": null,
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/arcade-paradise.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/arcade-paradise.webp",
+      "cover_2x": "assets/covers/arcade-paradise@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1388870/",
       "source_note": null
     },
     {
@@ -94,9 +94,9 @@
       "genre": "survival",
       "year": null,
       "publisher": "Xbox Game Studios",
-      "cover": "assets/covers/as-dusk-falls.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/as-dusk-falls.webp",
+      "cover_2x": "assets/covers/as-dusk-falls@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1341820/",
       "source_note": null
     },
     {
@@ -110,9 +110,9 @@
       "genre": "survival",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/astroneer.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/astroneer.webp",
+      "cover_2x": "assets/covers/astroneer@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/361420/",
       "source_note": null
     },
     {
@@ -126,9 +126,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": "Larian Studios",
-      "cover": "assets/covers/baldurs-gate-3.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/baldurs-gate-3.webp",
+      "cover_2x": "assets/covers/baldurs-gate-3@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1086940/",
       "source_note": "BG3"
     },
     {
@@ -142,9 +142,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/balan-wonderworld.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/balan-wonderworld.webp",
+      "cover_2x": "assets/covers/balan-wonderworld@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1341050/",
       "source_note": null
     },
     {
@@ -158,9 +158,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/biped.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/biped.webp",
+      "cover_2x": "assets/covers/biped@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1071870/",
       "source_note": null
     },
     {
@@ -174,9 +174,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/blackwind.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/blackwind.webp",
+      "cover_2x": "assets/covers/blackwind@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1567520/",
       "source_note": null
     },
     {
@@ -192,9 +192,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/bleed-2.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/bleed-2.webp",
+      "cover_2x": "assets/covers/bleed-2@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/396350/",
       "source_note": null
     },
     {
@@ -226,9 +226,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": "2K",
-      "cover": "assets/covers/borderlands-3.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/borderlands-3.webp",
+      "cover_2x": "assets/covers/borderlands-3@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/397540/",
       "source_note": null
     },
     {
@@ -242,9 +242,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": "Devolver Digital",
-      "cover": "assets/covers/broforce.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/broforce.webp",
+      "cover_2x": "assets/covers/broforce@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/274190/",
       "source_note": null
     },
     {
@@ -258,9 +258,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": "Activision",
-      "cover": "assets/covers/call-of-duty-black-ops-cold-war.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/call-of-duty-black-ops-cold-war.webp",
+      "cover_2x": "assets/covers/call-of-duty-black-ops-cold-war@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1985810/",
       "source_note": "modo Zombies"
     },
     {
@@ -274,9 +274,9 @@
       "genre": "party",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/cant-drive-this.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/cant-drive-this.webp",
+      "cover_2x": "assets/covers/cant-drive-this@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/466980/",
       "source_note": null
     },
     {
@@ -290,9 +290,9 @@
       "genre": "beat-em-up",
       "year": null,
       "publisher": "The Behemoth",
-      "cover": "assets/covers/castle-crashers-remastered.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/castle-crashers-remastered.webp",
+      "cover_2x": "assets/covers/castle-crashers-remastered@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/204360/",
       "source_note": null
     },
     {
@@ -306,9 +306,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/catty-batty-the-spirit-guide.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/catty-batty-the-spirit-guide.webp",
+      "cover_2x": "assets/covers/catty-batty-the-spirit-guide@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1483470/",
       "source_note": null
     },
     {
@@ -338,9 +338,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/children-of-morta.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/children-of-morta.webp",
+      "cover_2x": "assets/covers/children-of-morta@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/330020/",
       "source_note": null
     },
     {
@@ -354,9 +354,9 @@
       "genre": "puzzle",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/chicory-a-colorful-tale.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/chicory-a-colorful-tale.webp",
+      "cover_2x": "assets/covers/chicory-a-colorful-tale@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1123450/",
       "source_note": null
     },
     {
@@ -370,9 +370,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": "Konami",
-      "cover": "assets/covers/contra-operation-galuga.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/contra-operation-galuga.webp",
+      "cover_2x": "assets/covers/contra-operation-galuga@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/2235020/",
       "source_note": null
     },
     {
@@ -386,9 +386,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": "Konami",
-      "cover": "assets/covers/contra-rogue-corps.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/contra-rogue-corps.webp",
+      "cover_2x": "assets/covers/contra-rogue-corps@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1020540/",
       "source_note": null
     },
     {
@@ -402,9 +402,9 @@
       "genre": null,
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/crosskrush.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/crosskrush.webp",
+      "cover_2x": "assets/covers/crosskrush@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1437410/",
       "source_note": null
     },
     {
@@ -418,9 +418,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": "Studio MDHR",
-      "cover": "assets/covers/cuphead.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/cuphead.webp",
+      "cover_2x": "assets/covers/cuphead@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/268910/",
       "source_note": null
     },
     {
@@ -434,9 +434,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/dandy-randy-dx.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/dandy-randy-dx.webp",
+      "cover_2x": "assets/covers/dandy-randy-dx@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1651030/",
       "source_note": null
     },
     {
@@ -450,9 +450,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": "THQ Nordic",
-      "cover": "assets/covers/darksiders-genesis.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/darksiders-genesis.webp",
+      "cover_2x": "assets/covers/darksiders-genesis@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/710920/",
       "source_note": null
     },
     {
@@ -498,9 +498,9 @@
       "genre": "party",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/death-squared.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/death-squared.webp",
+      "cover_2x": "assets/covers/death-squared@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/471810/",
       "source_note": null
     },
     {
@@ -514,9 +514,9 @@
       "genre": "puzzle",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/death-tales.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/death-tales.webp",
+      "cover_2x": "assets/covers/death-tales@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1305440/",
       "source_note": null
     },
     {
@@ -530,9 +530,9 @@
       "genre": "puzzle",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/degrees-of-separation.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/degrees-of-separation.webp",
+      "cover_2x": "assets/covers/degrees-of-separation@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/809880/",
       "source_note": null
     },
     {
@@ -546,9 +546,9 @@
       "genre": "fighting",
       "year": null,
       "publisher": "SEGA",
-      "cover": "assets/covers/demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles.webp",
+      "cover_2x": "assets/covers/demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1490890/",
       "source_note": null
     },
     {
@@ -578,9 +578,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/die-for-valhalla.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/die-for-valhalla.webp",
+      "cover_2x": "assets/covers/die-for-valhalla@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/606000/",
       "source_note": null
     },
     {
@@ -594,9 +594,9 @@
       "genre": "racing",
       "year": null,
       "publisher": "Codemasters",
-      "cover": "assets/covers/dirt-5.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/dirt-5.webp",
+      "cover_2x": "assets/covers/dirt-5@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1038250/",
       "source_note": null
     },
     {
@@ -612,9 +612,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/disney-classic-games-aladdin-and-the-lion-king.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/disney-classic-games-aladdin-and-the-lion-king.webp",
+      "cover_2x": "assets/covers/disney-classic-games-aladdin-and-the-lion-king@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1126190/",
       "source_note": null
     },
     {
@@ -628,9 +628,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": "Larian Studios",
-      "cover": "assets/covers/divinity-original-sin.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/divinity-original-sin.webp",
+      "cover_2x": "assets/covers/divinity-original-sin@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/373420/",
       "source_note": null
     },
     {
@@ -644,9 +644,9 @@
       "genre": "sports",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/dodgeball-academia.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/dodgeball-academia.webp",
+      "cover_2x": "assets/covers/dodgeball-academia@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1422420/",
       "source_note": null
     },
     {
@@ -660,9 +660,9 @@
       "genre": "survival",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/dont-starve-together.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/dont-starve-together.webp",
+      "cover_2x": "assets/covers/dont-starve-together@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/322330/",
       "source_note": null
     },
     {
@@ -676,9 +676,9 @@
       "genre": "beat-em-up",
       "year": null,
       "publisher": "Modus Games",
-      "cover": "assets/covers/double-dragon-gaiden-rise-of-the-dragons.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/double-dragon-gaiden-rise-of-the-dragons.webp",
+      "cover_2x": "assets/covers/double-dragon-gaiden-rise-of-the-dragons@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1967260/",
       "source_note": null
     },
     {
@@ -692,9 +692,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/dungeon-defenders-awakened.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/dungeon-defenders-awakened.webp",
+      "cover_2x": "assets/covers/dungeon-defenders-awakened@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1101190/",
       "source_note": null
     },
     {
@@ -724,9 +724,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": "D3 Publisher",
-      "cover": "assets/covers/earth-defense-force-6.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/earth-defense-force-6.webp",
+      "cover_2x": "assets/covers/earth-defense-force-6@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/2291060/",
       "source_note": null
     },
     {
@@ -740,9 +740,9 @@
       "genre": "beat-em-up",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/eight-dragons.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/eight-dragons.webp",
+      "cover_2x": "assets/covers/eight-dragons@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/716250/",
       "source_note": null
     },
     {
@@ -756,9 +756,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": "Devolver Digital",
-      "cover": "assets/covers/enter-the-gungeon.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/enter-the-gungeon.webp",
+      "cover_2x": "assets/covers/enter-the-gungeon@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/311690/",
       "source_note": null
     },
     {
@@ -772,9 +772,9 @@
       "genre": "puzzle",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/escape-academy.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/escape-academy.webp",
+      "cover_2x": "assets/covers/escape-academy@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1812090/",
       "source_note": null
     },
     {
@@ -836,9 +836,9 @@
       "genre": "sports",
       "year": null,
       "publisher": "Electronic Arts",
-      "cover": "assets/covers/fifa-22.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/fifa-22.webp",
+      "cover_2x": "assets/covers/fifa-22@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1506830/",
       "source_note": null
     },
     {
@@ -868,9 +868,9 @@
       "genre": "beat-em-up",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/final-vendetta.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/final-vendetta.webp",
+      "cover_2x": "assets/covers/final-vendetta@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1891090/",
       "source_note": null
     },
     {
@@ -884,9 +884,9 @@
       "genre": "beat-em-up",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/fightn-rage.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/fightn-rage.webp",
+      "cover_2x": "assets/covers/fightn-rage@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/674520/",
       "source_note": null
     },
     {
@@ -900,9 +900,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": "Curve Games",
-      "cover": "assets/covers/for-the-king.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/for-the-king.webp",
+      "cover_2x": "assets/covers/for-the-king@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/527230/",
       "source_note": null
     },
     {
@@ -932,9 +932,9 @@
       "genre": "party",
       "year": null,
       "publisher": "Skybound Games",
-      "cover": "assets/covers/gang-beasts.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/gang-beasts.webp",
+      "cover_2x": "assets/covers/gang-beasts@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/285900/",
       "source_note": null
     },
     {
@@ -964,9 +964,9 @@
       "genre": "party",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/gigabash.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/gigabash.webp",
+      "cover_2x": "assets/covers/gigabash@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1546400/",
       "source_note": null
     },
     {
@@ -980,9 +980,9 @@
       "genre": "survival",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/graven.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/graven.webp",
+      "cover_2x": "assets/covers/graven@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1371690/",
       "source_note": null
     },
     {
@@ -996,9 +996,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/guacamelee-2.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/guacamelee-2.webp",
+      "cover_2x": "assets/covers/guacamelee-2@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/534550/",
       "source_note": null
     },
     {
@@ -1012,9 +1012,9 @@
       "genre": null,
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/gungungun.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/gungungun.webp",
+      "cover_2x": "assets/covers/gungungun@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/544400/",
       "source_note": null
     },
     {
@@ -1044,9 +1044,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/haven.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/haven.webp",
+      "cover_2x": "assets/covers/haven@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/983970/",
       "source_note": null
     },
     {
@@ -1060,9 +1060,9 @@
       "genre": "puzzle",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/heavenly-bodies.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/heavenly-bodies.webp",
+      "cover_2x": "assets/covers/heavenly-bodies@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1138850/",
       "source_note": null
     },
     {
@@ -1076,9 +1076,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": "Sony Interactive Entertainment",
-      "cover": "assets/covers/helldivers.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/helldivers.webp",
+      "cover_2x": "assets/covers/helldivers@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/394510/",
       "source_note": null
     },
     {
@@ -1092,9 +1092,9 @@
       "genre": "racing",
       "year": null,
       "publisher": "Milestone",
-      "cover": "assets/covers/hot-wheels-unleashed.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/hot-wheels-unleashed.webp",
+      "cover_2x": "assets/covers/hot-wheels-unleashed@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1271700/",
       "source_note": null
     },
     {
@@ -1108,9 +1108,9 @@
       "genre": "puzzle",
       "year": null,
       "publisher": "Curve Games",
-      "cover": "assets/covers/human-fall-flat.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/human-fall-flat.webp",
+      "cover_2x": "assets/covers/human-fall-flat@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/477160/",
       "source_note": null
     },
     {
@@ -1124,9 +1124,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/hyper-light-drifter.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/hyper-light-drifter.webp",
+      "cover_2x": "assets/covers/hyper-light-drifter@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/257850/",
       "source_note": null
     },
     {
@@ -1156,9 +1156,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/ibb-obb.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/ibb-obb.webp",
+      "cover_2x": "assets/covers/ibb-obb@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/95400/",
       "source_note": null
     },
     {
@@ -1172,9 +1172,9 @@
       "genre": "beat-em-up",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/jitsu-squad.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/jitsu-squad.webp",
+      "cover_2x": "assets/covers/jitsu-squad@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1522080/",
       "source_note": null
     },
     {
@@ -1204,9 +1204,9 @@
       "genre": "party",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/keywe.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/keywe.webp",
+      "cover_2x": "assets/covers/keywe@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1242980/",
       "source_note": null
     },
     {
@@ -1220,9 +1220,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/kitaria-fables.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/kitaria-fables.webp",
+      "cover_2x": "assets/covers/kitaria-fables@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1356280/",
       "source_note": null
     },
     {
@@ -1238,9 +1238,9 @@
       "genre": "fighting",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/the-king-of-fighters-xv.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/the-king-of-fighters-xv.webp",
+      "cover_2x": "assets/covers/the-king-of-fighters-xv@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1498570/",
       "source_note": null
     },
     {
@@ -1254,9 +1254,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/lara-croft-and-the-guardian-of-light.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/lara-croft-and-the-guardian-of-light.webp",
+      "cover_2x": "assets/covers/lara-croft-and-the-guardian-of-light@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/35130/",
       "source_note": null
     },
     {
@@ -1270,9 +1270,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/lara-croft-and-the-temple-of-osiris.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/lara-croft-and-the-temple-of-osiris.webp",
+      "cover_2x": "assets/covers/lara-croft-and-the-temple-of-osiris@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/289690/",
       "source_note": null
     },
     {
@@ -1286,9 +1286,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": "Warner Bros. Games",
-      "cover": "assets/covers/lego-star-wars-the-skywalker-saga.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/lego-star-wars-the-skywalker-saga.webp",
+      "cover_2x": "assets/covers/lego-star-wars-the-skywalker-saga@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/920210/",
       "source_note": null
     },
     {
@@ -1302,9 +1302,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": "Warner Bros. Games",
-      "cover": "assets/covers/lego-marvel-super-heroes-2.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/lego-marvel-super-heroes-2.webp",
+      "cover_2x": "assets/covers/lego-marvel-super-heroes-2@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/647830/",
       "source_note": null
     },
     {
@@ -1334,9 +1334,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/llamasoft-the-jeff-minter-story.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/llamasoft-the-jeff-minter-story.webp",
+      "cover_2x": "assets/covers/llamasoft-the-jeff-minter-story@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/2236680/",
       "source_note": null
     },
     {
@@ -1350,9 +1350,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/lovers-in-a-dangerous-spacetime.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/lovers-in-a-dangerous-spacetime.webp",
+      "cover_2x": "assets/covers/lovers-in-a-dangerous-spacetime@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/252110/",
       "source_note": null
     },
     {
@@ -1366,9 +1366,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/magicka.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/magicka.webp",
+      "cover_2x": "assets/covers/magicka@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/42910/",
       "source_note": null
     },
     {
@@ -1430,9 +1430,9 @@
       "genre": "party",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/mereks-market.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/mereks-market.webp",
+      "cover_2x": "assets/covers/mereks-market@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1610860/",
       "source_note": null
     },
     {
@@ -1446,9 +1446,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/mighty-goose.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/mighty-goose.webp",
+      "cover_2x": "assets/covers/mighty-goose@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1299360/",
       "source_note": null
     },
     {
@@ -1462,9 +1462,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": "Xbox Game Studios",
-      "cover": "assets/covers/minecraft-dungeons.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/minecraft-dungeons.webp",
+      "cover_2x": "assets/covers/minecraft-dungeons@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1672970/",
       "source_note": null
     },
     {
@@ -1494,9 +1494,9 @@
       "genre": "fighting",
       "year": null,
       "publisher": "Warner Bros. Games",
-      "cover": "assets/covers/mortal-kombat-11.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/mortal-kombat-11.webp",
+      "cover_2x": "assets/covers/mortal-kombat-11@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/976310/",
       "source_note": "modo Co-Op Towers of Time"
     },
     {
@@ -1510,9 +1510,9 @@
       "genre": "beat-em-up",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/mother-russia-bleeds.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/mother-russia-bleeds.webp",
+      "cover_2x": "assets/covers/mother-russia-bleeds@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/361300/",
       "source_note": null
     },
     {
@@ -1526,9 +1526,9 @@
       "genre": "party",
       "year": null,
       "publisher": "Team17",
-      "cover": "assets/covers/moving-out.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/moving-out.webp",
+      "cover_2x": "assets/covers/moving-out@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/996770/",
       "source_note": null
     },
     {
@@ -1590,9 +1590,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/neon-chrome.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/neon-chrome.webp",
+      "cover_2x": "assets/covers/neon-chrome@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/428750/",
       "source_note": null
     },
     {
@@ -1638,9 +1638,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/nine-parchments.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/nine-parchments.webp",
+      "cover_2x": "assets/covers/nine-parchments@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/471550/",
       "source_note": null
     },
     {
@@ -1654,9 +1654,9 @@
       "genre": "fighting",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/nidhogg-2.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/nidhogg-2.webp",
+      "cover_2x": "assets/covers/nidhogg-2@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/535520/",
       "source_note": null
     },
     {
@@ -1670,9 +1670,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/nobody-saves-the-world.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/nobody-saves-the-world.webp",
+      "cover_2x": "assets/covers/nobody-saves-the-world@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1432050/",
       "source_note": null
     },
     {
@@ -1702,9 +1702,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/orcs-must-die.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/orcs-must-die.webp",
+      "cover_2x": "assets/covers/orcs-must-die@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/102600/",
       "source_note": null
     },
     {
@@ -1718,9 +1718,9 @@
       "genre": "party",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/out-of-space-couch-edition.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/out-of-space-couch-edition.webp",
+      "cover_2x": "assets/covers/out-of-space-couch-edition@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/400080/",
       "source_note": null
     },
     {
@@ -1734,9 +1734,9 @@
       "genre": "survival",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/outbreak-endless-nightmares.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/outbreak-endless-nightmares.webp",
+      "cover_2x": "assets/covers/outbreak-endless-nightmares@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1419350/",
       "source_note": null
     },
     {
@@ -1750,9 +1750,9 @@
       "genre": "survival",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/outbreak-epidemic.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/outbreak-epidemic.webp",
+      "cover_2x": "assets/covers/outbreak-epidemic@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1082220/",
       "source_note": null
     },
     {
@@ -1766,9 +1766,9 @@
       "genre": "survival",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/outbreak-the-new-nightmare.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/outbreak-the-new-nightmare.webp",
+      "cover_2x": "assets/covers/outbreak-the-new-nightmare@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/644480/",
       "source_note": null
     },
     {
@@ -1784,9 +1784,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/outward-definitive-edition.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/outward-definitive-edition.webp",
+      "cover_2x": "assets/covers/outward-definitive-edition@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/794260/",
       "source_note": null
     },
     {
@@ -1800,9 +1800,9 @@
       "genre": "party",
       "year": null,
       "publisher": "Team17",
-      "cover": "assets/covers/overcooked-2.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/overcooked-2.webp",
+      "cover_2x": "assets/covers/overcooked-2@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/728880/",
       "source_note": null
     },
     {
@@ -1816,9 +1816,9 @@
       "genre": "party",
       "year": null,
       "publisher": "Team17",
-      "cover": "assets/covers/overcooked-all-you-can-eat.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/overcooked-all-you-can-eat.webp",
+      "cover_2x": "assets/covers/overcooked-all-you-can-eat@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1243830/",
       "source_note": null
     },
     {
@@ -1832,9 +1832,9 @@
       "genre": "party",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/overruled.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/overruled.webp",
+      "cover_2x": "assets/covers/overruled@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/297740/",
       "source_note": null
     },
     {
@@ -1848,9 +1848,9 @@
       "genre": "puzzle",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/pang-adventures.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/pang-adventures.webp",
+      "cover_2x": "assets/covers/pang-adventures@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/415150/",
       "source_note": null
     },
     {
@@ -1880,9 +1880,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/phogs.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/phogs.webp",
+      "cover_2x": "assets/covers/phogs@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/850320/",
       "source_note": null
     },
     {
@@ -1896,9 +1896,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/pode.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/pode.webp",
+      "cover_2x": "assets/covers/pode@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/944080/",
       "source_note": null
     },
     {
@@ -1912,9 +1912,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/portal-knights.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/portal-knights.webp",
+      "cover_2x": "assets/covers/portal-knights@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/374040/",
       "source_note": null
     },
     {
@@ -1928,9 +1928,9 @@
       "genre": "puzzle",
       "year": null,
       "publisher": "SEGA",
-      "cover": "assets/covers/puyo-puyo-tetris-2.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/puyo-puyo-tetris-2.webp",
+      "cover_2x": "assets/covers/puyo-puyo-tetris-2@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1259790/",
       "source_note": null
     },
     {
@@ -1944,9 +1944,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/quake.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/quake.webp",
+      "cover_2x": "assets/covers/quake@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/2310/",
       "source_note": null
     },
     {
@@ -1960,9 +1960,9 @@
       "genre": "beat-em-up",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/raging-justice.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/raging-justice.webp",
+      "cover_2x": "assets/covers/raging-justice@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/384200/",
       "source_note": null
     },
     {
@@ -1992,9 +1992,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": "Sony Interactive Entertainment",
-      "cover": "assets/covers/returnal.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/returnal.webp",
+      "cover_2x": "assets/covers/returnal@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1649240/",
       "source_note": null
     },
     {
@@ -2008,9 +2008,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/rico.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/rico.webp",
+      "cover_2x": "assets/covers/rico@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/656700/",
       "source_note": null
     },
     {
@@ -2024,9 +2024,9 @@
       "genre": "beat-em-up",
       "year": null,
       "publisher": "WayForward",
-      "cover": "assets/covers/river-city-girls-2.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/river-city-girls-2.webp",
+      "cover_2x": "assets/covers/river-city-girls-2@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1920480/",
       "source_note": null
     },
     {
@@ -2040,9 +2040,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/rogue-legacy-2.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/rogue-legacy-2.webp",
+      "cover_2x": "assets/covers/rogue-legacy-2@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1253920/",
       "source_note": null
     },
     {
@@ -2072,9 +2072,9 @@
       "genre": "sports",
       "year": null,
       "publisher": "Nacon",
-      "cover": "assets/covers/rugby-22.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/rugby-22.webp",
+      "cover_2x": "assets/covers/rugby-22@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1475850/",
       "source_note": null
     },
     {
@@ -2088,9 +2088,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/salt-and-sacrifice.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/salt-and-sacrifice.webp",
+      "cover_2x": "assets/covers/salt-and-sacrifice@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1437400/",
       "source_note": null
     },
     {
@@ -2104,9 +2104,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/salt-and-sanctuary.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/salt-and-sanctuary.webp",
+      "cover_2x": "assets/covers/salt-and-sanctuary@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/283640/",
       "source_note": null
     },
     {
@@ -2120,9 +2120,9 @@
       "genre": "fighting",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/samurai-gunn-2.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/samurai-gunn-2.webp",
+      "cover_2x": "assets/covers/samurai-gunn-2@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1397790/",
       "source_note": null
     },
     {
@@ -2136,9 +2136,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": "Sony Interactive Entertainment",
-      "cover": "assets/covers/sackboy-a-big-adventure.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/sackboy-a-big-adventure.webp",
+      "cover_2x": "assets/covers/sackboy-a-big-adventure@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1599660/",
       "source_note": null
     },
     {
@@ -2152,9 +2152,9 @@
       "genre": "beat-em-up",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/scott-pilgrim-vs-the-world-the-game-complete-edition.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/scott-pilgrim-vs-the-world-the-game-complete-edition.webp",
+      "cover_2x": "assets/covers/scott-pilgrim-vs-the-world-the-game-complete-edition@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/2215260/",
       "source_note": null
     },
     {
@@ -2168,9 +2168,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/sea-of-stars.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/sea-of-stars.webp",
+      "cover_2x": "assets/covers/sea-of-stars@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1244090/",
       "source_note": null
     },
     {
@@ -2184,9 +2184,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": "Square Enix",
-      "cover": "assets/covers/secret-of-mana.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/secret-of-mana.webp",
+      "cover_2x": "assets/covers/secret-of-mana@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/637670/",
       "source_note": null
     },
     {
@@ -2200,9 +2200,9 @@
       "genre": "beat-em-up",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/shing.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/shing.webp",
+      "cover_2x": "assets/covers/shing@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1103730/",
       "source_note": null
     },
     {
@@ -2216,9 +2216,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/skeletal-avenger.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/skeletal-avenger.webp",
+      "cover_2x": "assets/covers/skeletal-avenger@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1277500/",
       "source_note": null
     },
     {
@@ -2248,9 +2248,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": "SEGA",
-      "cover": "assets/covers/sonic-origins-plus.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/sonic-origins-plus.webp",
+      "cover_2x": "assets/covers/sonic-origins-plus@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1794960/",
       "source_note": null
     },
     {
@@ -2264,9 +2264,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": "SEGA",
-      "cover": "assets/covers/sonic-superstars.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/sonic-superstars.webp",
+      "cover_2x": "assets/covers/sonic-superstars@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/2022670/",
       "source_note": null
     },
     {
@@ -2280,9 +2280,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": "Mossmouth",
-      "cover": "assets/covers/spelunky.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/spelunky.webp",
+      "cover_2x": "assets/covers/spelunky@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/239350/",
       "source_note": null
     },
     {
@@ -2296,9 +2296,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": "Mossmouth",
-      "cover": "assets/covers/spelunky-2.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/spelunky-2.webp",
+      "cover_2x": "assets/covers/spelunky-2@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/418530/",
       "source_note": null
     },
     {
@@ -2312,9 +2312,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": "WayForward",
-      "cover": "assets/covers/spidersaurs.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/spidersaurs.webp",
+      "cover_2x": "assets/covers/spidersaurs@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1191620/",
       "source_note": null
     },
     {
@@ -2328,9 +2328,9 @@
       "genre": "survival",
       "year": null,
       "publisher": "ConcernedApe",
-      "cover": "assets/covers/stardew-valley.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/stardew-valley.webp",
+      "cover_2x": "assets/covers/stardew-valley@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/413150/",
       "source_note": null
     },
     {
@@ -2344,9 +2344,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/steredenn-binary-stars.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/steredenn-binary-stars.webp",
+      "cover_2x": "assets/covers/steredenn-binary-stars@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/347160/",
       "source_note": null
     },
     {
@@ -2362,9 +2362,9 @@
       "genre": "fighting",
       "year": null,
       "publisher": "Capcom",
-      "cover": "assets/covers/street-fighter-v-champion-edition.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/street-fighter-v-champion-edition.webp",
+      "cover_2x": "assets/covers/street-fighter-v-champion-edition@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/310950/",
       "source_note": null
     },
     {
@@ -2378,9 +2378,9 @@
       "genre": "beat-em-up",
       "year": null,
       "publisher": "Dotemu",
-      "cover": "assets/covers/streets-of-rage-4.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/streets-of-rage-4.webp",
+      "cover_2x": "assets/covers/streets-of-rage-4@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/985890/",
       "source_note": null
     },
     {
@@ -2394,9 +2394,9 @@
       "genre": "sports",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/super-blood-hockey.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/super-blood-hockey.webp",
+      "cover_2x": "assets/covers/super-blood-hockey@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/532190/",
       "source_note": null
     },
     {
@@ -2426,9 +2426,9 @@
       "genre": "puzzle",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/tetris-effect.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/tetris-effect.webp",
+      "cover_2x": "assets/covers/tetris-effect@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1003590/",
       "source_note": null
     },
     {
@@ -2477,9 +2477,9 @@
       "genre": "survival",
       "year": null,
       "publisher": "Bandai Namco Entertainment",
-      "cover": "assets/covers/the-dark-pictures-anthology-house-of-ashes.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/the-dark-pictures-anthology-house-of-ashes.webp",
+      "cover_2x": "assets/covers/the-dark-pictures-anthology-house-of-ashes@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1281590/",
       "source_note": null
     },
     {
@@ -2493,9 +2493,9 @@
       "genre": "survival",
       "year": null,
       "publisher": "Forever Entertainment",
-      "cover": "assets/covers/the-house-of-the-dead-remake.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/the-house-of-the-dead-remake.webp",
+      "cover_2x": "assets/covers/the-house-of-the-dead-remake@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1694600/",
       "source_note": null
     },
     {
@@ -2509,9 +2509,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/the-last-oricru.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/the-last-oricru.webp",
+      "cover_2x": "assets/covers/the-last-oricru@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1663640/",
       "source_note": null
     },
     {
@@ -2525,9 +2525,9 @@
       "genre": "survival",
       "year": null,
       "publisher": "2K",
-      "cover": "assets/covers/the-quarry.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/the-quarry.webp",
+      "cover_2x": "assets/covers/the-quarry@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1577120/",
       "source_note": null
     },
     {
@@ -2543,9 +2543,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": "2K",
-      "cover": "assets/covers/tiny-tinas-wonderlands.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/tiny-tinas-wonderlands.webp",
+      "cover_2x": "assets/covers/tiny-tinas-wonderlands@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1286680/",
       "source_note": null
     },
     {
@@ -2559,9 +2559,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/tiny-troopers-global-ops.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/tiny-troopers-global-ops.webp",
+      "cover_2x": "assets/covers/tiny-troopers-global-ops@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1374350/",
       "source_note": null
     },
     {
@@ -2575,9 +2575,9 @@
       "genre": "beat-em-up",
       "year": null,
       "publisher": "Konami",
-      "cover": "assets/covers/tmnt-the-cowabunga-collection.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/tmnt-the-cowabunga-collection.webp",
+      "cover_2x": "assets/covers/tmnt-the-cowabunga-collection@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1659600/",
       "source_note": null
     },
     {
@@ -2607,9 +2607,9 @@
       "genre": "party",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/tools-up.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/tools-up.webp",
+      "cover_2x": "assets/covers/tools-up@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1004490/",
       "source_note": null
     },
     {
@@ -2625,9 +2625,9 @@
       "genre": "sports",
       "year": null,
       "publisher": "Activision",
-      "cover": "assets/covers/tony-hawks-pro-skater-1-2.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/tony-hawks-pro-skater-1-2.webp",
+      "cover_2x": "assets/covers/tony-hawks-pro-skater-1-2@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/2395210/",
       "source_note": null
     },
     {
@@ -2641,9 +2641,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/tower-of-guns.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/tower-of-guns.webp",
+      "cover_2x": "assets/covers/tower-of-guns@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/266110/",
       "source_note": null
     },
     {
@@ -2657,9 +2657,9 @@
       "genre": "fighting",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/towerfall-ascension.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/towerfall-ascension.webp",
+      "cover_2x": "assets/covers/towerfall-ascension@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/251470/",
       "source_note": null
     },
     {
@@ -2675,9 +2675,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": "Modus Games",
-      "cover": "assets/covers/trine-4-the-nightmare-prince.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/trine-4-the-nightmare-prince.webp",
+      "cover_2x": "assets/covers/trine-4-the-nightmare-prince@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/690640/",
       "source_note": null
     },
     {
@@ -2707,9 +2707,9 @@
       "genre": "party",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/ultimate-chicken-horse.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/ultimate-chicken-horse.webp",
+      "cover_2x": "assets/covers/ultimate-chicken-horse@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/386940/",
       "source_note": null
     },
     {
@@ -2723,9 +2723,9 @@
       "genre": "sports",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/ultimate-fishing-simulator-2.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/ultimate-fishing-simulator-2.webp",
+      "cover_2x": "assets/covers/ultimate-fishing-simulator-2@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1136380/",
       "source_note": null
     },
     {
@@ -2739,9 +2739,9 @@
       "genre": "platformer",
       "year": null,
       "publisher": "Electronic Arts",
-      "cover": "assets/covers/unravel-two.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/unravel-two.webp",
+      "cover_2x": "assets/covers/unravel-two@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1225570/",
       "source_note": null
     },
     {
@@ -2755,9 +2755,9 @@
       "genre": "racing",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/urban-flow.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/urban-flow.webp",
+      "cover_2x": "assets/covers/urban-flow@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/2235340/",
       "source_note": null
     },
     {
@@ -2771,9 +2771,9 @@
       "genre": "beat-em-up",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/viking-squad.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/viking-squad.webp",
+      "cover_2x": "assets/covers/viking-squad@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/325930/",
       "source_note": null
     },
     {
@@ -2787,9 +2787,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/warhammer-40-000-shootas-blood-teef.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/warhammer-40-000-shootas-blood-teef.webp",
+      "cover_2x": "assets/covers/warhammer-40-000-shootas-blood-teef@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1324530/",
       "source_note": null
     },
     {
@@ -2803,9 +2803,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/warhammer-chaosbane-slayer-edition.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/warhammer-chaosbane-slayer-edition.webp",
+      "cover_2x": "assets/covers/warhammer-chaosbane-slayer-edition@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/774241/",
       "source_note": null
     },
     {
@@ -2819,9 +2819,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": "Fatshark",
-      "cover": "assets/covers/warhammer-vermintide-2.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/warhammer-vermintide-2.webp",
+      "cover_2x": "assets/covers/warhammer-vermintide-2@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/552500/",
       "source_note": null
     },
     {
@@ -2835,9 +2835,9 @@
       "genre": "party",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/we-love-katamari-reroll-royal-reverie.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/we-love-katamari-reroll-royal-reverie.webp",
+      "cover_2x": "assets/covers/we-love-katamari-reroll-royal-reverie@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1730700/",
       "source_note": null
     },
     {
@@ -2851,9 +2851,9 @@
       "genre": "rpg",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/wizard-of-legend.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/wizard-of-legend.webp",
+      "cover_2x": "assets/covers/wizard-of-legend@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/445980/",
       "source_note": null
     },
     {
@@ -2867,9 +2867,9 @@
       "genre": "fighting",
       "year": null,
       "publisher": "Team17",
-      "cover": "assets/covers/worms-rumble.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/worms-rumble.webp",
+      "cover_2x": "assets/covers/worms-rumble@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1186040/",
       "source_note": null
     },
     {
@@ -2883,9 +2883,9 @@
       "genre": "racing",
       "year": null,
       "publisher": "Nacon",
-      "cover": "assets/covers/wrc-10.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/wrc-10.webp",
+      "cover_2x": "assets/covers/wrc-10@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1462810/",
       "source_note": null
     },
     {
@@ -2899,9 +2899,9 @@
       "genre": "racing",
       "year": null,
       "publisher": "Nacon",
-      "cover": "assets/covers/wrc-generations.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/wrc-generations.webp",
+      "cover_2x": "assets/covers/wrc-generations@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1953520/",
       "source_note": "Tela dividida"
     },
     {
@@ -2915,9 +2915,9 @@
       "genre": "beat-em-up",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/wulverblade.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/wulverblade.webp",
+      "cover_2x": "assets/covers/wulverblade@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/587180/",
       "source_note": null
     },
     {
@@ -2931,9 +2931,9 @@
       "genre": "sports",
       "year": null,
       "publisher": "2K",
-      "cover": "assets/covers/wwe-2k23.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/wwe-2k23.webp",
+      "cover_2x": "assets/covers/wwe-2k23@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1942660/",
       "source_note": null
     },
     {
@@ -2947,9 +2947,9 @@
       "genre": "shooter",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/yars-recharged.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/yars-recharged.webp",
+      "cover_2x": "assets/covers/yars-recharged@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/2019990/",
       "source_note": null
     },
     {
@@ -2963,9 +2963,9 @@
       "genre": "beat-em-up",
       "year": null,
       "publisher": null,
-      "cover": "assets/covers/zombie-vikings.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
+      "cover": "assets/covers/zombie-vikings.webp",
+      "cover_2x": "assets/covers/zombie-vikings@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/337480/",
       "source_note": null
     }
   ]
