@@ -48,5 +48,7 @@ held = 60
 # [requirements]
 # declared = ["hardware"]
 
-[install]
-wired = "0.2.450"
+# [install] — whether the wired launcher, hook and skill are held at a version.
+# This build takes two booleans here, `enforced` and `pinned`, both default false.
+# An earlier `wired = "0.2.450"` named a roadkeep the index does not carry, and a
+# key this build refuses outright, which stopped every command; the defaults stand.

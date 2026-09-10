@@ -1,0 +1,60 @@
+# Publish the catalogue to GitHub Pages (CL19).
+#
+# There is no build step, because the site is static by decision (CL7): what is in
+# the repository is what gets served. This workflow only uploads the tree and
+# deploys it, so a push to the default branch is the whole publish.
+#
+# One-time repository setting: Settings -> Pages -> Build and deployment ->
+# Source: "GitHub Actions". Nothing else here works until that is selected, and it
+# cannot be set from a workflow file.
+
+name: Publish to Pages
+
+on:
+  push:
+    branches: [main]
+  # So the site can be republished without an empty commit.
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish rather than cancelling it: a half-published site is
+# worse than one that is a minute behind.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check the dataset is the one the builders produce
+        # The site reads data/games.json directly, so a committed file that no
+        # longer matches its sources would ship stale data to every visitor.
+        run: |
+          python3 scripts/build_dataset.py
+          python3 scripts/build_covers.py
+          git diff --exit-code -- data/games.json assets/covers
+
+      - name: Validate the catalogue
+        # The site has no server to catch bad data at request time, so this is
+        # where a broken record is stopped.
+        run: python3 scripts/validate_dataset.py
+
+      - uses: actions/configure-pages@v5
+
+      - name: Upload the repository as the site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - id: deploy
+        uses: actions/deploy-pages@v4

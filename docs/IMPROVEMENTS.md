@@ -2,21 +2,6 @@
 
 ## Block A — Game data
 
-### §CL1 Game dataset
-
-The catalog starts as a comma-separated blob of roughly 190 entries. That text is the
-source, not the format: one record per game — stable id, canonical name, player count,
-couch-coop type, genre, year and cover art — is what the grid, the search and the
-filters read. The original text stays versioned alongside it as traceable provenance.
-
-### §CL2 Duplicate reconciliation
-
-Super Blood Hockey, Super Bomberman R Online, Tetris Effect and The Angry 4 each appear
-twice in the source. Other pairs are one game under two names: Tiny Tina's Wonderlands
-and Wonderland, House of Ashes loose and again inside The Dark Pictures Anthology,
-Outward and Outward: Definitive Edition. The rule is one entry per buyable PS5 product,
-with the alternate names kept as aliases that search still matches.
-
 ### §CL3 Couch-coop metadata
 
 Local coop is not one field. Each game needs max players on a single console, screen
@@ -48,61 +33,6 @@ the grid aligned. Each image records where it came from.
 
 ## Block B — Catalog site
 
-### §CL7 The grid
-
-A static site, no framework and no build step: HTML, CSS and one JavaScript module
-reading the catalog JSON. The screen is a grid of cover cards, dense enough to fit a lot
-above the fold and still keep names legible. No pagination — the whole list scrolls,
-because scrolling costs less than clicking through to find the game was on page three.
-
-### §CL8 Search
-
-One field at the top, filtering on every keystroke, no submit button. It matches
-canonical names and aliases, ignores case and accents, and tolerates the one-character
-typo that names like Guacamelee and Chaosbane invite. The query lives in the URL, so a
-link pasted into the group chat opens already filtered.
-
-### §CL9 Filters
-
-Three filters, in that order of importance: players (2, 3, 4, 5+), genre and screen
-type. Combinable, visible at all times on desktop and behind one button on phones, and
-always reversible with a single clear. A filter that hides its own state is a filter the
-user forgets to switch off before concluding the catalog is small.
-
-### §CL10 Sorting
-
-Alphabetical by default, because it is the order a person can predict. Beyond it, newest
-first and most players first. Alphabetical ignores a leading article: The Quarry sorts
-under Q, or half the catalog piles up under T.
-
-### §CL11 Game detail
-
-A side panel, not a new page: the grid stays behind it and closing costs no navigation.
-It carries the large cover, players, screen type, genre, year and the caveat in prose —
-Call of Duty is local coop only in Zombies, Mortal Kombat 11 only in Towers of Time, WRC
-Generations only in split screen. This is what the source list carried in parentheses
-and nothing else has kept.
-
-### §CL12 The count
-
-A number next to the search, moving with the filters: 187 games, 41 games for four. It
-is the cheapest possible feedback that the interaction landed, and it is also what gives
-a newcomer the scale of the catalog.
-
-### §CL13 Phone reading
-
-Two cover columns on a phone, search pinned to the top while scrolling, filters in a
-sheet that rises from the bottom. Touch targets at 44 pixels, no information carried by
-hover, and the detail panel taking the full screen. This is the primary device, not the
-adaptation.
-
-### §CL14 Keyboard access
-
-Focus order following the reading order, a focus ring visible against the dark ground,
-slash as the shortcut to search and Escape closing the detail panel. The grid is a
-semantic list whose game names are real text, not baked into the image — screen readers
-and the browser's own find depend on that.
-
 ## Block C — Publishing and docs
 
 ### §CL19 Publishing
@@ -111,47 +41,4 @@ GitHub Pages from the main branch, with no build step, because the site is stati
 decision. Every push publishes. The link is the product: it has to open fast on a phone
 network and depend on nothing outside the repository.
 
-### §CL20 README
-
-What it is, the inclusion rule — local coop on one PS5 console —, where the list came
-from, how to run it in one line, and how to propose a game. The inclusion rule is the
-part that heads off the recurring argument about online coop, which is precisely what
-this catalog is not.
-
-### §CL21 Catalog validation
-
-A checker that runs in the repository and refuses: a repeated id, a missing required
-field, a genre outside the vocabulary, a player count below two, and cover art pointing
-at a file that is not there. It runs before commit and in CI. It costs little and it is
-the only defense a backend-less site has against its own data.
-
 ## Block D — Visual design and polish
-
-### §CL15 Visual language
-
-A dark blue-black ground, the tone of the console's own interface, with cover art as the
-only saturated color on screen — game art is loud already and fights any palette put
-beside it. A narrow sans for long titles inside small cards, a four-step type scale and
-spacing in multiples of eight. One accent color, spent on focus, active filters and the
-count, and nowhere else.
-
-### §CL16 Player badge
-
-A badge in the corner of each cover with the player count, plus a color bar for screen
-type. Readable at arm's length with a phone in hand, never dependent on hover, and never
-covering the title inside the art. It is the only thing the grid adds on top of a cover,
-which is why it has to earn the space it takes.
-
-### §CL17 Empty state
-
-When nothing matches, say which combination emptied the list and offer the way back:
-drop the narrowest filter, or clear everything. If the search only just missed, suggest
-the nearest title. This is the ordinary case of filtering five players and a niche genre
-at once.
-
-### §CL18 Image cost
-
-Lazy loading below the fold, declared dimensions on every card so the grid does not jump
-when an image lands, and covers in two sizes served by screen density. The first visible
-covers get priority; the rest can arrive as the page scrolls. The target is a usable
-grid before the last image.

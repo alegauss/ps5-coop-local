@@ -2,36 +2,18 @@
 
 ## Block A — Game data
 
-- 📋 **CL1** (deps: —) **the game list exists only as pasted text, with no data file the interface can read** — With no structured dataset no screen can sort, filter or count the titles. → §CL1
-- 📋 **CL2** (deps: —) **the list repeats titles and mixes variants of the same game, and nothing reconciles them** — A duplicate inflates the count and returns the same card twice in search. → §CL2
-- 📋 **CL3** (deps: —) **no title says how many players fit on the couch, or whether the screen splits or is shared** — Player count is the first filter anyone applies when picking a game with people over. → §CL3
-- 📋 **CL4** (deps: —) **games carry no genre, year or publisher, so there is no axis to group the grid by** — Genre is what separates a beat 'em up from a party game across two hundred titles. → §CL4
-- 📋 **CL5** (deps: —) **entries like 'Bleed 1 e 2', 'Trine Series' and 'King of Fighters' name a collection, not a game** — A non-canonical name matches no cover, no PSN listing and nothing the user types. → §CL5
-- 📋 **CL6** (deps: —) **no game has cover art, and a game grid without art is a text table** — Cover art is how a player recognizes a title; without it there are 190 lines to read. → §CL6
+- ⏳ **CL3** (deps: —) **no title says how many players fit on the couch, or whether the screen splits or is shared** — 58 titles still carry no player count or screen mode, so the couch question stays unanswerable for them until somebody checks the store. → §CL3
+- ⏳ **CL4** (deps: —) **games carry no genre, year or publisher, so there is no axis to group the grid by** — 14 titles have no genre the ten labels honestly fit, year is blank throughout, and 111 titles still have no publisher. → §CL4
+- ⏳ **CL5** (deps: —) **entries like 'Bleed 1 e 2', 'Trine Series' and 'King of Fighters' name a collection, not a game** — Diablo III e IV still names two products at once, and Minigolf, Runner and TOGETHER match no store listing anybody has checked yet. → §CL5
+- ⏳ **CL6** (deps: —) **no game has cover art, and a game grid without art is a text table** — No game has a real packshot yet, so all 184 covers are the generated fallback and a licensed image source still has to be chosen. → §CL6
 
 ## Block B — Catalog site
 
-- 📋 **CL7** (deps: CL1) **there is no page at all: the repository holds no site that shows the catalog** — It is the deliverable — seeing the whole local-coop list in a browser. → §CL7
-- 📋 **CL8** (deps: CL7) **with nearly two hundred titles on one page, finding a game means scrolling or Ctrl+F** — Instant name search is what makes a catalog this size usable at all. → §CL8
-- 📋 **CL9** (deps: CL3, CL4) **there is no way to filter by player count, genre or screen type** — The real question is what four of us can play tonight, and the grid cannot answer it. → §CL9
-- 📋 **CL10** (deps: CL7) **the grid has no ordering: not alphabetical, not by year, not by player count** — A fixed order buries the recent releases and forces a full sweep to compare. → §CL10
-- 📋 **CL11** (deps: CL3) **opening a game leads nowhere: no detail view with its coop mode and the list's caveats** — Caveats like Zombies-only or split-screen-only decide the purchase and are lost today. → §CL11
-- 📋 **CL12** (deps: CL9) **the page never says how many games exist, or how many survived the current filter** — Without a count the user cannot tell whether a filter worked or quietly broke. → §CL12
-- 📋 **CL13** (deps: CL7) **the layout is unverified on phones, which is where the list gets read in front of the TV** — The lookup happens with a controller in hand and a phone beside it, not at a desk. → §CL13
-- 📋 **CL14** (deps: CL7) **without a mouse nothing works: search never takes focus and the grid cannot be traversed** — Keyboard and screen-reader access are the floor for any public page, not an extra. → §CL14
-
 ## Block C — Publishing and docs
 
-- 📋 **CL19** (deps: CL7) **the site is published nowhere, so the list exists only on the developer's machine** — The point of a catalog is sending the link to whoever is coming over to play. → §CL19
-- 📋 **CL20** (deps: —) **the repository never says what the project is, where the list came from, or how to run it** — With no README a cloner cannot tell a site from a dataset from a scratch note. → §CL20
-- 📋 **CL21** (deps: CL1) **nothing validates the dataset: broken JSON or a missing field surfaces in the user's browser** — A static site has no server to catch bad data, so it has to be refused before shipping. → §CL21
+- ⏳ **CL19** (deps: CL7 ✅) **the site is published nowhere, so the list exists only on the developer's machine** — Pages still has to be switched to the GitHub Actions source in repository settings, which no workflow file can do, and this branch has to reach main. → §CL19
 
 ## Block D — Visual design and polish
-
-- 📋 **CL15** (deps: CL7) **the site has no identity: with no palette, type scale or grid it reads as a test page** — A PS5 catalog wants a dark surface, high contrast and the feel of a console shelf. → §CL15
-- 📋 **CL16** (deps: CL3) **the grid cannot tell two-player coop from four-player, and that is what decides the night** — The fact that settles the choice has to be readable on the card, not two clicks away. → §CL16
-- 📋 **CL17** (deps: CL8) **a search that matches nothing returns a blank screen explaining nothing** — An empty screen reads as a fault; emptiness has to name its cause and offer a way out. → §CL17
-- 📋 **CL18** (deps: CL6) **loading all 190 covers at once delays the first paint of the grid** — A grid that waits for its images wastes the seconds the user could have been reading. → §CL18
 
 ## Done when — Block A
 

@@ -1,0 +1,192 @@
+# Grouping axes, one row per game id (CL4). Blank is not yet established, never a claim.
+#
+# genre      one of: beat-em-up platformer party shooter rpg sports racing puzzle survival fighting
+#            A closed vocabulary on purpose: thirty labels holding one game each filter nothing.
+# year       the PS5 release year. Blank across the board for now -- most of this list is
+#            PS4 software played through back-compat, which has no PS5 release date at all.
+# publisher  the label on the store page.
+id,genre,year,publisher
+a-way-out,,,Electronic Arts
+aegis-defenders,platformer,,
+aew-fight-forever,sports,,THQ Nordic
+alienation,shooter,,Sony Interactive Entertainment
+arcade-paradise,,,
+as-dusk-falls,survival,,Xbox Game Studios
+astroneer,survival,,
+balan-wonderworld,platformer,,
+baldurs-gate-3,rpg,,Larian Studios
+biped,platformer,,
+blackwind,shooter,,
+bleed-2,shooter,,
+borderlands-3,shooter,,2K
+broforce,shooter,,Devolver Digital
+call-of-duty-black-ops-cold-war,shooter,,Activision
+cant-drive-this,party,,
+castle-crashers-remastered,beat-em-up,,The Behemoth
+catty-batty-the-spirit-guide,platformer,,
+cell-damage-hd,shooter,,
+chicory-a-colorful-tale,puzzle,,
+children-of-morta,rpg,,
+contra-operation-galuga,shooter,,Konami
+contra-rogue-corps,shooter,,Konami
+crosskrush,,,
+cuphead,platformer,,Studio MDHR
+dandy-randy-dx,platformer,,
+darksiders-genesis,rpg,,THQ Nordic
+dcs-justice-league-cosmic-chaos,beat-em-up,,
+dead-nation,shooter,,Sony Interactive Entertainment
+death-squared,party,,
+death-tales,puzzle,,
+degrees-of-separation,puzzle,,
+demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles,fighting,,SEGA
+diablo-iii-e-iv,,,
+die-for-valhalla,rpg,,
+dirt-5,racing,,Codemasters
+disney-classic-games-aladdin-and-the-lion-king,platformer,,
+divinity-original-sin,rpg,,Larian Studios
+dodgeball-academia,sports,,
+dont-starve-together,survival,,
+double-dragon-gaiden-rise-of-the-dragons,beat-em-up,,Modus Games
+dungeon-defenders-awakened,rpg,,
+ea-sports-ufc-4,sports,,Electronic Arts
+earth-defense-force-6,shooter,,D3 Publisher
+eight-dragons,beat-em-up,,
+enter-the-gungeon,shooter,,Devolver Digital
+escape-academy,puzzle,,
+f1-2021,racing,,Codemasters
+fall-guys-ultimate-knockout,party,,
+fifa-21,sports,,Electronic Arts
+fifa-22,sports,,Electronic Arts
+fifa-23,sports,,Electronic Arts
+fightn-rage,beat-em-up,,
+final-vendetta,beat-em-up,,
+for-the-king,rpg,,Curve Games
+fortnite,shooter,,Epic Games
+gang-beasts,party,,Skybound Games
+gauntlet-slayer-edition,shooter,,Warner Bros. Games
+gigabash,party,,
+graven,survival,,
+guacamelee-2,platformer,,
+gungungun,,,
+guts-n-goals,sports,,
+haven,rpg,,
+heavenly-bodies,puzzle,,
+helldivers,shooter,,Sony Interactive Entertainment
+hot-wheels-unleashed,racing,,Milestone
+human-fall-flat,puzzle,,Curve Games
+hyper-light-drifter,rpg,,
+ibb-obb,platformer,,
+ice-cream-surfer,puzzle,,
+jitsu-squad,beat-em-up,,
+jydge,shooter,,
+keywe,party,,
+kitaria-fables,rpg,,
+lara-croft-and-the-guardian-of-light,shooter,,
+lara-croft-and-the-temple-of-osiris,shooter,,
+lego-marvel-super-heroes-2,platformer,,Warner Bros. Games
+lego-star-wars-the-skywalker-saga,platformer,,Warner Bros. Games
+little-big-planet-3,platformer,,Sony Interactive Entertainment
+llamasoft-the-jeff-minter-story,shooter,,
+lovers-in-a-dangerous-spacetime,shooter,,
+madden-nfl-21,sports,,Electronic Arts
+madden-nfl-22,sports,,Electronic Arts
+madden-nfl-23,sports,,Electronic Arts
+magicka,rpg,,
+mereks-market,party,,
+mighty-goose,shooter,,
+minecraft-dungeons,shooter,,Xbox Game Studios
+minigolf,sports,,
+mortal-kombat-11,fighting,,Warner Bros. Games
+mother-russia-bleeds,beat-em-up,,
+moving-out,party,,Team17
+nba-2k21,sports,,2K
+nba-2k22,sports,,2K
+nba-2k23,sports,,2K
+neon-chrome,shooter,,
+nhl-21,sports,,Electronic Arts
+nhl-22,sports,,Electronic Arts
+nidhogg-2,fighting,,
+nine-parchments,rpg,,
+nobody-saves-the-world,rpg,,
+omega-strike,shooter,,
+orcs-must-die,shooter,,
+out-of-space-couch-edition,party,,
+outbreak-endless-nightmares,survival,,
+outbreak-epidemic,survival,,
+outbreak-the-new-nightmare,survival,,
+outward-definitive-edition,rpg,,
+overcooked-2,party,,Team17
+overcooked-all-you-can-eat,party,,Team17
+overruled,party,,
+pang-adventures,puzzle,,
+paprium,beat-em-up,,
+phogs,platformer,,
+pode,platformer,,
+portal-knights,rpg,,
+puyo-puyo-tetris-2,puzzle,,SEGA
+quake,shooter,,
+raging-justice,beat-em-up,,
+rayman-legends,platformer,,Ubisoft
+returnal,shooter,,Sony Interactive Entertainment
+rico,shooter,,
+river-city-girls-2,beat-em-up,,WayForward
+rogue-legacy-2,rpg,,
+rugby-22,sports,,Nacon
+runner,,,
+sackboy-a-big-adventure,platformer,,Sony Interactive Entertainment
+salt-and-sacrifice,rpg,,
+salt-and-sanctuary,rpg,,
+samurai-gunn-2,fighting,,
+scott-pilgrim-vs-the-world-the-game-complete-edition,beat-em-up,,
+sea-of-stars,rpg,,
+secret-of-mana,rpg,,Square Enix
+shing,beat-em-up,,
+skeletal-avenger,rpg,,
+snipperclips-cut-it-out-together,party,,
+sonic-origins-plus,platformer,,SEGA
+sonic-superstars,platformer,,SEGA
+spelunky,platformer,,Mossmouth
+spelunky-2,platformer,,Mossmouth
+spidersaurs,shooter,,WayForward
+stardew-valley,survival,,ConcernedApe
+steredenn-binary-stars,shooter,,
+street-fighter-v-champion-edition,fighting,,Capcom
+streets-of-rage-4,beat-em-up,,Dotemu
+super-blood-hockey,sports,,
+super-bomberman-r,fighting,,
+super-bomberman-r-online,fighting,,
+tetris-effect,puzzle,,
+the-angry-4,,,
+the-binding-of-isaac-repentance,rpg,,Nicalis
+the-dark-pictures-anthology-house-of-ashes,survival,,Bandai Namco Entertainment
+the-house-of-the-dead-remake,survival,,Forever Entertainment
+the-king-of-fighters-xv,fighting,,
+the-last-oricru,rpg,,
+the-quarry,survival,,2K
+tiny-tinas-wonderlands,shooter,,2K
+tiny-troopers-global-ops,shooter,,
+tmnt-the-cowabunga-collection,beat-em-up,,Konami
+together,,,
+tony-hawks-pro-skater-1-2,sports,,Activision
+tools-up,party,,
+tower-of-guns,shooter,,
+towerfall-ascension,fighting,,
+trine-4-the-nightmare-prince,platformer,,Modus Games
+twin-robots-ultimate-edition,platformer,,
+ultimate-chicken-horse,party,,
+ultimate-fishing-simulator-2,sports,,
+unravel-two,platformer,,Electronic Arts
+urban-flow,racing,,
+viking-squad,beat-em-up,,
+warhammer-40-000-shootas-blood-teef,shooter,,
+warhammer-chaosbane-slayer-edition,rpg,,
+warhammer-vermintide-2,rpg,,Fatshark
+we-love-katamari-reroll-royal-reverie,party,,
+wizard-of-legend,rpg,,
+worms-rumble,fighting,,Team17
+wrc-10,racing,,Nacon
+wrc-generations,racing,,Nacon
+wulverblade,beat-em-up,,
+wwe-2k23,sports,,2K
+yars-recharged,shooter,,
+zombie-vikings,beat-em-up,,
