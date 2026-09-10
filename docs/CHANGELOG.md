@@ -25,3 +25,4 @@
 ## Block D — Visual design and polish
 
 - ✅ **CL15** **the site has no identity: with no palette, type scale or grid it reads as a test page** — A blue-black ground with near-neutral chrome, one accent on focus, active filters and the count, a four-step type scale and spacing in eights (design recorded in `assets/site/styles.css`).
+- ✅ **CL16** **the grid cannot tell two-player coop from four-player, and that is what decides the night** — Each cover carries a corner badge with the player count and a bar for screen type, only where the count is known and never dependent on hover (design recorded in `assets/site/app.js`).

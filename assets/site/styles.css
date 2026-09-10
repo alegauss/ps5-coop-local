@@ -555,3 +555,59 @@ body {
     transition: none;
   }
 }
+
+/* Player badge (CL16).
+ *
+ * The only thing the grid adds on top of a cover, so it has to earn the space it
+ * takes. It sits in the top-left corner: PS5 packshots carry their title across
+ * the lower two-thirds, and a badge in a bottom corner would land on it.
+ *
+ * Nothing here depends on hover -- CL13 established that the phone is the primary
+ * device, and a touch screen has no hover to depend on.
+ */
+
+.card__art-wrap {
+  position: relative;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  top: var(--space-1);
+  left: var(--space-1);
+  display: flex;
+  align-items: stretch;
+  border-radius: 6px;
+  overflow: hidden;
+  /* Its own dark ground rather than a tint of the art: the badge has to stay
+   * legible over a cover this file has never seen. */
+  background: rgb(6 8 13 / 0.82);
+  box-shadow: 0 1px 6px rgb(0 0 0 / 0.4);
+  font-size: var(--text-xs);
+  line-height: 1;
+}
+
+.badge__count {
+  padding: 5px 7px;
+  color: var(--text);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+/* The screen type as a bar rather than a word: at arm's length a second word
+ * would not be read, and the grid already has a filter that spells it out. */
+.badge__screen {
+  width: 4px;
+}
+
+.badge__screen--split {
+  background: #6ea8fe;
+}
+
+.badge__screen--shared {
+  background: #4ec9a5;
+}
+
+.badge__screen--pass {
+  background: #e0a458;
+}

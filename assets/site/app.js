@@ -215,6 +215,9 @@ function card(game) {
   open.className = "card__open";
   open.addEventListener("click", () => openDetail(game));
 
+  const frame = document.createElement("span");
+  frame.className = "card__art-wrap";
+
   const art = document.createElement("img");
   art.className = "card__art";
   art.src = game.cover;
@@ -232,7 +235,36 @@ function card(game) {
   name.className = "card__name";
   name.textContent = game.name;
 
-  open.append(art, name);
+  frame.append(art);
+  // Only where the count is known. CL3 left 58 blanks, and a badge reading "?"
+  // would take the space the design says a badge has to earn.
+  if (game.max_players) {
+    const badge = document.createElement("span");
+    badge.className = "badge";
+
+    const count = document.createElement("span");
+    count.className = "badge__count";
+    count.textContent = `${game.max_players}P`;
+    badge.append(count);
+
+    if (game.screen) {
+      const bar = document.createElement("span");
+      bar.className = `badge__screen badge__screen--${game.screen}`;
+      badge.append(bar);
+    }
+
+    // The badge is decoration over an image with empty alt, so its meaning has to
+    // reach a screen reader as words rather than as "4P" and a coloured stripe.
+    const spoken = SCREEN_PROSE[game.screen];
+    badge.title = spoken
+      ? `Up to ${game.max_players} players, ${spoken}`
+      : `Up to ${game.max_players} players`;
+    count.setAttribute("aria-label", badge.title);
+
+    frame.append(badge);
+  }
+
+  open.append(frame, name);
   item.append(open);
   return item;
 }

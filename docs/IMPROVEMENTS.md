@@ -57,13 +57,6 @@ the only defense a backend-less site has against its own data.
 
 ## Block D — Visual design and polish
 
-### §CL16 Player badge
-
-A badge in the corner of each cover with the player count, plus a color bar for screen
-type. Readable at arm's length with a phone in hand, never dependent on hover, and never
-covering the title inside the art. It is the only thing the grid adds on top of a cover,
-which is why it has to earn the space it takes.
-
 ### §CL17 Empty state
 
 When nothing matches, say which combination emptied the list and offer the way back:
