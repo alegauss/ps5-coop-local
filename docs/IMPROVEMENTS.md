@@ -2,22 +2,6 @@
 
 ## Block A — Game data
 
-### §CL4 Grouping axes
-
-One genre per game, from a closed and deliberately small vocabulary: beat 'em up,
-platformer, party, shooter, RPG, sports, racing, puzzle, survival, fighting. An open
-vocabulary becomes thirty labels holding one game each and filters nothing. Publisher
-comes along because it sorts and gives context without costing another curation call.
-
-Year was defined as the PS5 release year, and that is the one thing here that turned out
-wrong. It cost a curation call nobody could make: most of this list is PS4 software
-played through back-compat and has no PS5 date, so the column was null on all 184
-records while the site shipped a "Newest first" sort and a "Released" row against it. It
-now means the year the game came out, the product a row names in its earliest form,
-which is the same axis and is sourceable -- scripts/fetch_years.py reads the store pages
-data/covers.csv already records, and names the seventeen where the listing's date is not
-the product's.
-
 ## Block B — Catalog site
 
 ## Block C — Publishing and docs

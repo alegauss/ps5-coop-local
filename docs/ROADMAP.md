@@ -2,8 +2,6 @@
 
 ## Block A — Game data
 
-- ⏳ **CL4** (deps: CL23 ✅) **games carry no genre, year or publisher, so there is no axis to group the grid by** — Genre is done, but 5 years and 2 publishers are open: fields no listing checked here answers, on titles Steam does not carry. → §CL4
-
 ## Block B — Catalog site
 
 ## Block C — Publishing and docs
@@ -44,14 +42,6 @@
   analytics, no API. The grid has to render from files this repository serves, so a
   visitor on a phone network waits on one origin and nothing a third party does can
   break the page. Checked by reading index.html and assets/site for an off-origin URL.
-
-## Done when — CL4
-
-- **a genre and a publisher on every entry, and the year column settled**
-  build_dataset.py prints genre coverage on every run, so that half is counted. Year is
-  the open question rather than a gap: it means the PS5 release year, and a PS4 title
-  played through back-compat has none, so what finishes this is the column being filled
-  or dropped, not left silently empty.
 
 ## Non-goals
 

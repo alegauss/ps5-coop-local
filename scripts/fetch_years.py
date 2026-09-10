@@ -114,20 +114,21 @@ LATE = {
     "warhammer-chaosbane-slayer-edition": (
         2021, "the Slayer Edition is 2021; the page is Chaosbane, 2019",
     ),
+    "castle-crashers-remastered": (
+        2015, "the Remastered SKU is September 2015; the page is the 2012 original",
+    ),
 }
 
 # Pages whose date says nothing about this entry, and where nothing checked here
 # establishes the right year either. Left blank rather than guessed. Each of these is
 # a wrong cover as well as a missing year, because CL6 read the same page -- which is
 # CL5's to fix, since in every case the entry's own name is what pointed here.
-REJECT = {
-    # The Steam listing predates the Remastered SKU, and no listing checked here
-    # states when the console remaster shipped.
-    "castle-crashers-remastered": "the page is the 2012 Steam release of the original",
-    # It shipped on PS5, which CL5 confirmed, but the Steam listing is still Early
-    # Access and an Early Access date is not a release date.
-    "samurai-gunn-2": "the page is an Early Access listing",
-}
+# Empty, and kept rather than deleted: both entries it held were resolved by CL4 once
+# somebody went looking -- Castle Crashers Remastered moved to LATE with its real year,
+# and Samurai Gunn 2 turned out to have shipped alongside its Early Access listing. The
+# mechanism stays because the next wrong page will need it, and a blank list says
+# plainly that nothing is currently refused rather than that nothing ever was.
+REJECT: dict[str, str] = {}
 
 
 def fetch(url: str):
