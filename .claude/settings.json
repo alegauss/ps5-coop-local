@@ -3,9 +3,8 @@
   "permissions": {
     "allow": [
       "Bash(roadkeep:*)",
-      "Bash(python ../roadkeep/scripts/roadkeep.py:*)",
-      "Bash(python \"${CLAUDE_PROJECT_DIR}/../roadkeep/scripts/roadkeep.py\":*)",
-      "Bash(sh \"${CLAUDE_PROJECT_DIR}/scripts/install-roadkeep.sh\":*)",
+      "Bash(python \"${CLAUDE_PROJECT_DIR}/scripts/roadkeep_run.py\":*)",
+      "Bash(python \"${CLAUDE_PROJECT_DIR}/scripts/install_roadkeep.py\":*)",
       "Edit(/.claude/skills/ps5-coop-local-roadmap-docs/**)"
     ],
     "deny": [],
@@ -21,12 +20,12 @@
         "hooks": [
           {
             "type": "command",
-            "command": "sh \"${CLAUDE_PROJECT_DIR}/scripts/install-roadkeep.sh\"",
+            "command": "python \"${CLAUDE_PROJECT_DIR}/scripts/install_roadkeep.py\"",
             "timeout": 300
           },
           {
             "type": "command",
-            "command": "python \"${CLAUDE_PROJECT_DIR}/../roadkeep/scripts/roadkeep.py\" guard",
+            "command": "python \"${CLAUDE_PROJECT_DIR}/scripts/roadkeep_run.py\" guard",
             "timeout": 10
           }
         ]
@@ -48,7 +47,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python \"${CLAUDE_PROJECT_DIR}/../roadkeep/scripts/roadkeep.py\" guard",
+            "command": "python \"${CLAUDE_PROJECT_DIR}/scripts/roadkeep_run.py\" guard",
             "timeout": 10
           }
         ]
@@ -59,7 +58,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python \"${CLAUDE_PROJECT_DIR}/../roadkeep/scripts/roadkeep.py\" guard",
+            "command": "python \"${CLAUDE_PROJECT_DIR}/scripts/roadkeep_run.py\" guard",
             "timeout": 30
           }
         ]

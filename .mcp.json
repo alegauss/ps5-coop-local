@@ -3,7 +3,7 @@
     "roadkeep": {
       "command": "python",
       "args": [
-        "${CLAUDE_PROJECT_DIR:-.}/../roadkeep/scripts/roadkeep.py",
+        "${CLAUDE_PROJECT_DIR:-.}/scripts/roadkeep_run.py",
         "mcp"
       ]
     }
