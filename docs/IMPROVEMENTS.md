@@ -2,13 +2,6 @@
 
 ## Block A — Game data
 
-### §CL3 Couch-coop metadata
-
-Local coop is not one field. Each game needs max players on a single console, screen
-mode (split, shared or pass-the-controller) and scope (full campaign, side modes only,
-versus only). Streets of Rage 4 and Overcooked are both four-player coop and play
-nothing alike; the grid has to say which is which before the click.
-
 ### §CL4 Grouping axes
 
 One genre per game, from a closed and deliberately small vocabulary: beat 'em up,

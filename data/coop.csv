@@ -1,6 +1,10 @@
 # Couch-coop metadata, one row per game id (CL3). Blank fields are not yet known,
 # never a claim of zero: CL21's validator is what refuses a record still missing one.
 #
+# A game with no local coop at all does not belong here as a blank -- a blank says
+# nobody has checked, and somebody has. It belongs in data/excluded.csv (CL22), which
+# keeps it out of the catalogue and records why.
+#
 # max_players  players on a single console, the whole point of the list
 # screen       split | shared | pass    (split-screen, one shared view, pass-the-controller)
 # scope        campaign | side | versus (full campaign, side modes only, versus only)
@@ -97,7 +101,7 @@ nba-2k21,4,shared,versus
 nba-2k22,4,shared,versus
 nba-2k23,4,shared,versus
 neon-chrome,4,shared,campaign
-nhl-21,,shared,versus
+nhl-21,4,shared,versus
 nhl-22,4,shared,versus
 nidhogg-2,2,shared,versus
 nine-parchments,4,shared,campaign

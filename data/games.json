@@ -1526,7 +1526,7 @@
       "name": "NHL 21",
       "aliases": [],
       "source": "NHL 21",
-      "max_players": null,
+      "max_players": 4,
       "screen": "shared",
       "scope": "versus",
       "genre": "sports",

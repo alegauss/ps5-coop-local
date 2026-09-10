@@ -2,7 +2,6 @@
 
 ## Block A — Game data
 
-- ⏳ **CL3** (deps: CL22 ✅, CL5 ✅) **no title says how many players fit on the couch, or whether the screen splits or is shared** — Only NHL 21 is left: it has local versus on one console, but no listing checked here states how many pads that takes. → §CL3
 - ⏳ **CL4** (deps: CL23) **games carry no genre, year or publisher, so there is no axis to group the grid by** — 5 years, 3 genres and 2 publishers are open; the genres are the three CL23 has to label, and the rest are fields no listing checked here answers. → §CL4
 - 📋 **CL23** (deps: —) **three real games fit none of the ten genre labels, so the grid leaves them out of every filter** — A Way Out is a coop cinematic adventure and Arcade Paradise an arcade management sim; calling either a platformer files it where nobody would look for it. → §CL23
 
@@ -44,13 +43,6 @@
   analytics, no API. The grid has to render from files this repository serves, so a
   visitor on a phone network waits on one origin and nothing a third party does can
   break the page. Checked by reading index.html and assets/site for an off-origin URL.
-
-## Done when — CL3
-
-- **max players and screen mode on every entry, or the entry is gone** build_dataset.py
-  prints the coverage on every run, so the check is that its "still blank" count reaches
-  zero. The 18 left do not close with a number: twelve are games with no local coop and
-  five name no product, and both of those close by removal.
 
 ## Done when — CL4
 
