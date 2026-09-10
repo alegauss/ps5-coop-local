@@ -24,6 +24,13 @@ Trine Series, King of Fighters, Street Fighter, Bomberman, Final Fight, Minigolf
 Spelunky. Each resolves to the exact title sold on PS5 — Trine 4, The King of Fighters
 XV — or drops out, when all that exists is emulation inside another collection.
 
+Four more surfaced while CL3 and CL4 checked listings, and they fail differently from a
+franchise name: Snipperclips is Switch-only and ibb & obb was a PS3 release, so neither
+is a PS5 product at all; Cell Damage HD misspells Cel Damage HD; and Magicka names a
+PC-only game whose PlayStation release is Magicka 2. Samurai Gunn 2 was announced for
+PS5 and no listing checked here confirms it shipped. A drop settles the first two, a
+rename the next two, and the last needs the store open before either.
+
 ### §CL22 Entries with no local coop
 
 CL3 went looking for player counts and found twelve entries where the answer is not a
@@ -48,6 +55,31 @@ Note Orcs Must Die! also names the series rather than a product, so CL5 reaches 
 the drop and the rename must not both fire on one line.
 
 On ship: --recorded-in data/canonical.csv, plus a criterion naming the inclusion rule.
+
+### §CL23 A genre label for the games that fit none
+
+The ten labels were closed on purpose and CL4 shows the cost: with 179 of 184 entries
+placed, three games still have no home. A Way Out is a co-op cinematic adventure, Arcade
+Paradise an arcade management sim around retro mini-games, CrossKrush a two-player
+demolition puzzle. The other two blanks, Runner and TOGETHER, are CL5 names.
+
+The design that closed the vocabulary is right about why: an open list becomes thirty
+labels holding one game each and filters nothing. But a blank is not free either. The
+grid groups by genre, so an unlabelled game is in no group at all -- worse than being
+filed imperfectly, because a reader who filters never sees it.
+
+Three exits:
+
+- One or two labels that earn their place, "adventure" the obvious candidate, chosen by
+  counting how many existing entries would move.
+- A single "other" label, keeping ten real genres and putting the leftovers where a filter
+  can still reach them.
+- Keep the blank and make the grid show it, which is a Block B rendering decision and
+  belongs on its own line there, not here.
+
+The first two are a worksheet edit plus GENRES in scripts/build_dataset.py.
+
+On ship: --recorded-in scripts/build_dataset.py.
 
 ## Block B — Catalog site
 
