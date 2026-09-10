@@ -37,6 +37,10 @@ and "Minigolf" is a listing nobody has been able to find. Resolving that leaves 
 entries: `data/canonical.csv` renames what has a real title, splits what names more
 than one product, and drops what PS5 does not sell, each with its reason on the row.
 
+Twelve of those 180 then fail the inclusion rule — Returnal, Fall Guys, Astroneer and
+nine more are real PS5 games whose co-op needs a network — so `data/excluded.csv` keeps
+them out and says why. That leaves **168 entries**.
+
 ## Running it
 
 There is no build step and no framework. One line, from the repository root:
@@ -87,7 +91,7 @@ query hash, which no script here can reach without driving a browser. Every row 
 `data/covers.csv` records the store page its image came from, which is why a file
 without a source is refused outright.
 
-148 of the 180 games have one. The other 32 are titles Steam does not carry, or
+139 of the 168 games have one. The other 29 are titles Steam does not carry, or
 carries without a portrait capsule — the annual sports games, the PlayStation
 exclusives, Diablo III, a few delisted ones — and they keep the generated
 typographic card.
@@ -100,6 +104,7 @@ reader recognises before they read the title, so a wrong one is worse than a bla
 | --- | --- |
 | `data/source-list.txt` | The received list, verbatim. Provenance, never corrected. |
 | `data/canonical.csv` | Franchise and bundle names resolved to real products, or dropped. |
+| `data/excluded.csv` | Real PS5 games the inclusion rule keeps out, and why each one. |
 | `data/coop.csv` | Players, screen type and what the co-op covers. |
 | `data/catalog.csv` | Genre, release year and publisher. |
 | `data/covers.csv` | Packshots and where each came from. |
@@ -117,7 +122,8 @@ That is the part nobody can look up quickly, and a proposal without it cannot be
 filed.
 
 Check it against the inclusion rule first — online-only co-op is the one that comes
-up every time. If co-op is limited to one mode, say which.
+up every time, and `data/excluded.csv` already lists the twelve games turned away for
+it, so look there before writing the issue. If co-op is limited to one mode, say which.
 
 To add it yourself: put the title in `data/source-list.txt`, fill its row in
 `data/coop.csv` and `data/catalog.csv`, then run the three scripts above.

@@ -12,11 +12,15 @@ Two levels, deliberately
 the vocabulary, a player count below two, a cover pointing at a file that is not
 there. Any of them fails the run.
 
-**Gaps** are facts nobody has established yet. CL3 left 51 titles without a player
-count and CL4 left 8 without a genre, on purpose: a blank is honest where a guess
-would not be. Those are counted and printed, and they do not fail the run --
-otherwise the gate could only be adopted by first inventing the data it exists to
-protect.
+**Gaps** are facts nobody has established yet. CL3 and CL4 left blanks on purpose,
+because a blank is honest where a guess would not be, and the run prints how many
+rather than quoting a number here that would be wrong a commit later. They do not
+fail the run -- otherwise the gate could only be adopted by first inventing the data
+it exists to protect.
+
+A gap is not the same as a game that does not belong. An entry whose co-op needs a
+network has no honest player count to be missing: it is in data/excluded.csv and never
+reaches this file at all.
 
 ``--strict`` promotes every gap to an error. That is the switch to throw when the
 curation is finished, and it is exactly the Block A criterion: the validator

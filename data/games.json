@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "data/source-list.txt",
-  "count": 180,
+  "count": 168,
   "games": [
     {
       "id": "a-way-out",
@@ -97,22 +97,6 @@
       "cover": "assets/covers/as-dusk-falls.webp",
       "cover_2x": "assets/covers/as-dusk-falls@2x.webp",
       "cover_source": "https://store.steampowered.com/app/1341820/",
-      "source_note": null
-    },
-    {
-      "id": "astroneer",
-      "name": "Astroneer",
-      "aliases": [],
-      "source": "Astroneer",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": "survival",
-      "year": 2019,
-      "publisher": "System Era Softworks",
-      "cover": "assets/covers/astroneer.webp",
-      "cover_2x": "assets/covers/astroneer@2x.webp",
-      "cover_source": "https://store.steampowered.com/app/361420/",
       "source_note": null
     },
     {
@@ -622,24 +606,6 @@
       "source_note": null
     },
     {
-      "id": "disney-classic-games-aladdin-and-the-lion-king",
-      "name": "Disney Classic Games: Aladdin and The Lion King",
-      "aliases": [
-        "Disney Classic Games: Aladdin e O Rei Leão"
-      ],
-      "source": "Disney Classic Games: Aladdin e O Rei Leão",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": "platformer",
-      "year": 2019,
-      "publisher": "Nighthawk Interactive",
-      "cover": "assets/covers/disney-classic-games-aladdin-and-the-lion-king.webp",
-      "cover_2x": "assets/covers/disney-classic-games-aladdin-and-the-lion-king@2x.webp",
-      "cover_source": "https://store.steampowered.com/app/1126190/",
-      "source_note": null
-    },
-    {
       "id": "divinity-original-sin",
       "name": "Divinity: Original Sin",
       "aliases": [],
@@ -816,22 +782,6 @@
       "source_note": null
     },
     {
-      "id": "fall-guys-ultimate-knockout",
-      "name": "Fall Guys: Ultimate Knockout",
-      "aliases": [],
-      "source": "Fall Guys: Ultimate Knockout",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": "party",
-      "year": 2020,
-      "publisher": "Devolver Digital",
-      "cover": "assets/covers/fall-guys-ultimate-knockout.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
-      "source_note": null
-    },
-    {
       "id": "fifa-21",
       "name": "FIFA 21",
       "aliases": [],
@@ -989,22 +939,6 @@
       "cover": "assets/covers/gigabash.webp",
       "cover_2x": "assets/covers/gigabash@2x.webp",
       "cover_source": "https://store.steampowered.com/app/1546400/",
-      "source_note": null
-    },
-    {
-      "id": "graven",
-      "name": "GRAVEN",
-      "aliases": [],
-      "source": "GRAVEN",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": "survival",
-      "year": 2024,
-      "publisher": "3D Realms",
-      "cover": "assets/covers/graven.webp",
-      "cover_2x": "assets/covers/graven@2x.webp",
-      "cover_source": "https://store.steampowered.com/app/1371690/",
       "source_note": null
     },
     {
@@ -1668,40 +1602,6 @@
       "source_note": null
     },
     {
-      "id": "omega-strike",
-      "name": "Omega Strike",
-      "aliases": [],
-      "source": "Omega Strike",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": "shooter",
-      "year": null,
-      "publisher": "Ratalaika Games",
-      "cover": "assets/covers/omega-strike.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
-      "source_note": null
-    },
-    {
-      "id": "orcs-must-die-3",
-      "name": "Orcs Must Die! 3",
-      "aliases": [
-        "Orcs Must Die!"
-      ],
-      "source": "Orcs Must Die!",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": "shooter",
-      "year": null,
-      "publisher": "Robot Entertainment",
-      "cover": "assets/covers/orcs-must-die-3.webp",
-      "cover_2x": "assets/covers/orcs-must-die-3@2x.webp",
-      "cover_source": "https://store.steampowered.com/app/1522820/",
-      "source_note": null
-    },
-    {
       "id": "out-of-space-couch-edition",
       "name": "Out of Space: Couch Edition",
       "aliases": [],
@@ -1976,22 +1876,6 @@
       "source_note": null
     },
     {
-      "id": "returnal",
-      "name": "Returnal",
-      "aliases": [],
-      "source": "Returnal",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": "shooter",
-      "year": 2021,
-      "publisher": "Sony Interactive Entertainment",
-      "cover": "assets/covers/returnal.webp",
-      "cover_2x": "assets/covers/returnal@2x.webp",
-      "cover_source": "https://store.steampowered.com/app/1649240/",
-      "source_note": null
-    },
-    {
       "id": "rico",
       "name": "RICO",
       "aliases": [],
@@ -2021,22 +1905,6 @@
       "cover": "assets/covers/river-city-girls-2.webp",
       "cover_2x": "assets/covers/river-city-girls-2@2x.webp",
       "cover_source": "https://store.steampowered.com/app/1920480/",
-      "source_note": null
-    },
-    {
-      "id": "rogue-legacy-2",
-      "name": "Rogue Legacy 2",
-      "aliases": [],
-      "source": "Rogue Legacy 2",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": "rpg",
-      "year": 2022,
-      "publisher": "Cellar Door Games",
-      "cover": "assets/covers/rogue-legacy-2.webp",
-      "cover_2x": "assets/covers/rogue-legacy-2@2x.webp",
-      "cover_source": "https://store.steampowered.com/app/1253920/",
       "source_note": null
     },
     {
@@ -2362,22 +2230,6 @@
       "source_note": null
     },
     {
-      "id": "super-bomberman-r-online",
-      "name": "Super Bomberman R Online",
-      "aliases": [],
-      "source": "Super Bomberman R Online",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": "fighting",
-      "year": null,
-      "publisher": "Konami",
-      "cover": "assets/covers/super-bomberman-r-online.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
-      "source_note": null
-    },
-    {
       "id": "tetris-effect",
       "name": "Tetris Effect",
       "aliases": [],
@@ -2659,22 +2511,6 @@
       "source_note": null
     },
     {
-      "id": "ultimate-fishing-simulator-2",
-      "name": "Ultimate Fishing Simulator 2",
-      "aliases": [],
-      "source": "Ultimate Fishing Simulator 2",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": "sports",
-      "year": 2025,
-      "publisher": "Ultimate Games",
-      "cover": "assets/covers/ultimate-fishing-simulator-2.webp",
-      "cover_2x": "assets/covers/ultimate-fishing-simulator-2@2x.webp",
-      "cover_source": "https://store.steampowered.com/app/1136380/",
-      "source_note": null
-    },
-    {
       "id": "unravel-two",
       "name": "Unravel Two",
       "aliases": [],
@@ -2755,22 +2591,6 @@
       "source_note": null
     },
     {
-      "id": "warhammer-vermintide-2",
-      "name": "Warhammer: Vermintide 2",
-      "aliases": [],
-      "source": "Warhammer: Vermintide 2",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": "rpg",
-      "year": 2018,
-      "publisher": "Fatshark",
-      "cover": "assets/covers/warhammer-vermintide-2.webp",
-      "cover_2x": "assets/covers/warhammer-vermintide-2@2x.webp",
-      "cover_source": "https://store.steampowered.com/app/552500/",
-      "source_note": null
-    },
-    {
       "id": "we-love-katamari-reroll-royal-reverie",
       "name": "We Love Katamari REROLL + Royal Reverie",
       "aliases": [],
@@ -2800,22 +2620,6 @@
       "cover": "assets/covers/wizard-of-legend.webp",
       "cover_2x": "assets/covers/wizard-of-legend@2x.webp",
       "cover_source": "https://store.steampowered.com/app/445980/",
-      "source_note": null
-    },
-    {
-      "id": "worms-rumble",
-      "name": "Worms Rumble",
-      "aliases": [],
-      "source": "Worms Rumble",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": "fighting",
-      "year": 2020,
-      "publisher": "Team17",
-      "cover": "assets/covers/worms-rumble.webp",
-      "cover_2x": "assets/covers/worms-rumble@2x.webp",
-      "cover_source": "https://store.steampowered.com/app/1186040/",
       "source_note": null
     },
     {

@@ -62,6 +62,19 @@ One gap is still deliberate. A handful of titles have no genre because the ten l
 have no honest home for them: "A Way Out" is a co-op cinematic adventure, and calling
 it a platformer to avoid a blank would put it under a filter nobody would find it in.
 
+The inclusion rule (CL22)
+-------------------------
+``data/excluded.csv`` is the last word on whether a line becomes an entry at all, and
+it is a different question from the one above. Canonical names ask what a line is
+called; this asks whether the game can be played by two people on one couch. Astroneer,
+Returnal and Vermintide 2 are real PS5 products with real co-op that needs a network,
+so they are out -- and a blank player count would have said the opposite, because a
+blank means nobody has checked.
+
+The reason on each row is mandatory. Online-only co-op is the objection this catalogue
+attracts every time, and the next person to propose Fall Guys is owed a sentence rather
+than a silent removal.
+
 Canonical names (CL5)
 ---------------------
 About a dozen source lines name a franchise or a bundle rather than a product, and a
@@ -93,6 +106,7 @@ SOURCE = ROOT / "data" / "source-list.txt"
 COOP = ROOT / "data" / "coop.csv"
 CATALOG = ROOT / "data" / "catalog.csv"
 CANONICAL = ROOT / "data" / "canonical.csv"
+EXCLUDED = ROOT / "data" / "excluded.csv"
 COVERS = ROOT / "data" / "covers.csv"
 TARGET = ROOT / "data" / "games.json"
 
@@ -243,6 +257,40 @@ def divide(game: dict, titles: list[str]) -> list[dict]:
             half["aliases"].append(game["name"])
         halves.append(half)
     return halves
+
+
+def read_excluded(path: Path) -> dict[str, str]:
+    """The ids the inclusion rule excludes, and why, keyed by id.
+
+    A reason is mandatory. "Online-only coop" is the objection this catalogue attracts
+    every time, and a removal that records nothing teaches the next person proposing
+    Fall Guys nothing either.
+    """
+    reasons: dict[str, str] = {}
+    for row in read_rows(path):
+        game_id = (row.get("id") or "").strip()
+        if not game_id:
+            continue
+        reason = (row.get("reason") or "").strip()
+        if not reason:
+            raise ValueError(f"{path.name}: {game_id} is excluded with no reason given")
+        if game_id in reasons:
+            raise ValueError(f"{path.name} lists {game_id} twice")
+        reasons[game_id] = reason
+    return reasons
+
+
+def exclude(games: list[dict], reasons: dict[str, str]) -> list[dict]:
+    """Drop the entries the inclusion rule keeps out, refusing a stale id.
+
+    Stale is an error rather than a no-op: a row naming an id nothing has would stop
+    excluding anything the day a rename moved that id, and the game would reappear in
+    the grid with nobody the wiser.
+    """
+    unknown = sorted(set(reasons) - {g["id"] for g in games})
+    if unknown:
+        raise KeyError(f"{EXCLUDED.name} names id(s) the dataset does not have: {unknown}")
+    return [g for g in games if g["id"] not in reasons]
 
 
 def read_catalog(path: Path) -> dict[str, dict]:
@@ -404,6 +452,9 @@ def read_entries(text: str) -> list[str]:
 def build(text: str) -> dict:
     parsed = [parse_line(entry) for entry in read_entries(text)]
     games = reconcile(apply_canonical(parsed, read_canonical(CANONICAL)))
+    # After reconciliation, so an exclusion names the id the catalogue settled on, and
+    # before the worksheets are joined, so an excluded id has no row left to orphan.
+    games = exclude(games, read_excluded(EXCLUDED))
 
     ids = {g["id"] for g in games}
     for path, reader in ((COOP, read_coop), (CATALOG, read_catalog), (COVERS, read_covers)):
@@ -454,10 +505,12 @@ def main() -> int:
     dropped = sum(1 for r in rules.values() if r["action"] == "drop")
     renamed = sum(1 for r in rules.values() if r["action"] == "rename")
     added = sum(len(r["titles"]) - 1 for r in rules.values() if r["action"] == "split")
+    excluded = read_excluded(EXCLUDED)
     print(
         f"build-dataset: {dropped} dropped, "
-        f"{entries - dropped + added - dataset['count']} folded, "
-        f"{added} added by a split, {renamed} renamed",
+        f"{entries - dropped + added - len(excluded) - dataset['count']} folded, "
+        f"{added} added by a split, {renamed} renamed, "
+        f"{len(excluded)} excluded by the inclusion rule",
         file=sys.stderr,
     )
     for game in sorted(merged, key=lambda g: g["id"]):

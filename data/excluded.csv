@@ -1,0 +1,32 @@
+# Source lines that name a real PS5 product the inclusion rule excludes (CL22), keyed
+# by the id after data/canonical.csv has had its say.
+#
+# This is not data/canonical.csv. That file answers "what is this line called?" and
+# drops a line whose product PS5 does not sell. This one answers "does this line belong
+# at all?", and every id here is a game PS5 really does sell -- it just cannot be played
+# by two people on one couch, which is the whole rule:
+#
+#   Local co-op on a single PS5. Two or more people, one console, one television.
+#
+# So a blank player count would be the wrong answer for these, not a missing one. A
+# blank means nobody has established it yet; here somebody has, and the answer is that
+# the game is out. The reason is mandatory because "online-only co-op" is the objection
+# this list attracts every time, and the next person to propose Fall Guys is owed the
+# sentence rather than a silent removal. data/source-list.txt still carries the line, so
+# nothing is lost by leaving.
+#
+# An id here that the dataset does not have is an error, not a no-op: a stale row would
+# quietly stop excluding anything the day a rename moved the id.
+id,reason
+astroneer,"co-op is online only, and there is no split screen on console"
+disney-classic-games-aladdin-and-the-lion-king,"both games are single-player, and the collection adds no second player"
+fall-guys-ultimate-knockout,"online only; Mediatonic has never shipped split screen, and lists it as a request"
+graven,"co-op is online only, and the developers ruled split screen out rather than delayed it"
+omega-strike,"single-player: the three heroes are swapped between, not shared"
+orcs-must-die-3,"co-op is online only, as Robot Entertainment says of Deathtrap too"
+returnal,"the Ascension co-op is online only, joined through a portal rather than a second pad"
+rogue-legacy-2,"single-player, and Cellar Door has said there are no plans for multiplayer"
+super-bomberman-r-online,"online only, and the servers closed in December 2022, so it plays for nobody"
+ultimate-fishing-simulator-2,"multiplayer is over the Internet only, and no listing checked here settles that a console version exists"
+warhammer-vermintide-2,"co-op is online only, on every platform it has shipped on"
+worms-rumble,"online only, and Team17 has stated there are no plans for a local mode"

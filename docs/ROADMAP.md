@@ -2,9 +2,8 @@
 
 ## Block A — Game data
 
-- ⏳ **CL3** (deps: CL22, CL5 ✅) **no title says how many players fit on the couch, or whether the screen splits or is shared** — 13 titles are left: the 12 CL22 will drop for having no local coop, and NHL 21, whose local player count no listing states. → §CL3
-- ⏳ **CL4** (deps: CL23) **games carry no genre, year or publisher, so there is no axis to group the grid by** — 8 years, 3 genres and 2 publishers are open; the genres are the three CL23 has to label, and the rest are fields no listing checked here answers. → §CL4
-- 📋 **CL22** (deps: —) **twelve entries have no local coop at all, and a blank player count reads as not yet checked** — Returnal, Fall Guys, Astroneer and nine more are online-only or single-player, so the catalogue advertises games that fail its own inclusion rule. → §CL22
+- ⏳ **CL3** (deps: CL22 ✅, CL5 ✅) **no title says how many players fit on the couch, or whether the screen splits or is shared** — Only NHL 21 is left: it has local versus on one console, but no listing checked here states how many pads that takes. → §CL3
+- ⏳ **CL4** (deps: CL23) **games carry no genre, year or publisher, so there is no axis to group the grid by** — 5 years, 3 genres and 2 publishers are open; the genres are the three CL23 has to label, and the rest are fields no listing checked here answers. → §CL4
 - 📋 **CL23** (deps: —) **three real games fit none of the ten genre labels, so the grid leaves them out of every filter** — A Way Out is a coop cinematic adventure and Arcade Paradise an arcade management sim; calling either a platformer files it where nobody would look for it. → §CL23
 
 ## Block B — Catalog site
@@ -19,6 +18,11 @@
   for a game, and every title findable on the PSN store.
 - **Player count and screen mode on every game** The validator refuses a record missing
   either field, so the grid can always render the badge.
+- **every entry can be played by two people on one console** The rule the catalogue
+  exists for. A game whose co-op needs a network belongs in data/excluded.csv with its
+  reason, never in the grid behind a blank player count. Checked by build_dataset.py,
+  which refuses an excluded id it cannot find, so a rename can never quietly readmit
+  one.
 
 ## Done when — Block B
 

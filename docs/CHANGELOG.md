@@ -8,6 +8,7 @@
 - ✅ **CL4 (179 genres, 177 publishers, 170 years)** **games carry no genre, year or publisher, so there is no axis to group the grid by** — data/catalog.csv gives genre for 179 of 184, publisher for 177 and year for 170, the year sourced from the store pages covers.csv already records.
 - ✅ **CL5** **entries like 'Bleed 1 e 2', 'Trine Series' and 'King of Fighters' name a collection, not a game** — data/canonical.csv resolves every questioned name: one line splits into two products, five entries PS5 does not sell are dropped, three are renamed (design recorded in `scripts/build_dataset.py`).
 - ✅ **CL6** **no game has cover art, and a game grid without art is a text table** — 148 of 184 games now carry a real 2:3 WebP packshot at Steam's own two sizes, attributed to its store page; the other 36 keep the generated card (design recorded in `scripts/fetch_covers.py`).
+- ✅ **CL22** **twelve entries have no local coop at all, and a blank player count reads as not yet checked** — data/excluded.csv keeps twelve real PS5 games out with a reason each, kept apart from canonical.csv because these fail the rule, not their name (design recorded in `data/excluded.csv`).
 
 ## Block B — Catalog site
 
