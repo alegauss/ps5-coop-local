@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PS5 local co-op</title>
+    <meta
+      name="description"
+      content="The local couch co-op catalogue for PS5: every game on the list, in one grid."
+    />
+    <link rel="icon" href="assets/covers/streets-of-rage-4.svg" />
+    <link rel="stylesheet" href="assets/site/styles.css" />
+  </head>
+  <body>
+    <header class="masthead">
+      <h1>PS5 local co-op</h1>
+      <p class="masthead__note">Every game on the couch list, in one grid.</p>
+    </header>
+
+    <main id="main">
+      <!-- Replaced on load. Anyone arriving without JavaScript sees this rather
+           than an empty page that looks broken. -->
+      <p class="status" id="status">Loading the catalogue…</p>
+      <ul class="grid" id="grid" hidden></ul>
+    </main>
+
+    <script type="module" src="assets/site/app.js"></script>
+  </body>
+</html>

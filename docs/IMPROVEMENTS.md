@@ -33,13 +33,6 @@ the grid aligned. Each image records where it came from.
 
 ## Block B — Catalog site
 
-### §CL7 The grid
-
-A static site, no framework and no build step: HTML, CSS and one JavaScript module
-reading the catalog JSON. The screen is a grid of cover cards, dense enough to fit a lot
-above the fold and still keep names legible. No pagination — the whole list scrolls,
-because scrolling costs less than clicking through to find the game was on page three.
-
 ### §CL8 Search
 
 One field at the top, filtering on every keystroke, no submit button. It matches
