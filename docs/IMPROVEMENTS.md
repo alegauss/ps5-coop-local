@@ -2,14 +2,6 @@
 
 ## Block A — Game data
 
-### §CL2 Duplicate reconciliation
-
-Super Blood Hockey, Super Bomberman R Online, Tetris Effect and The Angry 4 each appear
-twice in the source. Other pairs are one game under two names: Tiny Tina's Wonderlands
-and Wonderland, House of Ashes loose and again inside The Dark Pictures Anthology,
-Outward and Outward: Definitive Edition. The rule is one entry per buyable PS5 product,
-with the alternate names kept as aliases that search still matches.
-
 ### §CL3 Couch-coop metadata
 
 Local coop is not one field. Each game needs max players on a single console, screen

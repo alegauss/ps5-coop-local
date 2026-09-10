@@ -12,9 +12,6 @@ What it does NOT do
 -------------------
 The conversion is mechanical on purpose. It parses; it does not curate:
 
-* Duplicates survive it (CL2). Four lines repeat verbatim, and a couple more name
-  the same game twice in different words. Collapsing them here would hide the very
-  entries CL2 has to reconcile, so identical ids are emitted and merely counted.
 * Collection names survive it (CL5). "Trine Series" and "Bleed 1 e 2" name a set
   rather than a product, and picking the canonical title is a judgement about the
   PSN catalog that this script has no way to make.
@@ -26,6 +23,17 @@ The conversion is mechanical on purpose. It parses; it does not curate:
 What the source puts in parentheses is kept verbatim in ``source_note`` -- the
 "(modo Zombies)" and "(Tela dividida)" caveats are what CL11 surfaces, and they
 would be lost if the title were simply cleaned.
+
+Reconciliation (CL2)
+--------------------
+One entry per buyable PS5 product. Two lines that slugify to the same id are the
+same entry and collapse on their own; the pairs that do not are a judgement about
+what the store actually sells, so they are named in ``MERGES`` rather than guessed
+at by string distance -- "Wonderland" and "Wonderlands" are one typo apart and
+"Salt and Sacrifice" and "Salt and Sanctuary" are two different games.
+
+Nothing is discarded by a merge. Every folded title stays in ``aliases``, because
+the source spelling is what somebody will type into the search box.
 """
 
 from __future__ import annotations
@@ -48,6 +56,16 @@ DEFERRED_FIELDS = ("players", "coop", "genre", "year", "publisher", "cover")
 
 # A trailing "(...)" is the source's caveat about the entry, not part of its title.
 TRAILING_PAREN = re.compile(r"\s*\(([^()]*)\)\s*$")
+
+# Two lines that are one product under two names: the id that survives -> the ids
+# folded into it. The survivor is the title the PS5 store sells, which is why this
+# is a list and not a heuristic. Exact repeats need no entry here -- identical ids
+# collapse on their own. A stale entry is an error, not a silent no-op.
+MERGES = {
+    "tiny-tinas-wonderlands": ["tiny-tinas-wonderland"],
+    "the-dark-pictures-anthology-house-of-ashes": ["house-of-ashes"],
+    "outward-definitive-edition": ["outward"],
+}
 
 
 def slugify(name: str) -> str:
@@ -73,10 +91,48 @@ def parse_line(raw: str) -> dict:
         note = match.group(1).strip() or None
         name = name[: match.start()].strip()
 
-    record = {"id": slugify(name), "name": name, "source": source}
+    record = {"id": slugify(name), "name": name, "aliases": [], "source": source}
     record.update({field: None for field in DEFERRED_FIELDS})
     record["source_note"] = note
     return record
+
+
+def fold(survivor: dict, folded: dict) -> None:
+    """Absorb one record into another, keeping every name it was known by.
+
+    A caveat is adopted only where the survivor has none: the source attaches
+    "(modo Zombies)" to one spelling of a title and not the other, and dropping it
+    on the merge would lose the fact that decides the purchase.
+    """
+    for name in [folded["name"], *folded["aliases"]]:
+        if name != survivor["name"] and name not in survivor["aliases"]:
+            survivor["aliases"].append(name)
+    if survivor["source_note"] is None:
+        survivor["source_note"] = folded["source_note"]
+
+
+def reconcile(games: list[dict]) -> list[dict]:
+    """One entry per product: collapse repeated ids, then apply MERGES."""
+    collapsed: dict[str, dict] = {}
+    for game in games:
+        existing = collapsed.get(game["id"])
+        if existing is None:
+            collapsed[game["id"]] = game
+        else:
+            fold(existing, game)
+
+    for survivor_id, folded_ids in MERGES.items():
+        if survivor_id not in collapsed:
+            raise KeyError(f"MERGES names a survivor the source does not have: {survivor_id}")
+        for folded_id in folded_ids:
+            folded = collapsed.pop(folded_id, None)
+            if folded is None:
+                raise KeyError(f"MERGES names an entry the source does not have: {folded_id}")
+            fold(collapsed[survivor_id], folded)
+
+    for game in collapsed.values():
+        game["aliases"].sort()
+    return list(collapsed.values())
 
 
 def read_entries(text: str) -> list[str]:
@@ -89,7 +145,7 @@ def read_entries(text: str) -> list[str]:
 
 
 def build(text: str) -> dict:
-    games = [parse_line(entry) for entry in read_entries(text)]
+    games = reconcile([parse_line(entry) for entry in read_entries(text)])
     return {
         "schema_version": SCHEMA_VERSION,
         "source": SOURCE.relative_to(ROOT).as_posix(),
@@ -108,18 +164,29 @@ def main() -> int:
         json.dumps(dataset, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
 
-    repeated = sorted(
-        item for item, n in Counter(g["id"] for g in dataset["games"]).items() if n > 1
-    )
+    entries = len(read_entries(SOURCE.read_text(encoding="utf-8")))
+    merged = [g for g in dataset["games"] if g["aliases"]]
     print(
-        f"build-dataset: {dataset['count']} record(s) -> "
+        f"build-dataset: {entries} source line(s) -> {dataset['count']} record(s) -> "
         f"{TARGET.relative_to(ROOT).as_posix()}",
         file=sys.stderr,
     )
-    # Reported and not resolved: this is the list CL2 reconciles.
-    print(f"build-dataset: {len(repeated)} repeated id(s) left for CL2", file=sys.stderr)
-    for item in repeated:
-        print(f"  {item}", file=sys.stderr)
+    # An exact repeat contributes no alias, so the two are counted apart.
+    aliased = sum(len(g["aliases"]) for g in merged)
+    print(
+        f"build-dataset: {entries - dataset['count']} line(s) folded -- "
+        f"{entries - dataset['count'] - aliased} exact repeat(s), "
+        f"{aliased} under another name",
+        file=sys.stderr,
+    )
+    for game in sorted(merged, key=lambda g: g["id"]):
+        print(f"  {game['id']} <- {', '.join(game['aliases'])}", file=sys.stderr)
+
+    # An id is the record's identity from here on; two of them is a bug, not a duplicate.
+    clashes = [i for i, n in Counter(g["id"] for g in dataset["games"]).items() if n > 1]
+    if clashes:
+        print(f"build-dataset: ERROR repeated id(s): {clashes}", file=sys.stderr)
+        return 1
     return 0
 
 

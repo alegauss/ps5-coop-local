@@ -2,7 +2,6 @@
 
 ## Block A — Game data
 
-- 📋 **CL2** (deps: —) **the list repeats titles and mixes variants of the same game, and nothing reconciles them** — A duplicate inflates the count and returns the same card twice in search. → §CL2
 - 📋 **CL3** (deps: —) **no title says how many players fit on the couch, or whether the screen splits or is shared** — Player count is the first filter anyone applies when picking a game with people over. → §CL3
 - 📋 **CL4** (deps: —) **games carry no genre, year or publisher, so there is no axis to group the grid by** — Genre is what separates a beat 'em up from a party game across two hundred titles. → §CL4
 - 📋 **CL5** (deps: —) **entries like 'Bleed 1 e 2', 'Trine Series' and 'King of Fighters' name a collection, not a game** — A non-canonical name matches no cover, no PSN listing and nothing the user types. → §CL5

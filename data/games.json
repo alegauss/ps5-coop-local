@@ -1,11 +1,12 @@
 {
   "schema_version": 1,
   "source": "data/source-list.txt",
-  "count": 195,
+  "count": 188,
   "games": [
     {
       "id": "a-way-out",
       "name": "A Way Out",
+      "aliases": [],
       "source": "A Way Out",
       "players": null,
       "coop": null,
@@ -18,6 +19,7 @@
     {
       "id": "aew-fight-forever",
       "name": "AEW Fight Forever",
+      "aliases": [],
       "source": "AEW Fight Forever",
       "players": null,
       "coop": null,
@@ -30,6 +32,7 @@
     {
       "id": "aegis-defenders",
       "name": "Aegis Defenders",
+      "aliases": [],
       "source": "Aegis Defenders",
       "players": null,
       "coop": null,
@@ -42,6 +45,7 @@
     {
       "id": "alienation",
       "name": "Alienation",
+      "aliases": [],
       "source": "Alienation",
       "players": null,
       "coop": null,
@@ -54,6 +58,7 @@
     {
       "id": "arcade-paradise",
       "name": "Arcade Paradise",
+      "aliases": [],
       "source": "Arcade Paradise",
       "players": null,
       "coop": null,
@@ -66,6 +71,7 @@
     {
       "id": "as-dusk-falls",
       "name": "As Dusk Falls",
+      "aliases": [],
       "source": "As Dusk Falls",
       "players": null,
       "coop": null,
@@ -78,6 +84,7 @@
     {
       "id": "astroneer",
       "name": "Astroneer",
+      "aliases": [],
       "source": "Astroneer",
       "players": null,
       "coop": null,
@@ -90,6 +97,7 @@
     {
       "id": "baldurs-gate-3",
       "name": "Baldur's Gate 3",
+      "aliases": [],
       "source": "Baldur's Gate 3 (BG3)",
       "players": null,
       "coop": null,
@@ -102,6 +110,7 @@
     {
       "id": "balan-wonderworld",
       "name": "Balan Wonderworld",
+      "aliases": [],
       "source": "Balan Wonderworld",
       "players": null,
       "coop": null,
@@ -114,6 +123,7 @@
     {
       "id": "biped",
       "name": "Biped",
+      "aliases": [],
       "source": "Biped",
       "players": null,
       "coop": null,
@@ -126,6 +136,7 @@
     {
       "id": "blackwind",
       "name": "Blackwind",
+      "aliases": [],
       "source": "Blackwind",
       "players": null,
       "coop": null,
@@ -138,6 +149,7 @@
     {
       "id": "bleed-1-e-2",
       "name": "Bleed 1 e 2",
+      "aliases": [],
       "source": "Bleed 1 e 2",
       "players": null,
       "coop": null,
@@ -150,6 +162,7 @@
     {
       "id": "bomberman",
       "name": "Bomberman",
+      "aliases": [],
       "source": "Bomberman",
       "players": null,
       "coop": null,
@@ -162,6 +175,7 @@
     {
       "id": "borderlands-3",
       "name": "Borderlands 3",
+      "aliases": [],
       "source": "Borderlands 3",
       "players": null,
       "coop": null,
@@ -174,6 +188,7 @@
     {
       "id": "broforce",
       "name": "Broforce",
+      "aliases": [],
       "source": "Broforce",
       "players": null,
       "coop": null,
@@ -186,6 +201,7 @@
     {
       "id": "call-of-duty-black-ops-cold-war",
       "name": "Call of Duty: Black Ops Cold War",
+      "aliases": [],
       "source": "Call of Duty: Black Ops Cold War (modo Zombies)",
       "players": null,
       "coop": null,
@@ -198,6 +214,7 @@
     {
       "id": "cant-drive-this",
       "name": "Can't Drive This",
+      "aliases": [],
       "source": "Can't Drive This",
       "players": null,
       "coop": null,
@@ -210,6 +227,7 @@
     {
       "id": "castle-crashers-remastered",
       "name": "Castle Crashers Remastered",
+      "aliases": [],
       "source": "Castle Crashers Remastered",
       "players": null,
       "coop": null,
@@ -222,6 +240,7 @@
     {
       "id": "catty-batty-the-spirit-guide",
       "name": "Catty & Batty: The Spirit Guide",
+      "aliases": [],
       "source": "Catty & Batty: The Spirit Guide",
       "players": null,
       "coop": null,
@@ -234,6 +253,7 @@
     {
       "id": "cell-damage-hd",
       "name": "Cell Damage HD",
+      "aliases": [],
       "source": "Cell Damage HD",
       "players": null,
       "coop": null,
@@ -246,6 +266,7 @@
     {
       "id": "children-of-morta",
       "name": "Children of Morta",
+      "aliases": [],
       "source": "Children of Morta",
       "players": null,
       "coop": null,
@@ -258,6 +279,7 @@
     {
       "id": "chicory-a-colorful-tale",
       "name": "Chicory: A Colorful Tale",
+      "aliases": [],
       "source": "Chicory: A Colorful Tale",
       "players": null,
       "coop": null,
@@ -270,6 +292,7 @@
     {
       "id": "contra-operation-galuga",
       "name": "Contra: Operation Galuga",
+      "aliases": [],
       "source": "Contra: Operation Galuga",
       "players": null,
       "coop": null,
@@ -282,6 +305,7 @@
     {
       "id": "contra-rogue-corps",
       "name": "Contra: Rogue Corps",
+      "aliases": [],
       "source": "Contra: Rogue Corps",
       "players": null,
       "coop": null,
@@ -294,6 +318,7 @@
     {
       "id": "crosskrush",
       "name": "CrossKrush",
+      "aliases": [],
       "source": "CrossKrush",
       "players": null,
       "coop": null,
@@ -306,6 +331,7 @@
     {
       "id": "cuphead",
       "name": "Cuphead",
+      "aliases": [],
       "source": "Cuphead",
       "players": null,
       "coop": null,
@@ -318,6 +344,7 @@
     {
       "id": "dandy-randy-dx",
       "name": "Dandy & Randy DX",
+      "aliases": [],
       "source": "Dandy & Randy DX",
       "players": null,
       "coop": null,
@@ -330,6 +357,7 @@
     {
       "id": "darksiders-genesis",
       "name": "Darksiders Genesis",
+      "aliases": [],
       "source": "Darksiders Genesis",
       "players": null,
       "coop": null,
@@ -342,6 +370,7 @@
     {
       "id": "dcs-justice-league-cosmic-chaos",
       "name": "DC's Justice League: Cosmic Chaos",
+      "aliases": [],
       "source": "DC's Justice League: Cosmic Chaos",
       "players": null,
       "coop": null,
@@ -354,6 +383,7 @@
     {
       "id": "dead-nation",
       "name": "Dead Nation",
+      "aliases": [],
       "source": "Dead Nation",
       "players": null,
       "coop": null,
@@ -366,6 +396,7 @@
     {
       "id": "death-squared",
       "name": "Death Squared",
+      "aliases": [],
       "source": "Death Squared",
       "players": null,
       "coop": null,
@@ -378,6 +409,7 @@
     {
       "id": "death-tales",
       "name": "Death Tales",
+      "aliases": [],
       "source": "Death Tales",
       "players": null,
       "coop": null,
@@ -390,6 +422,7 @@
     {
       "id": "degrees-of-separation",
       "name": "Degrees of Separation",
+      "aliases": [],
       "source": "Degrees of Separation",
       "players": null,
       "coop": null,
@@ -402,6 +435,7 @@
     {
       "id": "demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles",
       "name": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles",
+      "aliases": [],
       "source": "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles",
       "players": null,
       "coop": null,
@@ -414,6 +448,7 @@
     {
       "id": "diablo-iii-e-iv",
       "name": "Diablo III e IV",
+      "aliases": [],
       "source": "Diablo III e IV",
       "players": null,
       "coop": null,
@@ -426,6 +461,7 @@
     {
       "id": "die-for-valhalla",
       "name": "Die for Valhalla!",
+      "aliases": [],
       "source": "Die for Valhalla!",
       "players": null,
       "coop": null,
@@ -438,6 +474,7 @@
     {
       "id": "dirt-5",
       "name": "Dirt 5",
+      "aliases": [],
       "source": "Dirt 5",
       "players": null,
       "coop": null,
@@ -450,6 +487,7 @@
     {
       "id": "disney-classic-games-aladdin-e-o-rei-leao",
       "name": "Disney Classic Games: Aladdin e O Rei Leão",
+      "aliases": [],
       "source": "Disney Classic Games: Aladdin e O Rei Leão",
       "players": null,
       "coop": null,
@@ -462,6 +500,7 @@
     {
       "id": "divinity-original-sin",
       "name": "Divinity: Original Sin",
+      "aliases": [],
       "source": "Divinity: Original Sin",
       "players": null,
       "coop": null,
@@ -474,6 +513,7 @@
     {
       "id": "dodgeball-academia",
       "name": "Dodgeball Academia",
+      "aliases": [],
       "source": "Dodgeball Academia",
       "players": null,
       "coop": null,
@@ -486,6 +526,7 @@
     {
       "id": "dont-starve-together",
       "name": "Don't Starve Together",
+      "aliases": [],
       "source": "Don't Starve Together",
       "players": null,
       "coop": null,
@@ -498,6 +539,7 @@
     {
       "id": "double-dragon-gaiden-rise-of-the-dragons",
       "name": "Double Dragon Gaiden: Rise of the Dragons",
+      "aliases": [],
       "source": "Double Dragon Gaiden: Rise of the Dragons",
       "players": null,
       "coop": null,
@@ -510,6 +552,7 @@
     {
       "id": "dungeon-defenders-awakened",
       "name": "Dungeon Defenders: Awakened",
+      "aliases": [],
       "source": "Dungeon Defenders: Awakened",
       "players": null,
       "coop": null,
@@ -522,6 +565,7 @@
     {
       "id": "ea-sports-ufc-4",
       "name": "EA Sports UFC 4",
+      "aliases": [],
       "source": "EA Sports UFC 4",
       "players": null,
       "coop": null,
@@ -534,6 +578,7 @@
     {
       "id": "earth-defense-force-6",
       "name": "Earth Defense Force 6",
+      "aliases": [],
       "source": "Earth Defense Force 6",
       "players": null,
       "coop": null,
@@ -546,6 +591,7 @@
     {
       "id": "eight-dragons",
       "name": "Eight Dragons",
+      "aliases": [],
       "source": "Eight Dragons",
       "players": null,
       "coop": null,
@@ -558,6 +604,7 @@
     {
       "id": "enter-the-gungeon",
       "name": "Enter the Gungeon",
+      "aliases": [],
       "source": "Enter the Gungeon",
       "players": null,
       "coop": null,
@@ -570,6 +617,7 @@
     {
       "id": "escape-academy",
       "name": "Escape Academy",
+      "aliases": [],
       "source": "Escape Academy",
       "players": null,
       "coop": null,
@@ -582,6 +630,7 @@
     {
       "id": "f1-2021",
       "name": "F1 2021",
+      "aliases": [],
       "source": "F1 2021",
       "players": null,
       "coop": null,
@@ -594,6 +643,7 @@
     {
       "id": "fall-guys-ultimate-knockout",
       "name": "Fall Guys: Ultimate Knockout",
+      "aliases": [],
       "source": "Fall Guys: Ultimate Knockout",
       "players": null,
       "coop": null,
@@ -606,6 +656,7 @@
     {
       "id": "fifa-21",
       "name": "FIFA 21",
+      "aliases": [],
       "source": "FIFA 21",
       "players": null,
       "coop": null,
@@ -618,6 +669,7 @@
     {
       "id": "fifa-22",
       "name": "FIFA 22",
+      "aliases": [],
       "source": "FIFA 22",
       "players": null,
       "coop": null,
@@ -630,6 +682,7 @@
     {
       "id": "fifa-23",
       "name": "FIFA 23",
+      "aliases": [],
       "source": "FIFA 23",
       "players": null,
       "coop": null,
@@ -642,6 +695,7 @@
     {
       "id": "final-fight",
       "name": "Final Fight",
+      "aliases": [],
       "source": "Final Fight",
       "players": null,
       "coop": null,
@@ -654,6 +708,7 @@
     {
       "id": "final-vendetta",
       "name": "Final Vendetta",
+      "aliases": [],
       "source": "Final Vendetta",
       "players": null,
       "coop": null,
@@ -666,6 +721,7 @@
     {
       "id": "fightn-rage",
       "name": "Fight'N Rage",
+      "aliases": [],
       "source": "Fight'N Rage",
       "players": null,
       "coop": null,
@@ -678,6 +734,7 @@
     {
       "id": "for-the-king",
       "name": "For the King",
+      "aliases": [],
       "source": "For the King",
       "players": null,
       "coop": null,
@@ -690,6 +747,7 @@
     {
       "id": "fortnite",
       "name": "Fortnite",
+      "aliases": [],
       "source": "Fortnite (modo tela dividida para Duos e Esquadrões)",
       "players": null,
       "coop": null,
@@ -702,6 +760,7 @@
     {
       "id": "gang-beasts",
       "name": "Gang Beasts",
+      "aliases": [],
       "source": "Gang Beasts",
       "players": null,
       "coop": null,
@@ -714,6 +773,7 @@
     {
       "id": "gauntlet-slayer-edition",
       "name": "Gauntlet: Slayer Edition",
+      "aliases": [],
       "source": "Gauntlet: Slayer Edition",
       "players": null,
       "coop": null,
@@ -726,6 +786,7 @@
     {
       "id": "gigabash",
       "name": "GigaBash",
+      "aliases": [],
       "source": "GigaBash",
       "players": null,
       "coop": null,
@@ -738,6 +799,7 @@
     {
       "id": "graven",
       "name": "GRAVEN",
+      "aliases": [],
       "source": "GRAVEN",
       "players": null,
       "coop": null,
@@ -750,6 +812,7 @@
     {
       "id": "guacamelee-2",
       "name": "Guacamelee! 2",
+      "aliases": [],
       "source": "Guacamelee! 2",
       "players": null,
       "coop": null,
@@ -762,6 +825,7 @@
     {
       "id": "gungungun",
       "name": "GUNGUNGUN",
+      "aliases": [],
       "source": "GUNGUNGUN",
       "players": null,
       "coop": null,
@@ -774,6 +838,7 @@
     {
       "id": "guts-n-goals",
       "name": "Guts 'N Goals",
+      "aliases": [],
       "source": "Guts 'N Goals",
       "players": null,
       "coop": null,
@@ -786,6 +851,7 @@
     {
       "id": "haven",
       "name": "Haven",
+      "aliases": [],
       "source": "Haven",
       "players": null,
       "coop": null,
@@ -798,6 +864,7 @@
     {
       "id": "heavenly-bodies",
       "name": "Heavenly Bodies",
+      "aliases": [],
       "source": "Heavenly Bodies",
       "players": null,
       "coop": null,
@@ -810,6 +877,7 @@
     {
       "id": "helldivers",
       "name": "Helldivers",
+      "aliases": [],
       "source": "Helldivers",
       "players": null,
       "coop": null,
@@ -822,19 +890,8 @@
     {
       "id": "hot-wheels-unleashed",
       "name": "Hot Wheels Unleashed",
+      "aliases": [],
       "source": "Hot Wheels Unleashed",
-      "players": null,
-      "coop": null,
-      "genre": null,
-      "year": null,
-      "publisher": null,
-      "cover": null,
-      "source_note": null
-    },
-    {
-      "id": "house-of-ashes",
-      "name": "House of Ashes",
-      "source": "House of Ashes",
       "players": null,
       "coop": null,
       "genre": null,
@@ -846,6 +903,7 @@
     {
       "id": "human-fall-flat",
       "name": "Human: Fall Flat",
+      "aliases": [],
       "source": "Human: Fall Flat",
       "players": null,
       "coop": null,
@@ -858,6 +916,7 @@
     {
       "id": "hyper-light-drifter",
       "name": "Hyper Light Drifter",
+      "aliases": [],
       "source": "Hyper Light Drifter",
       "players": null,
       "coop": null,
@@ -870,6 +929,7 @@
     {
       "id": "ice-cream-surfer",
       "name": "Ice Cream Surfer",
+      "aliases": [],
       "source": "Ice Cream Surfer",
       "players": null,
       "coop": null,
@@ -882,6 +942,7 @@
     {
       "id": "ibb-obb",
       "name": "Ibb & Obb",
+      "aliases": [],
       "source": "Ibb & Obb",
       "players": null,
       "coop": null,
@@ -894,6 +955,7 @@
     {
       "id": "jitsu-squad",
       "name": "Jitsu Squad",
+      "aliases": [],
       "source": "Jitsu Squad",
       "players": null,
       "coop": null,
@@ -906,6 +968,7 @@
     {
       "id": "jydge",
       "name": "JYDGE",
+      "aliases": [],
       "source": "JYDGE",
       "players": null,
       "coop": null,
@@ -918,6 +981,7 @@
     {
       "id": "keywe",
       "name": "KeyWe",
+      "aliases": [],
       "source": "KeyWe",
       "players": null,
       "coop": null,
@@ -930,6 +994,7 @@
     {
       "id": "kitaria-fables",
       "name": "Kitaria Fables",
+      "aliases": [],
       "source": "Kitaria Fables",
       "players": null,
       "coop": null,
@@ -942,6 +1007,7 @@
     {
       "id": "king-of-fighters",
       "name": "King of Fighters",
+      "aliases": [],
       "source": "King of Fighters",
       "players": null,
       "coop": null,
@@ -954,6 +1020,7 @@
     {
       "id": "lara-croft-and-the-guardian-of-light",
       "name": "Lara Croft and the Guardian of Light",
+      "aliases": [],
       "source": "Lara Croft and the Guardian of Light",
       "players": null,
       "coop": null,
@@ -966,6 +1033,7 @@
     {
       "id": "lara-croft-and-the-temple-of-osiris",
       "name": "Lara Croft and the Temple of Osiris",
+      "aliases": [],
       "source": "Lara Croft and the Temple of Osiris",
       "players": null,
       "coop": null,
@@ -978,6 +1046,7 @@
     {
       "id": "lego-star-wars-the-skywalker-saga",
       "name": "Lego Star Wars: The Skywalker Saga",
+      "aliases": [],
       "source": "Lego Star Wars: The Skywalker Saga",
       "players": null,
       "coop": null,
@@ -990,6 +1059,7 @@
     {
       "id": "lego-marvel-super-heroes-2",
       "name": "LEGO Marvel Super Heroes 2",
+      "aliases": [],
       "source": "LEGO Marvel Super Heroes 2",
       "players": null,
       "coop": null,
@@ -1002,6 +1072,7 @@
     {
       "id": "little-big-planet-3",
       "name": "Little Big Planet 3",
+      "aliases": [],
       "source": "Little Big Planet 3",
       "players": null,
       "coop": null,
@@ -1014,6 +1085,7 @@
     {
       "id": "llamasoft-the-jeff-minter-story",
       "name": "Llamasoft: The Jeff Minter Story",
+      "aliases": [],
       "source": "Llamasoft: The Jeff Minter Story",
       "players": null,
       "coop": null,
@@ -1026,6 +1098,7 @@
     {
       "id": "lovers-in-a-dangerous-spacetime",
       "name": "Lovers in a Dangerous Spacetime",
+      "aliases": [],
       "source": "Lovers in a Dangerous Spacetime",
       "players": null,
       "coop": null,
@@ -1038,6 +1111,7 @@
     {
       "id": "magicka",
       "name": "Magicka",
+      "aliases": [],
       "source": "Magicka",
       "players": null,
       "coop": null,
@@ -1050,6 +1124,7 @@
     {
       "id": "madden-nfl-21",
       "name": "Madden NFL 21",
+      "aliases": [],
       "source": "Madden NFL 21",
       "players": null,
       "coop": null,
@@ -1062,6 +1137,7 @@
     {
       "id": "madden-nfl-22",
       "name": "Madden NFL 22",
+      "aliases": [],
       "source": "Madden NFL 22",
       "players": null,
       "coop": null,
@@ -1074,6 +1150,7 @@
     {
       "id": "madden-nfl-23",
       "name": "Madden NFL 23",
+      "aliases": [],
       "source": "Madden NFL 23",
       "players": null,
       "coop": null,
@@ -1086,6 +1163,7 @@
     {
       "id": "mereks-market",
       "name": "Merek's Market",
+      "aliases": [],
       "source": "Merek's Market",
       "players": null,
       "coop": null,
@@ -1098,6 +1176,7 @@
     {
       "id": "mighty-goose",
       "name": "Mighty Goose",
+      "aliases": [],
       "source": "Mighty Goose",
       "players": null,
       "coop": null,
@@ -1110,6 +1189,7 @@
     {
       "id": "minecraft-dungeons",
       "name": "Minecraft Dungeons",
+      "aliases": [],
       "source": "Minecraft Dungeons",
       "players": null,
       "coop": null,
@@ -1122,6 +1202,7 @@
     {
       "id": "minigolf",
       "name": "Minigolf",
+      "aliases": [],
       "source": "Minigolf",
       "players": null,
       "coop": null,
@@ -1134,6 +1215,7 @@
     {
       "id": "mortal-kombat-11",
       "name": "Mortal Kombat 11",
+      "aliases": [],
       "source": "Mortal Kombat 11 (modo Co-Op Towers of Time)",
       "players": null,
       "coop": null,
@@ -1146,6 +1228,7 @@
     {
       "id": "mother-russia-bleeds",
       "name": "Mother Russia Bleeds",
+      "aliases": [],
       "source": "Mother Russia Bleeds",
       "players": null,
       "coop": null,
@@ -1158,6 +1241,7 @@
     {
       "id": "moving-out",
       "name": "Moving Out",
+      "aliases": [],
       "source": "Moving Out",
       "players": null,
       "coop": null,
@@ -1170,6 +1254,7 @@
     {
       "id": "nba-2k21",
       "name": "NBA 2K21",
+      "aliases": [],
       "source": "NBA 2K21",
       "players": null,
       "coop": null,
@@ -1182,6 +1267,7 @@
     {
       "id": "nba-2k22",
       "name": "NBA 2K22",
+      "aliases": [],
       "source": "NBA 2K22",
       "players": null,
       "coop": null,
@@ -1194,6 +1280,7 @@
     {
       "id": "nba-2k23",
       "name": "NBA 2K23",
+      "aliases": [],
       "source": "NBA 2K23",
       "players": null,
       "coop": null,
@@ -1206,6 +1293,7 @@
     {
       "id": "neon-chrome",
       "name": "Neon Chrome",
+      "aliases": [],
       "source": "Neon Chrome",
       "players": null,
       "coop": null,
@@ -1218,6 +1306,7 @@
     {
       "id": "nhl-21",
       "name": "NHL 21",
+      "aliases": [],
       "source": "NHL 21",
       "players": null,
       "coop": null,
@@ -1230,6 +1319,7 @@
     {
       "id": "nhl-22",
       "name": "NHL 22",
+      "aliases": [],
       "source": "NHL 22",
       "players": null,
       "coop": null,
@@ -1242,6 +1332,7 @@
     {
       "id": "nine-parchments",
       "name": "Nine Parchments",
+      "aliases": [],
       "source": "Nine Parchments",
       "players": null,
       "coop": null,
@@ -1254,6 +1345,7 @@
     {
       "id": "nidhogg-2",
       "name": "Nidhogg 2",
+      "aliases": [],
       "source": "Nidhogg 2",
       "players": null,
       "coop": null,
@@ -1266,6 +1358,7 @@
     {
       "id": "nobody-saves-the-world",
       "name": "Nobody Saves the World",
+      "aliases": [],
       "source": "Nobody Saves the World",
       "players": null,
       "coop": null,
@@ -1278,6 +1371,7 @@
     {
       "id": "omega-strike",
       "name": "Omega Strike",
+      "aliases": [],
       "source": "Omega Strike",
       "players": null,
       "coop": null,
@@ -1290,6 +1384,7 @@
     {
       "id": "orcs-must-die",
       "name": "Orcs Must Die!",
+      "aliases": [],
       "source": "Orcs Must Die!",
       "players": null,
       "coop": null,
@@ -1302,6 +1397,7 @@
     {
       "id": "out-of-space-couch-edition",
       "name": "Out of Space: Couch Edition",
+      "aliases": [],
       "source": "Out of Space: Couch Edition",
       "players": null,
       "coop": null,
@@ -1314,6 +1410,7 @@
     {
       "id": "outbreak-endless-nightmares",
       "name": "Outbreak: Endless Nightmares",
+      "aliases": [],
       "source": "Outbreak: Endless Nightmares",
       "players": null,
       "coop": null,
@@ -1326,6 +1423,7 @@
     {
       "id": "outbreak-epidemic",
       "name": "Outbreak: Epidemic",
+      "aliases": [],
       "source": "Outbreak: Epidemic",
       "players": null,
       "coop": null,
@@ -1338,19 +1436,8 @@
     {
       "id": "outbreak-the-new-nightmare",
       "name": "Outbreak: The New Nightmare",
+      "aliases": [],
       "source": "Outbreak: The New Nightmare",
-      "players": null,
-      "coop": null,
-      "genre": null,
-      "year": null,
-      "publisher": null,
-      "cover": null,
-      "source_note": null
-    },
-    {
-      "id": "outward",
-      "name": "Outward",
-      "source": "Outward",
       "players": null,
       "coop": null,
       "genre": null,
@@ -1362,6 +1449,9 @@
     {
       "id": "outward-definitive-edition",
       "name": "Outward: Definitive Edition",
+      "aliases": [
+        "Outward"
+      ],
       "source": "Outward: Definitive Edition",
       "players": null,
       "coop": null,
@@ -1374,6 +1464,7 @@
     {
       "id": "overcooked-2",
       "name": "Overcooked 2",
+      "aliases": [],
       "source": "Overcooked 2",
       "players": null,
       "coop": null,
@@ -1386,6 +1477,7 @@
     {
       "id": "overcooked-all-you-can-eat",
       "name": "Overcooked! All You Can Eat",
+      "aliases": [],
       "source": "Overcooked! All You Can Eat",
       "players": null,
       "coop": null,
@@ -1398,6 +1490,7 @@
     {
       "id": "overruled",
       "name": "Overruled!",
+      "aliases": [],
       "source": "Overruled!",
       "players": null,
       "coop": null,
@@ -1410,6 +1503,7 @@
     {
       "id": "pang-adventures",
       "name": "Pang Adventures",
+      "aliases": [],
       "source": "Pang Adventures",
       "players": null,
       "coop": null,
@@ -1422,6 +1516,7 @@
     {
       "id": "paprium",
       "name": "Paprium",
+      "aliases": [],
       "source": "Paprium",
       "players": null,
       "coop": null,
@@ -1434,6 +1529,7 @@
     {
       "id": "phogs",
       "name": "Phogs!",
+      "aliases": [],
       "source": "Phogs!",
       "players": null,
       "coop": null,
@@ -1446,6 +1542,7 @@
     {
       "id": "pode",
       "name": "Pode",
+      "aliases": [],
       "source": "Pode",
       "players": null,
       "coop": null,
@@ -1458,6 +1555,7 @@
     {
       "id": "portal-knights",
       "name": "Portal Knights",
+      "aliases": [],
       "source": "Portal Knights",
       "players": null,
       "coop": null,
@@ -1470,6 +1568,7 @@
     {
       "id": "puyo-puyo-tetris-2",
       "name": "Puyo Puyo Tetris 2",
+      "aliases": [],
       "source": "Puyo Puyo Tetris 2",
       "players": null,
       "coop": null,
@@ -1482,6 +1581,7 @@
     {
       "id": "quake",
       "name": "Quake",
+      "aliases": [],
       "source": "Quake",
       "players": null,
       "coop": null,
@@ -1494,6 +1594,7 @@
     {
       "id": "raging-justice",
       "name": "Raging Justice",
+      "aliases": [],
       "source": "Raging Justice",
       "players": null,
       "coop": null,
@@ -1506,6 +1607,7 @@
     {
       "id": "rayman-legends",
       "name": "Rayman Legends",
+      "aliases": [],
       "source": "Rayman Legends",
       "players": null,
       "coop": null,
@@ -1518,6 +1620,7 @@
     {
       "id": "returnal",
       "name": "Returnal",
+      "aliases": [],
       "source": "Returnal",
       "players": null,
       "coop": null,
@@ -1530,6 +1633,7 @@
     {
       "id": "rico",
       "name": "RICO",
+      "aliases": [],
       "source": "RICO",
       "players": null,
       "coop": null,
@@ -1542,6 +1646,7 @@
     {
       "id": "river-city-girls-2",
       "name": "River City Girls 2",
+      "aliases": [],
       "source": "River City Girls 2",
       "players": null,
       "coop": null,
@@ -1554,6 +1659,7 @@
     {
       "id": "rogue-legacy-2",
       "name": "Rogue Legacy 2",
+      "aliases": [],
       "source": "Rogue Legacy 2",
       "players": null,
       "coop": null,
@@ -1566,6 +1672,7 @@
     {
       "id": "runner",
       "name": "Runner",
+      "aliases": [],
       "source": "Runner",
       "players": null,
       "coop": null,
@@ -1578,6 +1685,7 @@
     {
       "id": "rugby-22",
       "name": "Rugby 22",
+      "aliases": [],
       "source": "Rugby 22",
       "players": null,
       "coop": null,
@@ -1590,6 +1698,7 @@
     {
       "id": "salt-and-sacrifice",
       "name": "Salt and Sacrifice",
+      "aliases": [],
       "source": "Salt and Sacrifice",
       "players": null,
       "coop": null,
@@ -1602,6 +1711,7 @@
     {
       "id": "salt-and-sanctuary",
       "name": "Salt and Sanctuary",
+      "aliases": [],
       "source": "Salt and Sanctuary",
       "players": null,
       "coop": null,
@@ -1614,6 +1724,7 @@
     {
       "id": "samurai-gunn-2",
       "name": "Samurai Gunn 2",
+      "aliases": [],
       "source": "Samurai Gunn 2",
       "players": null,
       "coop": null,
@@ -1626,6 +1737,7 @@
     {
       "id": "sackboy-a-big-adventure",
       "name": "Sackboy: A Big Adventure",
+      "aliases": [],
       "source": "Sackboy: A Big Adventure",
       "players": null,
       "coop": null,
@@ -1638,6 +1750,7 @@
     {
       "id": "scott-pilgrim-vs-the-world-the-game-complete-edition",
       "name": "Scott Pilgrim vs. The World: The Game – Complete Edition",
+      "aliases": [],
       "source": "Scott Pilgrim vs. The World: The Game – Complete Edition",
       "players": null,
       "coop": null,
@@ -1650,6 +1763,7 @@
     {
       "id": "sea-of-stars",
       "name": "Sea of Stars",
+      "aliases": [],
       "source": "Sea of Stars",
       "players": null,
       "coop": null,
@@ -1662,6 +1776,7 @@
     {
       "id": "secret-of-mana",
       "name": "Secret of Mana",
+      "aliases": [],
       "source": "Secret of Mana",
       "players": null,
       "coop": null,
@@ -1674,6 +1789,7 @@
     {
       "id": "shing",
       "name": "Shing!",
+      "aliases": [],
       "source": "Shing!",
       "players": null,
       "coop": null,
@@ -1686,6 +1802,7 @@
     {
       "id": "skeletal-avenger",
       "name": "Skeletal Avenger",
+      "aliases": [],
       "source": "Skeletal Avenger",
       "players": null,
       "coop": null,
@@ -1698,6 +1815,7 @@
     {
       "id": "snipperclips-cut-it-out-together",
       "name": "Snipperclips - Cut it out, together!",
+      "aliases": [],
       "source": "Snipperclips - Cut it out, together!",
       "players": null,
       "coop": null,
@@ -1710,6 +1828,7 @@
     {
       "id": "sonic-origins-plus",
       "name": "Sonic Origins Plus",
+      "aliases": [],
       "source": "Sonic Origins Plus",
       "players": null,
       "coop": null,
@@ -1722,6 +1841,7 @@
     {
       "id": "sonic-superstars",
       "name": "Sonic Superstars",
+      "aliases": [],
       "source": "Sonic Superstars",
       "players": null,
       "coop": null,
@@ -1734,6 +1854,7 @@
     {
       "id": "spelunky",
       "name": "Spelunky",
+      "aliases": [],
       "source": "Spelunky",
       "players": null,
       "coop": null,
@@ -1746,6 +1867,7 @@
     {
       "id": "spelunky-2",
       "name": "Spelunky 2",
+      "aliases": [],
       "source": "Spelunky 2",
       "players": null,
       "coop": null,
@@ -1758,6 +1880,7 @@
     {
       "id": "spidersaurs",
       "name": "Spidersaurs",
+      "aliases": [],
       "source": "Spidersaurs",
       "players": null,
       "coop": null,
@@ -1770,6 +1893,7 @@
     {
       "id": "stardew-valley",
       "name": "Stardew Valley",
+      "aliases": [],
       "source": "Stardew Valley",
       "players": null,
       "coop": null,
@@ -1782,6 +1906,7 @@
     {
       "id": "steredenn-binary-stars",
       "name": "Steredenn: Binary Stars",
+      "aliases": [],
       "source": "Steredenn: Binary Stars",
       "players": null,
       "coop": null,
@@ -1794,6 +1919,7 @@
     {
       "id": "street-fighter",
       "name": "Street Fighter",
+      "aliases": [],
       "source": "Street Fighter",
       "players": null,
       "coop": null,
@@ -1806,6 +1932,7 @@
     {
       "id": "street-fighter-v-champion-edition",
       "name": "Street Fighter V: Champion Edition",
+      "aliases": [],
       "source": "Street Fighter V: Champion Edition",
       "players": null,
       "coop": null,
@@ -1818,6 +1945,7 @@
     {
       "id": "streets-of-rage-4",
       "name": "Streets of Rage 4",
+      "aliases": [],
       "source": "Streets of Rage 4",
       "players": null,
       "coop": null,
@@ -1830,6 +1958,7 @@
     {
       "id": "super-blood-hockey",
       "name": "Super Blood Hockey",
+      "aliases": [],
       "source": "Super Blood Hockey",
       "players": null,
       "coop": null,
@@ -1842,6 +1971,7 @@
     {
       "id": "super-bomberman-r-online",
       "name": "Super Bomberman R Online",
+      "aliases": [],
       "source": "Super Bomberman R Online",
       "players": null,
       "coop": null,
@@ -1854,6 +1984,7 @@
     {
       "id": "tetris-effect",
       "name": "Tetris Effect",
+      "aliases": [],
       "source": "Tetris Effect",
       "players": null,
       "coop": null,
@@ -1866,54 +1997,7 @@
     {
       "id": "the-angry-4",
       "name": "The Angry 4",
-      "source": "The Angry 4",
-      "players": null,
-      "coop": null,
-      "genre": null,
-      "year": null,
-      "publisher": null,
-      "cover": null,
-      "source_note": null
-    },
-    {
-      "id": "super-blood-hockey",
-      "name": "Super Blood Hockey",
-      "source": "Super Blood Hockey",
-      "players": null,
-      "coop": null,
-      "genre": null,
-      "year": null,
-      "publisher": null,
-      "cover": null,
-      "source_note": null
-    },
-    {
-      "id": "super-bomberman-r-online",
-      "name": "Super Bomberman R Online",
-      "source": "Super Bomberman R Online",
-      "players": null,
-      "coop": null,
-      "genre": null,
-      "year": null,
-      "publisher": null,
-      "cover": null,
-      "source_note": null
-    },
-    {
-      "id": "tetris-effect",
-      "name": "Tetris Effect",
-      "source": "Tetris Effect",
-      "players": null,
-      "coop": null,
-      "genre": null,
-      "year": null,
-      "publisher": null,
-      "cover": null,
-      "source_note": null
-    },
-    {
-      "id": "the-angry-4",
-      "name": "The Angry 4",
+      "aliases": [],
       "source": "The Angry 4",
       "players": null,
       "coop": null,
@@ -1926,6 +2010,7 @@
     {
       "id": "the-binding-of-isaac-repentance",
       "name": "The Binding of Isaac: Repentance",
+      "aliases": [],
       "source": "The Binding of Isaac: Repentance",
       "players": null,
       "coop": null,
@@ -1938,6 +2023,7 @@
     {
       "id": "the-dark-pictures-anthology",
       "name": "The Dark Pictures Anthology",
+      "aliases": [],
       "source": "The Dark Pictures Anthology",
       "players": null,
       "coop": null,
@@ -1950,6 +2036,9 @@
     {
       "id": "the-dark-pictures-anthology-house-of-ashes",
       "name": "The Dark Pictures Anthology: House of Ashes",
+      "aliases": [
+        "House of Ashes"
+      ],
       "source": "The Dark Pictures Anthology: House of Ashes",
       "players": null,
       "coop": null,
@@ -1962,6 +2051,7 @@
     {
       "id": "the-house-of-the-dead-remake",
       "name": "The House of the Dead: Remake",
+      "aliases": [],
       "source": "The House of the Dead: Remake",
       "players": null,
       "coop": null,
@@ -1974,6 +2064,7 @@
     {
       "id": "the-last-oricru",
       "name": "The Last Oricru",
+      "aliases": [],
       "source": "The Last Oricru",
       "players": null,
       "coop": null,
@@ -1986,6 +2077,7 @@
     {
       "id": "the-quarry",
       "name": "The Quarry",
+      "aliases": [],
       "source": "The Quarry",
       "players": null,
       "coop": null,
@@ -1998,19 +2090,10 @@
     {
       "id": "tiny-tinas-wonderlands",
       "name": "Tiny Tina's Wonderlands",
+      "aliases": [
+        "Tiny Tina's Wonderland"
+      ],
       "source": "Tiny Tina's Wonderlands",
-      "players": null,
-      "coop": null,
-      "genre": null,
-      "year": null,
-      "publisher": null,
-      "cover": null,
-      "source_note": null
-    },
-    {
-      "id": "tiny-tinas-wonderland",
-      "name": "Tiny Tina's Wonderland",
-      "source": "Tiny Tina's Wonderland",
       "players": null,
       "coop": null,
       "genre": null,
@@ -2022,6 +2105,7 @@
     {
       "id": "tiny-troopers-global-ops",
       "name": "Tiny Troopers: Global Ops",
+      "aliases": [],
       "source": "Tiny Troopers: Global Ops",
       "players": null,
       "coop": null,
@@ -2034,6 +2118,7 @@
     {
       "id": "tmnt-the-cowabunga-collection",
       "name": "TMNT: The Cowabunga Collection",
+      "aliases": [],
       "source": "TMNT: The Cowabunga Collection",
       "players": null,
       "coop": null,
@@ -2046,6 +2131,7 @@
     {
       "id": "together",
       "name": "TOGETHER",
+      "aliases": [],
       "source": "TOGETHER",
       "players": null,
       "coop": null,
@@ -2058,6 +2144,7 @@
     {
       "id": "tools-up",
       "name": "Tools Up!",
+      "aliases": [],
       "source": "Tools Up!",
       "players": null,
       "coop": null,
@@ -2070,6 +2157,7 @@
     {
       "id": "tony-hawks-pro-skater-1-e-2",
       "name": "Tony Hawk's Pro Skater 1 e 2",
+      "aliases": [],
       "source": "Tony Hawk's Pro Skater 1 e 2",
       "players": null,
       "coop": null,
@@ -2082,6 +2170,7 @@
     {
       "id": "tower-of-guns",
       "name": "Tower of Guns",
+      "aliases": [],
       "source": "Tower of Guns",
       "players": null,
       "coop": null,
@@ -2094,6 +2183,7 @@
     {
       "id": "towerfall-ascension",
       "name": "TowerFall Ascension",
+      "aliases": [],
       "source": "TowerFall Ascension",
       "players": null,
       "coop": null,
@@ -2106,6 +2196,7 @@
     {
       "id": "trine-4-the-nightmare-prince",
       "name": "Trine 4: The Nightmare Prince",
+      "aliases": [],
       "source": "Trine 4: The Nightmare Prince",
       "players": null,
       "coop": null,
@@ -2118,6 +2209,7 @@
     {
       "id": "trine-series",
       "name": "Trine Series",
+      "aliases": [],
       "source": "Trine Series",
       "players": null,
       "coop": null,
@@ -2130,6 +2222,7 @@
     {
       "id": "twin-robots-ultimate-edition",
       "name": "Twin Robots: Ultimate Edition",
+      "aliases": [],
       "source": "Twin Robots: Ultimate Edition",
       "players": null,
       "coop": null,
@@ -2142,6 +2235,7 @@
     {
       "id": "ultimate-chicken-horse",
       "name": "Ultimate Chicken Horse",
+      "aliases": [],
       "source": "Ultimate Chicken Horse",
       "players": null,
       "coop": null,
@@ -2154,6 +2248,7 @@
     {
       "id": "ultimate-fishing-simulator-2",
       "name": "Ultimate Fishing Simulator 2",
+      "aliases": [],
       "source": "Ultimate Fishing Simulator 2",
       "players": null,
       "coop": null,
@@ -2166,6 +2261,7 @@
     {
       "id": "unravel-two",
       "name": "Unravel Two",
+      "aliases": [],
       "source": "Unravel Two",
       "players": null,
       "coop": null,
@@ -2178,6 +2274,7 @@
     {
       "id": "urban-flow",
       "name": "Urban Flow",
+      "aliases": [],
       "source": "Urban Flow",
       "players": null,
       "coop": null,
@@ -2190,6 +2287,7 @@
     {
       "id": "viking-squad",
       "name": "Viking Squad",
+      "aliases": [],
       "source": "Viking Squad",
       "players": null,
       "coop": null,
@@ -2202,6 +2300,7 @@
     {
       "id": "warhammer-40-000-shootas-blood-teef",
       "name": "Warhammer 40,000: Shootas, Blood & Teef",
+      "aliases": [],
       "source": "Warhammer 40,000: Shootas, Blood & Teef",
       "players": null,
       "coop": null,
@@ -2214,6 +2313,7 @@
     {
       "id": "warhammer-chaosbane-slayer-edition",
       "name": "Warhammer: Chaosbane – Slayer Edition",
+      "aliases": [],
       "source": "Warhammer: Chaosbane – Slayer Edition",
       "players": null,
       "coop": null,
@@ -2226,6 +2326,7 @@
     {
       "id": "warhammer-vermintide-2",
       "name": "Warhammer: Vermintide 2",
+      "aliases": [],
       "source": "Warhammer: Vermintide 2",
       "players": null,
       "coop": null,
@@ -2238,6 +2339,7 @@
     {
       "id": "we-love-katamari-reroll-royal-reverie",
       "name": "We Love Katamari REROLL + Royal Reverie",
+      "aliases": [],
       "source": "We Love Katamari REROLL + Royal Reverie",
       "players": null,
       "coop": null,
@@ -2250,6 +2352,7 @@
     {
       "id": "wizard-of-legend",
       "name": "Wizard of Legend",
+      "aliases": [],
       "source": "Wizard of Legend",
       "players": null,
       "coop": null,
@@ -2262,6 +2365,7 @@
     {
       "id": "worms-rumble",
       "name": "Worms Rumble",
+      "aliases": [],
       "source": "Worms Rumble",
       "players": null,
       "coop": null,
@@ -2274,6 +2378,7 @@
     {
       "id": "wrc-10",
       "name": "WRC 10",
+      "aliases": [],
       "source": "WRC 10",
       "players": null,
       "coop": null,
@@ -2286,6 +2391,7 @@
     {
       "id": "wrc-generations",
       "name": "WRC Generations",
+      "aliases": [],
       "source": "WRC Generations (Tela dividida)",
       "players": null,
       "coop": null,
@@ -2298,6 +2404,7 @@
     {
       "id": "wulverblade",
       "name": "Wulverblade",
+      "aliases": [],
       "source": "Wulverblade",
       "players": null,
       "coop": null,
@@ -2310,6 +2417,7 @@
     {
       "id": "wwe-2k23",
       "name": "WWE 2K23",
+      "aliases": [],
       "source": "WWE 2K23",
       "players": null,
       "coop": null,
@@ -2322,6 +2430,7 @@
     {
       "id": "yars-recharged",
       "name": "Yars: Recharged",
+      "aliases": [],
       "source": "Yars: Recharged",
       "players": null,
       "coop": null,
@@ -2334,6 +2443,7 @@
     {
       "id": "zombie-vikings",
       "name": "Zombie Vikings",
+      "aliases": [],
       "source": "Zombie Vikings",
       "players": null,
       "coop": null,
