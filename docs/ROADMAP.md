@@ -9,8 +9,6 @@
 
 ## Block B — Catalog site
 
-- 📋 **CL14** (deps: CL7 ✅) **without a mouse nothing works: search never takes focus and the grid cannot be traversed** — Keyboard and screen-reader access are the floor for any public page, not an extra. → §CL14
-
 ## Block C — Publishing and docs
 
 - 📋 **CL19** (deps: CL7 ✅) **the site is published nowhere, so the list exists only on the developer's machine** — The point of a catalog is sending the link to whoever is coming over to play. → §CL19

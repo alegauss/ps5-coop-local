@@ -444,6 +444,23 @@ async function main() {
 
   // Collapsed by default only where the media query hides the panel; on desktop
   // the attribute is never set, so the filters stay visible at all times.
+  // "/" jumps to search, the convention this kind of page has taught people to
+  // expect. Ignored while a field already has focus, or the shortcut would make
+  // the character impossible to type into the search box it just opened.
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "/" || event.ctrlKey || event.metaKey || event.altKey) return;
+    const active = document.activeElement;
+    const typing =
+      active instanceof HTMLInputElement ||
+      active instanceof HTMLTextAreaElement ||
+      active instanceof HTMLSelectElement ||
+      active?.isContentEditable;
+    if (typing) return;
+    event.preventDefault();
+    field.focus();
+    field.select();
+  });
+
   detailClose.addEventListener("click", () => detail.close());
   // Clicking the backdrop closes it. The dialog element is the full-height panel,
   // so anything outside its box is backdrop.

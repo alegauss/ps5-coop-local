@@ -33,13 +33,6 @@ the grid aligned. Each image records where it came from.
 
 ## Block B — Catalog site
 
-### §CL14 Keyboard access
-
-Focus order following the reading order, a focus ring visible against the dark ground,
-slash as the shortcut to search and Escape closing the detail panel. The grid is a
-semantic list whose game names are real text, not baked into the image — screen readers
-and the browser's own find depend on that.
-
 ## Block C — Publishing and docs
 
 ### §CL19 Publishing

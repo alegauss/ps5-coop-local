@@ -478,3 +478,45 @@ body {
     height: 44px;
   }
 }
+
+/* Keyboard access (CL14).
+ *
+ * Focus order is DOM order throughout -- nothing on this page uses tabindex to
+ * reorder it, and the controls sit in the markup in the order they are read.
+ */
+
+.skip {
+  position: absolute;
+  left: 8px;
+  top: -60px;
+  z-index: 10;
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  background: #6ea8fe;
+  color: #0b0d12;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 120ms ease-out;
+}
+
+.skip:focus {
+  top: 8px;
+}
+
+/* One ring, everywhere, at a contrast that survives the dark ground. Declared
+ * last so no component rule quietly wins over it. */
+:focus-visible {
+  outline: 2px solid #8fc0ff;
+  outline-offset: 2px;
+}
+
+/* A focused card must not sit half off-screen when it is reached by keyboard. */
+.card__open:focus-visible {
+  scroll-margin-block: 90px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skip {
+    transition: none;
+  }
+}
