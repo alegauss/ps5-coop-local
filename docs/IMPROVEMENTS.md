@@ -79,10 +79,4 @@ On ship: --recorded-in scripts/build_dataset.py.
 
 ## Block C — Publishing and docs
 
-### §CL19 Publishing
-
-GitHub Pages from the main branch, with no build step, because the site is static by
-decision. Every push publishes. The link is the product: it has to open fast on a phone
-network and depend on nothing outside the repository.
-
 ## Block D — Visual design and polish

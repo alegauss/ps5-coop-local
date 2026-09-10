@@ -11,8 +11,6 @@
 
 ## Block C — Publishing and docs
 
-- ⏳ **CL19** (deps: CL7 ✅) **the site is published nowhere, so the list exists only on the developer's machine** — Pages still has to be switched to the GitHub Actions source in repository settings, which no workflow file can do, and this branch has to reach main. → §CL19
-
 ## Block D — Visual design and polish
 
 ## Done when — Block A
@@ -38,6 +36,10 @@
 
 - **A public link that opens fast on mobile data** Published from main with no build
   step, and the grid usable before the last cover lands.
+- **the page depends on nothing outside this repository** No CDN, no web font, no
+  analytics, no API. The grid has to render from files this repository serves, so a
+  visitor on a phone network waits on one origin and nothing a third party does can
+  break the page. Checked by reading index.html and assets/site for an off-origin URL.
 
 ## Done when — CL3
 
