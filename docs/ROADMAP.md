@@ -2,9 +2,10 @@
 
 ## Block A — Game data
 
-- ⏳ **CL3** (deps: —) **no title says how many players fit on the couch, or whether the screen splits or is shared** — 58 titles still carry no player count or screen mode, so the couch question stays unanswerable for them until somebody checks the store. → §CL3
+- ⏳ **CL3** (deps: CL22, CL5 ⏳) **no title says how many players fit on the couch, or whether the screen splits or is shared** — 18 titles are left: 12 that CL22 will drop for having no local coop, 5 that CL5 has to name first, and NHL 21, whose local player count no listing states. → §CL3
 - ⏳ **CL4** (deps: —) **games carry no genre, year or publisher, so there is no axis to group the grid by** — 14 titles have no genre the ten labels honestly fit, year is blank throughout, and 111 titles still have no publisher. → §CL4
 - ⏳ **CL5** (deps: —) **entries like 'Bleed 1 e 2', 'Trine Series' and 'King of Fighters' name a collection, not a game** — Diablo III e IV still names two products at once, and Minigolf, Runner and TOGETHER match no store listing anybody has checked yet. → §CL5
+- 📋 **CL22** (deps: —) **twelve entries have no local coop at all, and a blank player count reads as not yet checked** — Returnal, Fall Guys, Astroneer and nine more are online-only or single-player, so the catalogue advertises games that fail its own inclusion rule. → §CL22
 
 ## Block B — Catalog site
 
@@ -37,6 +38,13 @@
 
 - **A public link that opens fast on mobile data** Published from main with no build
   step, and the grid usable before the last cover lands.
+
+## Done when — CL3
+
+- **max players and screen mode on every entry, or the entry is gone** build_dataset.py
+  prints the coverage on every run, so the check is that its "still blank" count reaches
+  zero. The 18 left do not close with a number: twelve are games with no local coop and
+  five name no product, and both of those close by removal.
 
 ## Non-goals
 
