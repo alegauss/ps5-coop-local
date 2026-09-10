@@ -16,6 +16,7 @@
 - ✅ **CL9** **there is no way to filter by player count, genre or screen type** — Players, genre and screen filter the grid together, each reversible, all three carried in the URL, and a game whose value is unknown never satisfies a filter (design recorded in `assets/site/app.js`).
 - ✅ **CL10** **the grid has no ordering: not alphabetical, not by year, not by player count** — Alphabetical by default and ignoring a leading article, plus newest first and most players first, with unknown values sorted last rather than as zero (design recorded in `assets/site/app.js`).
 - ✅ **CL11** **opening a game leads nowhere: no detail view with its coop mode and the list's caveats** — A side panel carries the cover, players, screen, scope and genre, and surfaces the source's caveat that Zombies or split screen is the only co-op (design recorded in `assets/site/app.js`).
+- ✅ **CL12** **the page never says how many games exist, or how many survived the current filter** — A live count sits above the grid and moves with every filter: 184 games unfiltered, 9 of 184 when the filters narrow it, announced to a screen reader (design recorded in `assets/site/app.js`).
 
 ## Block C — Publishing and docs
 

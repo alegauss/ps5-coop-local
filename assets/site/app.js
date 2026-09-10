@@ -60,6 +60,7 @@ const panel = document.getElementById("filters");
 const toggle = document.getElementById("filters-toggle");
 const clear = document.getElementById("clear");
 const sortField = document.getElementById("sort");
+const counter = document.getElementById("count");
 const detail = document.getElementById("detail");
 const detailArt = document.getElementById("detail-art");
 const detailTitle = document.getElementById("detail-title");
@@ -302,6 +303,20 @@ function render(games) {
   status.hidden = true;
 }
 
+/** The cheapest possible feedback that the interaction landed, and the thing that
+ *  gives a newcomer the scale of the catalogue (CL12). It says "of 184" only while
+ *  something is narrowing the list, so the unfiltered page states one number
+ *  rather than the same number twice. */
+function showCount(shown, total) {
+  // The noun agrees with whichever number it follows: "1 game" unfiltered, but
+  // "1 of 184 games", because there it is the total being counted.
+  if (shown === total) {
+    counter.textContent = `${total} ${total === 1 ? "game" : "games"}`;
+    return;
+  }
+  counter.textContent = `${shown} of ${total} ${total === 1 ? "game" : "games"}`;
+}
+
 /** Keep the address bar in step without pushing a history entry per keystroke,
  *  which would make Back walk the query backwards one letter at a time. */
 function syncUrl(state) {
@@ -386,7 +401,9 @@ async function main() {
   };
 
   const apply = () => {
-    render(select(games, state));
+    const shown = select(games, state);
+    render(shown);
+    showCount(shown.length, games.length);
     syncUrl(state);
     const active = ["players", "genre", "screen"].filter((k) => state[k]).length;
     clear.hidden = active === 0 && !state.q;

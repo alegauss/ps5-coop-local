@@ -33,12 +33,6 @@ the grid aligned. Each image records where it came from.
 
 ## Block B — Catalog site
 
-### §CL12 The count
-
-A number next to the search, moving with the filters: 187 games, 41 games for four. It
-is the cheapest possible feedback that the interaction landed, and it is also what gives
-a newcomer the scale of the catalog.
-
 ### §CL13 Phone reading
 
 Two cover columns on a phone, search pinned to the top while scrolling, filters in a

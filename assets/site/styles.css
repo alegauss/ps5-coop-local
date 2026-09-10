@@ -372,3 +372,16 @@ body {
   outline-offset: 3px;
   border-radius: var(--radius);
 }
+
+/* The count (CL12).
+ *
+ * aria-live so the number is announced when a filter changes it: for a screen
+ * reader this line is the only feedback that the interaction landed at all.
+ */
+
+.count {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
