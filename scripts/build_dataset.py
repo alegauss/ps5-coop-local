@@ -50,12 +50,17 @@ way. Genre is one label from a closed set of ten, checked on read for the same
 reason the coop vocabulary is: an open vocabulary becomes thirty labels holding one
 game each, and filters nothing.
 
-Two gaps are deliberate. ``year`` is blank throughout -- the axis wanted is the PS5
-release year, and most of this list is PS4 software played through back-compat,
-which has no PS5 release date to carry; the column stays so the answer has somewhere
-to land. And a handful of titles have no genre because the ten labels have no honest
-home for them: "A Way Out" is a co-op cinematic adventure, and calling it a
-platformer to avoid a blank would put it under a filter nobody would find it in.
+``year`` was the PS5 release year, and that definition is why it sat blank on all 184
+records: most of this list is PS4 software played through back-compat and has no PS5
+release date to carry, so the honest value was nothing, permanently -- for a column
+the site already sorted by. It now means the year the game came out, the product a
+row names in its earliest form, which is the same "how old is this" axis and can
+actually be sourced. ``scripts/fetch_years.py`` does most of it, from the store pages
+``data/covers.csv`` already records.
+
+One gap is still deliberate. A handful of titles have no genre because the ten labels
+have no honest home for them: "A Way Out" is a co-op cinematic adventure, and calling
+it a platformer to avoid a blank would put it under a filter nobody would find it in.
 
 Canonical names (CL5)
 ---------------------
@@ -195,9 +200,9 @@ def apply_canonical(games: list[dict], rules: dict[str, dict]) -> list[dict]:
 def read_catalog(path: Path) -> dict[str, dict]:
     """Genre, year and publisher, keyed by game id.
 
-    ``year`` is the PS5 release year and is blank throughout for now: most of this
-    list is PS4 software played through back-compat, which has no PS5 release date
-    to carry. The column stays so the answer has somewhere to land.
+    ``year`` is the year the game came out -- the product a row names, in its
+    earliest form, rather than a PS5-specific date, which most of this list does not
+    have. ``scripts/fetch_years.py`` is where the bulk of it comes from.
     """
     rows: dict[str, dict] = {}
     for row in read_rows(path):
@@ -419,6 +424,13 @@ def main() -> int:
     print(
         f"build-dataset: genre known for {len(genred)}/{dataset['count']}, "
         f"{dataset['count'] - len(genred)} still blank",
+        file=sys.stderr,
+    )
+
+    dated = [g for g in dataset["games"] if g["year"] is not None]
+    print(
+        f"build-dataset: year known for {len(dated)}/{dataset['count']}, "
+        f"{dataset['count'] - len(dated)} still blank",
         file=sys.stderr,
     )
 

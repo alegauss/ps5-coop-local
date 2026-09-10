@@ -60,16 +60,20 @@ python3 scripts/validate_dataset.py  # refuse a broken catalogue
 CI runs all three and refuses to publish if the committed output no longer matches
 its sources.
 
-A fourth script fills `data/covers.csv`, and is deliberately not part of that loop:
+Two more scripts fill worksheets, and are deliberately not part of that loop:
 
 ```sh
 python3 scripts/fetch_covers.py --dry-run  # report what it would match
 python3 scripts/fetch_covers.py            # download the packshots
+python3 scripts/fetch_years.py --dry-run   # report the years it would write
+python3 scripts/fetch_years.py             # fill data/catalog.csv's year column
 ```
 
-It goes to the network, so CI cannot run it and a build must never depend on it.
-Run it when titles are added; it leaves a row that already has a file alone unless
-you pass `--force`.
+Both go to the network, so CI cannot run them and a build must never depend on them.
+Run them when titles are added; each leaves a row that is already filled alone unless
+you pass `--force`. `fetch_years.py` searches for nothing — it reads the store pages
+`data/covers.csv` already records, so a title with no packshot has no year from it
+either, and that year is filled in by hand.
 
 ## Where the covers come from
 
@@ -93,7 +97,7 @@ reader recognises before they read the title, so a wrong one is worse than a bla
 | `data/source-list.txt` | The received list, verbatim. Provenance, never corrected. |
 | `data/canonical.csv` | Franchise and bundle names resolved to real products, or dropped. |
 | `data/coop.csv` | Players, screen type and what the co-op covers. |
-| `data/catalog.csv` | Genre, year and publisher. |
+| `data/catalog.csv` | Genre, release year and publisher. |
 | `data/covers.csv` | Packshots and where each came from. |
 
 A blank in a worksheet means *nobody has established this yet*. It never means zero,

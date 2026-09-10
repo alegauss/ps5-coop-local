@@ -13,9 +13,17 @@ nothing alike; the grid has to say which is which before the click.
 
 One genre per game, from a closed and deliberately small vocabulary: beat 'em up,
 platformer, party, shooter, RPG, sports, racing, puzzle, survival, fighting. An open
-vocabulary becomes thirty labels holding one game each and filters nothing. PS5 release
-year and publisher come along because they sort and give context without costing another
-curation call.
+vocabulary becomes thirty labels holding one game each and filters nothing. Publisher
+comes along because it sorts and gives context without costing another curation call.
+
+Year was defined as the PS5 release year, and that is the one thing here that turned out
+wrong. It cost a curation call nobody could make: most of this list is PS4 software
+played through back-compat and has no PS5 date, so the column was null on all 184
+records while the site shipped a "Newest first" sort and a "Released" row against it. It
+now means the year the game came out, the product a row names in its earliest form,
+which is the same axis and is sourceable -- scripts/fetch_years.py reads the store pages
+data/covers.csv already records, and names the seventeen where the listing's date is not
+the product's.
 
 ### §CL5 Canonical names
 
@@ -30,6 +38,12 @@ is a PS5 product at all; Cell Damage HD misspells Cel Damage HD; and Magicka nam
 PC-only game whose PlayStation release is Magicka 2. Samurai Gunn 2 was announced for
 PS5 and no listing checked here confirms it shipped. A drop settles the first two, a
 rename the next two, and the last needs the store open before either.
+
+Two of them already cost more than a blank. fetch_covers.py matches on an exact name, so
+Magicka and Orcs Must Die! matched the PC games those names really are -- and the row
+now carries the wrong game's packshot, which is the loudest field there is. The name is
+the root cause in both cases, so the rename fixes the cover too, and covers.csv has to
+be re-fetched for whichever ids move.
 
 ### §CL22 Entries with no local coop
 

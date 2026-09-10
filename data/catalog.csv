@@ -2,191 +2,196 @@
 #
 # genre      one of: beat-em-up platformer party shooter rpg sports racing puzzle survival fighting
 #            A closed vocabulary on purpose: thirty labels holding one game each filter nothing.
-# year       the PS5 release year. Blank across the board for now -- most of this list is
-#            PS4 software played through back-compat, which has no PS5 release date at all.
+# year       the year the game came out -- the product this row names, in its earliest
+#            form. Cel Damage HD is 2014 and not 2001; Repentance is 2021 and not 2014.
+#            It was the PS5 release year until CL4, which is why it sat blank on all 184:
+#            most of this list is PS4 software played through back-compat and has no PS5
+#            date at all, and the site's "Newest first" sort had nothing to sort on.
+#            scripts/fetch_years.py fills what data/covers.csv already has a store page
+#            for; the rest are filled here by hand, and 14 are still open.
 # publisher  the label on the store page.
 id,genre,year,publisher
-a-way-out,,,Electronic Arts
-aegis-defenders,platformer,,Humble Bundle
-aew-fight-forever,sports,,THQ Nordic
-alienation,shooter,,Sony Interactive Entertainment
-arcade-paradise,,,Wired Productions
-as-dusk-falls,survival,,Xbox Game Studios
-astroneer,survival,,System Era Softworks
-balan-wonderworld,platformer,,Square Enix
-baldurs-gate-3,rpg,,Larian Studios
-biped,platformer,,META Publishing
-blackwind,shooter,,Blowfish Studios
-bleed-2,shooter,,Digerati
-borderlands-3,shooter,,2K
-broforce,shooter,,Devolver Digital
-call-of-duty-black-ops-cold-war,shooter,,Activision
-cant-drive-this,party,,Pixel Maniacs
+a-way-out,,2018,Electronic Arts
+aegis-defenders,platformer,2018,Humble Bundle
+aew-fight-forever,sports,2023,THQ Nordic
+alienation,shooter,2016,Sony Interactive Entertainment
+arcade-paradise,,2022,Wired Productions
+as-dusk-falls,survival,2022,Xbox Game Studios
+astroneer,survival,2019,System Era Softworks
+balan-wonderworld,platformer,2021,Square Enix
+baldurs-gate-3,rpg,2023,Larian Studios
+biped,platformer,2020,META Publishing
+blackwind,shooter,2022,Blowfish Studios
+bleed-2,shooter,2017,Digerati
+borderlands-3,shooter,2019,2K
+broforce,shooter,2015,Devolver Digital
+call-of-duty-black-ops-cold-war,shooter,2020,Activision
+cant-drive-this,party,2021,Pixel Maniacs
 castle-crashers-remastered,beat-em-up,,The Behemoth
-catty-batty-the-spirit-guide,platformer,,Sometimes You
-cell-damage-hd,shooter,,Finish Line Games
-chicory-a-colorful-tale,puzzle,,Finji
-children-of-morta,rpg,,11 bit studios
-contra-operation-galuga,shooter,,Konami
-contra-rogue-corps,shooter,,Konami
-crosskrush,,,Ratalaika Games
-cuphead,platformer,,Studio MDHR
-dandy-randy-dx,platformer,,Ratalaika Games
-darksiders-genesis,rpg,,THQ Nordic
-dcs-justice-league-cosmic-chaos,beat-em-up,,Outright Games
-dead-nation,shooter,,Sony Interactive Entertainment
-death-squared,party,,SMG Studio
-death-tales,puzzle,,Arcade Distillery
-degrees-of-separation,puzzle,,Modus Games
-demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles,fighting,,SEGA
+catty-batty-the-spirit-guide,platformer,2021,Sometimes You
+cell-damage-hd,shooter,2014,Finish Line Games
+chicory-a-colorful-tale,puzzle,2021,Finji
+children-of-morta,rpg,2019,11 bit studios
+contra-operation-galuga,shooter,2024,Konami
+contra-rogue-corps,shooter,2019,Konami
+crosskrush,,2020,Ratalaika Games
+cuphead,platformer,2017,Studio MDHR
+dandy-randy-dx,platformer,2022,Ratalaika Games
+darksiders-genesis,rpg,2019,THQ Nordic
+dcs-justice-league-cosmic-chaos,beat-em-up,2023,Outright Games
+dead-nation,shooter,2010,Sony Interactive Entertainment
+death-squared,party,2017,SMG Studio
+death-tales,puzzle,2020,Arcade Distillery
+degrees-of-separation,puzzle,2019,Modus Games
+demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles,fighting,2021,SEGA
 diablo-iii-e-iv,rpg,,Blizzard Entertainment
-die-for-valhalla,rpg,,Monster Couch
-dirt-5,racing,,Codemasters
-disney-classic-games-aladdin-and-the-lion-king,platformer,,Nighthawk Interactive
-divinity-original-sin,rpg,,Larian Studios
-dodgeball-academia,sports,,Humble Games
-dont-starve-together,survival,,Klei Entertainment
-double-dragon-gaiden-rise-of-the-dragons,beat-em-up,,Modus Games
-dungeon-defenders-awakened,rpg,,Chromatic Games
-ea-sports-ufc-4,sports,,Electronic Arts
-earth-defense-force-6,shooter,,D3 Publisher
-eight-dragons,beat-em-up,,JanduSoft
-enter-the-gungeon,shooter,,Devolver Digital
-escape-academy,puzzle,,iam8bit
-f1-2021,racing,,Codemasters
-fall-guys-ultimate-knockout,party,,Devolver Digital
-fifa-21,sports,,Electronic Arts
-fifa-22,sports,,Electronic Arts
-fifa-23,sports,,Electronic Arts
-fightn-rage,beat-em-up,,BlitWorks
-final-vendetta,beat-em-up,,Numskull Games
-for-the-king,rpg,,Curve Games
-fortnite,shooter,,Epic Games
-gang-beasts,party,,Skybound Games
-gauntlet-slayer-edition,shooter,,Warner Bros. Games
-gigabash,party,,Passion Republic Games
-graven,survival,,3D Realms
-guacamelee-2,platformer,,DrinkBox Studios
-gungungun,shooter,,Top Hat Studios
-guts-n-goals,sports,,Numskull Games
-haven,rpg,,The Game Bakers
-heavenly-bodies,puzzle,,2pt Interactive
-helldivers,shooter,,Sony Interactive Entertainment
-hot-wheels-unleashed,racing,,Milestone
-human-fall-flat,puzzle,,Curve Games
-hyper-light-drifter,rpg,,Heart Machine
-ibb-obb,platformer,,Sparpweed
+die-for-valhalla,rpg,2018,Monster Couch
+dirt-5,racing,2020,Codemasters
+disney-classic-games-aladdin-and-the-lion-king,platformer,2019,Nighthawk Interactive
+divinity-original-sin,rpg,2015,Larian Studios
+dodgeball-academia,sports,2021,Humble Games
+dont-starve-together,survival,2016,Klei Entertainment
+double-dragon-gaiden-rise-of-the-dragons,beat-em-up,2023,Modus Games
+dungeon-defenders-awakened,rpg,2020,Chromatic Games
+ea-sports-ufc-4,sports,2020,Electronic Arts
+earth-defense-force-6,shooter,2024,D3 Publisher
+eight-dragons,beat-em-up,2019,JanduSoft
+enter-the-gungeon,shooter,2016,Devolver Digital
+escape-academy,puzzle,2022,iam8bit
+f1-2021,racing,2021,Codemasters
+fall-guys-ultimate-knockout,party,2020,Devolver Digital
+fifa-21,sports,2020,Electronic Arts
+fifa-22,sports,2021,Electronic Arts
+fifa-23,sports,2022,Electronic Arts
+fightn-rage,beat-em-up,2017,BlitWorks
+final-vendetta,beat-em-up,2022,Numskull Games
+for-the-king,rpg,2018,Curve Games
+fortnite,shooter,2017,Epic Games
+gang-beasts,party,2017,Skybound Games
+gauntlet-slayer-edition,shooter,2015,Warner Bros. Games
+gigabash,party,2022,Passion Republic Games
+graven,survival,2024,3D Realms
+guacamelee-2,platformer,2018,DrinkBox Studios
+gungungun,shooter,2017,Top Hat Studios
+guts-n-goals,sports,2021,Numskull Games
+haven,rpg,2020,The Game Bakers
+heavenly-bodies,puzzle,2021,2pt Interactive
+helldivers,shooter,2015,Sony Interactive Entertainment
+hot-wheels-unleashed,racing,2021,Milestone
+human-fall-flat,puzzle,2016,Curve Games
+hyper-light-drifter,rpg,2016,Heart Machine
+ibb-obb,platformer,2014,Sparpweed
 ice-cream-surfer,puzzle,,Eastasiasoft
-jitsu-squad,beat-em-up,,ININ Games
-jydge,shooter,,10tons
-keywe,party,,Sold Out
-kitaria-fables,rpg,,PQube
-lara-croft-and-the-guardian-of-light,shooter,,Square Enix
-lara-croft-and-the-temple-of-osiris,shooter,,Square Enix
-lego-marvel-super-heroes-2,platformer,,Warner Bros. Games
-lego-star-wars-the-skywalker-saga,platformer,,Warner Bros. Games
-little-big-planet-3,platformer,,Sony Interactive Entertainment
-llamasoft-the-jeff-minter-story,shooter,,
-lovers-in-a-dangerous-spacetime,shooter,,Asteroid Base
-madden-nfl-21,sports,,Electronic Arts
-madden-nfl-22,sports,,Electronic Arts
-madden-nfl-23,sports,,Electronic Arts
+jitsu-squad,beat-em-up,2022,ININ Games
+jydge,shooter,2017,10tons
+keywe,party,2021,Sold Out
+kitaria-fables,rpg,2021,PQube
+lara-croft-and-the-guardian-of-light,shooter,2010,Square Enix
+lara-croft-and-the-temple-of-osiris,shooter,2014,Square Enix
+lego-marvel-super-heroes-2,platformer,2017,Warner Bros. Games
+lego-star-wars-the-skywalker-saga,platformer,2022,Warner Bros. Games
+little-big-planet-3,platformer,2014,Sony Interactive Entertainment
+llamasoft-the-jeff-minter-story,shooter,2024,
+lovers-in-a-dangerous-spacetime,shooter,2015,Asteroid Base
+madden-nfl-21,sports,2020,Electronic Arts
+madden-nfl-22,sports,2021,Electronic Arts
+madden-nfl-23,sports,2022,Electronic Arts
 magicka,rpg,,Paradox Interactive
-mereks-market,party,,Digerati
-mighty-goose,shooter,,Playism
-minecraft-dungeons,shooter,,Xbox Game Studios
+mereks-market,party,2021,Digerati
+mighty-goose,shooter,2021,Playism
+minecraft-dungeons,shooter,2020,Xbox Game Studios
 minigolf,sports,,
-mortal-kombat-11,fighting,,Warner Bros. Games
-mother-russia-bleeds,beat-em-up,,Devolver Digital
-moving-out,party,,Team17
-nba-2k21,sports,,2K
-nba-2k22,sports,,2K
-nba-2k23,sports,,2K
-neon-chrome,shooter,,10tons
-nhl-21,sports,,Electronic Arts
-nhl-22,sports,,Electronic Arts
-nidhogg-2,fighting,,Messhof
-nine-parchments,rpg,,Frozenbyte
-nobody-saves-the-world,rpg,,DrinkBox Studios
+mortal-kombat-11,fighting,2019,Warner Bros. Games
+mother-russia-bleeds,beat-em-up,2016,Devolver Digital
+moving-out,party,2020,Team17
+nba-2k21,sports,2020,2K
+nba-2k22,sports,2021,2K
+nba-2k23,sports,2022,2K
+neon-chrome,shooter,2016,10tons
+nhl-21,sports,2020,Electronic Arts
+nhl-22,sports,2021,Electronic Arts
+nidhogg-2,fighting,2017,Messhof
+nine-parchments,rpg,2017,Frozenbyte
+nobody-saves-the-world,rpg,2022,DrinkBox Studios
 omega-strike,shooter,,Ratalaika Games
 orcs-must-die,shooter,,
-out-of-space-couch-edition,party,,Behaviour Interactive
-outbreak-endless-nightmares,survival,,Dead Drop Studios
-outbreak-epidemic,survival,,Dead Drop Studios
-outbreak-the-new-nightmare,survival,,Dead Drop Studios
-outward-definitive-edition,rpg,,Prime Matter
-overcooked-2,party,,Team17
-overcooked-all-you-can-eat,party,,Team17
-overruled,party,,Dlala Studios
-pang-adventures,puzzle,,DotEmu
+out-of-space-couch-edition,party,2020,Behaviour Interactive
+outbreak-endless-nightmares,survival,2021,Dead Drop Studios
+outbreak-epidemic,survival,2020,Dead Drop Studios
+outbreak-the-new-nightmare,survival,2018,Dead Drop Studios
+outward-definitive-edition,rpg,2022,Prime Matter
+overcooked-2,party,2018,Team17
+overcooked-all-you-can-eat,party,2020,Team17
+overruled,party,2015,Dlala Studios
+pang-adventures,puzzle,2016,DotEmu
 paprium,beat-em-up,,WaterMelon Games
-phogs,platformer,,Coatsink
-pode,platformer,,Henchman & Goon
-portal-knights,rpg,,505 Games
-puyo-puyo-tetris-2,puzzle,,SEGA
-quake,shooter,,Bethesda Softworks
-raging-justice,beat-em-up,,Team17
-rayman-legends,platformer,,Ubisoft
-returnal,shooter,,Sony Interactive Entertainment
-rico,shooter,,Rising Star Games
-river-city-girls-2,beat-em-up,,WayForward
-rogue-legacy-2,rpg,,Cellar Door Games
-rugby-22,sports,,Nacon
+phogs,platformer,2020,Coatsink
+pode,platformer,2020,Henchman & Goon
+portal-knights,rpg,2017,505 Games
+puyo-puyo-tetris-2,puzzle,2020,SEGA
+quake,shooter,2021,Bethesda Softworks
+raging-justice,beat-em-up,2018,Team17
+rayman-legends,platformer,2013,Ubisoft
+returnal,shooter,2021,Sony Interactive Entertainment
+rico,shooter,2019,Rising Star Games
+river-city-girls-2,beat-em-up,2022,WayForward
+rogue-legacy-2,rpg,2022,Cellar Door Games
+rugby-22,sports,2022,Nacon
 runner,,,
-sackboy-a-big-adventure,platformer,,Sony Interactive Entertainment
-salt-and-sacrifice,rpg,,Ska Studios
-salt-and-sanctuary,rpg,,Ska Studios
+sackboy-a-big-adventure,platformer,2020,Sony Interactive Entertainment
+salt-and-sacrifice,rpg,2022,Ska Studios
+salt-and-sanctuary,rpg,2016,Ska Studios
 samurai-gunn-2,fighting,,SCRAMBLER
-scott-pilgrim-vs-the-world-the-game-complete-edition,beat-em-up,,Ubisoft
-sea-of-stars,rpg,,Sabotage Studio
-secret-of-mana,rpg,,Square Enix
-shing,beat-em-up,,Mass Creation
-skeletal-avenger,rpg,,10tons
+scott-pilgrim-vs-the-world-the-game-complete-edition,beat-em-up,2021,Ubisoft
+sea-of-stars,rpg,2023,Sabotage Studio
+secret-of-mana,rpg,2018,Square Enix
+shing,beat-em-up,2020,Mass Creation
+skeletal-avenger,rpg,2021,10tons
 snipperclips-cut-it-out-together,party,,
-sonic-origins-plus,platformer,,SEGA
-sonic-superstars,platformer,,SEGA
-spelunky,platformer,,Mossmouth
-spelunky-2,platformer,,Mossmouth
-spidersaurs,shooter,,WayForward
-stardew-valley,survival,,ConcernedApe
-steredenn-binary-stars,shooter,,Pixelnest Studio
-street-fighter-v-champion-edition,fighting,,Capcom
-streets-of-rage-4,beat-em-up,,Dotemu
-super-blood-hockey,sports,,Digerati
-super-bomberman-r,fighting,,Konami
+sonic-origins-plus,platformer,2023,SEGA
+sonic-superstars,platformer,2023,SEGA
+spelunky,platformer,2013,Mossmouth
+spelunky-2,platformer,2020,Mossmouth
+spidersaurs,shooter,2022,WayForward
+stardew-valley,survival,2016,ConcernedApe
+steredenn-binary-stars,shooter,2015,Pixelnest Studio
+street-fighter-v-champion-edition,fighting,2020,Capcom
+streets-of-rage-4,beat-em-up,2020,Dotemu
+super-blood-hockey,sports,2017,Digerati
+super-bomberman-r,fighting,2017,Konami
 super-bomberman-r-online,fighting,,Konami
-tetris-effect,puzzle,,Enhance
-the-angry-4,party,,4 Gladiators
-the-binding-of-isaac-repentance,rpg,,Nicalis
-the-dark-pictures-anthology-house-of-ashes,survival,,Bandai Namco Entertainment
-the-house-of-the-dead-remake,survival,,Forever Entertainment
-the-king-of-fighters-xv,fighting,,SNK
-the-last-oricru,rpg,,Prime Matter
-the-quarry,survival,,2K
-tiny-tinas-wonderlands,shooter,,2K
-tiny-troopers-global-ops,shooter,,Wired Productions
-tmnt-the-cowabunga-collection,beat-em-up,,Konami
+tetris-effect,puzzle,2021,Enhance
+the-angry-4,party,2021,4 Gladiators
+the-binding-of-isaac-repentance,rpg,2021,Nicalis
+the-dark-pictures-anthology-house-of-ashes,survival,2021,Bandai Namco Entertainment
+the-house-of-the-dead-remake,survival,2022,Forever Entertainment
+the-king-of-fighters-xv,fighting,2022,SNK
+the-last-oricru,rpg,2022,Prime Matter
+the-quarry,survival,2022,2K
+tiny-tinas-wonderlands,shooter,2022,2K
+tiny-troopers-global-ops,shooter,2023,Wired Productions
+tmnt-the-cowabunga-collection,beat-em-up,2022,Konami
 together,,,
-tony-hawks-pro-skater-1-2,sports,,Activision
-tools-up,party,,All in! Games
-tower-of-guns,shooter,,Grip Digital
-towerfall-ascension,fighting,,Matt Makes Games
-trine-4-the-nightmare-prince,platformer,,Modus Games
+tony-hawks-pro-skater-1-2,sports,2020,Activision
+tools-up,party,2019,All in! Games
+tower-of-guns,shooter,2014,Grip Digital
+towerfall-ascension,fighting,2014,Matt Makes Games
+trine-4-the-nightmare-prince,platformer,2019,Modus Games
 twin-robots-ultimate-edition,platformer,,Ratalaika Games
-ultimate-chicken-horse,party,,Clever Endeavour Games
-ultimate-fishing-simulator-2,sports,,Ultimate Games
-unravel-two,platformer,,Electronic Arts
-urban-flow,racing,,Baltoro Games
-viking-squad,beat-em-up,,Slick Entertainment
-warhammer-40-000-shootas-blood-teef,shooter,,Rogueside
-warhammer-chaosbane-slayer-edition,rpg,,Nacon
-warhammer-vermintide-2,rpg,,Fatshark
-we-love-katamari-reroll-royal-reverie,party,,Bandai Namco Entertainment
-wizard-of-legend,rpg,,Humble Bundle
-worms-rumble,fighting,,Team17
-wrc-10,racing,,Nacon
-wrc-generations,racing,,Nacon
-wulverblade,beat-em-up,,
-wwe-2k23,sports,,2K
-yars-recharged,shooter,,Atari
-zombie-vikings,beat-em-up,,Zoink Games
+ultimate-chicken-horse,party,2016,Clever Endeavour Games
+ultimate-fishing-simulator-2,sports,2025,Ultimate Games
+unravel-two,platformer,2018,Electronic Arts
+urban-flow,racing,2023,Baltoro Games
+viking-squad,beat-em-up,2016,Slick Entertainment
+warhammer-40-000-shootas-blood-teef,shooter,2022,Rogueside
+warhammer-chaosbane-slayer-edition,rpg,2021,Nacon
+warhammer-vermintide-2,rpg,2018,Fatshark
+we-love-katamari-reroll-royal-reverie,party,2023,Bandai Namco Entertainment
+wizard-of-legend,rpg,2018,Humble Bundle
+worms-rumble,fighting,2020,Team17
+wrc-10,racing,2021,Nacon
+wrc-generations,racing,2022,Nacon
+wulverblade,beat-em-up,2018,
+wwe-2k23,sports,2023,2K
+yars-recharged,shooter,2022,Atari
+zombie-vikings,beat-em-up,2015,Zoink Games
