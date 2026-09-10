@@ -57,14 +57,6 @@ the only defense a backend-less site has against its own data.
 
 ## Block D — Visual design and polish
 
-### §CL15 Visual language
-
-A dark blue-black ground, the tone of the console's own interface, with cover art as the
-only saturated color on screen — game art is loud already and fights any palette put
-beside it. A narrow sans for long titles inside small cards, a four-step type scale and
-spacing in multiples of eight. One accent color, spent on focus, active filters and the
-count, and nowhere else.
-
 ### §CL16 Player badge
 
 A badge in the corner of each cover with the player count, plus a color bar for screen

@@ -17,7 +17,6 @@
 
 ## Block D — Visual design and polish
 
-- 📋 **CL15** (deps: CL7 ✅) **the site has no identity: with no palette, type scale or grid it reads as a test page** — A PS5 catalog wants a dark surface, high contrast and the feel of a console shelf. → §CL15
 - 📋 **CL16** (deps: CL3 ⏳) **the grid cannot tell two-player coop from four-player, and that is what decides the night** — The fact that settles the choice has to be readable on the card, not two clicks away. → §CL16
 - 📋 **CL17** (deps: CL8 ✅) **a search that matches nothing returns a blank screen explaining nothing** — An empty screen reads as a fault; emptiness has to name its cause and offer a way out. → §CL17
 - 📋 **CL18** (deps: CL6 ⏳) **loading all 190 covers at once delays the first paint of the grid** — A grid that waits for its images wastes the seconds the user could have been reading. → §CL18
