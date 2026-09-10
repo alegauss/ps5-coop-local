@@ -1,0 +1,199 @@
+# Source list, verbatim as received, one entry per line (split on the ",,," separator).
+# This is provenance, not the dataset: CL1 turns it into structured records, CL2 removes
+# the duplicates, CL5 resolves the collection names. Do not edit to "fix" an entry.
+
+A Way Out
+AEW Fight Forever
+Aegis Defenders
+Alienation
+Arcade Paradise
+As Dusk Falls
+Astroneer
+Baldur's Gate 3 (BG3)
+Balan Wonderworld
+Biped
+Blackwind
+Bleed 1 e 2
+Bomberman
+Borderlands 3
+Broforce
+Call of Duty: Black Ops Cold War (modo Zombies)
+Can't Drive This
+Castle Crashers Remastered
+Catty & Batty: The Spirit Guide
+Cell Damage HD
+Children of Morta
+Chicory: A Colorful Tale
+Contra: Operation Galuga
+Contra: Rogue Corps
+CrossKrush
+Cuphead
+Dandy & Randy DX
+Darksiders Genesis
+DC's Justice League: Cosmic Chaos
+Dead Nation
+Death Squared
+Death Tales
+Degrees of Separation
+Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles
+Diablo III e IV
+Die for Valhalla!
+Dirt 5
+Disney Classic Games: Aladdin e O Rei Leão
+Divinity: Original Sin
+Dodgeball Academia
+Don't Starve Together
+Double Dragon Gaiden: Rise of the Dragons
+Dungeon Defenders: Awakened
+EA Sports UFC 4
+Earth Defense Force 6
+Eight Dragons
+Enter the Gungeon
+Escape Academy
+F1 2021
+Fall Guys: Ultimate Knockout
+FIFA 21
+FIFA 22
+FIFA 23
+Final Fight
+Final Vendetta
+Fight'N Rage
+For the King
+Fortnite (modo tela dividida para Duos e Esquadrões)
+Gang Beasts
+Gauntlet: Slayer Edition
+GigaBash
+GRAVEN
+Guacamelee! 2
+GUNGUNGUN
+Guts 'N Goals
+Haven
+Heavenly Bodies
+Helldivers
+Hot Wheels Unleashed
+House of Ashes
+Human: Fall Flat
+Hyper Light Drifter
+Ice Cream Surfer
+Ibb & Obb
+Jitsu Squad
+JYDGE
+KeyWe
+Kitaria Fables
+King of Fighters
+Lara Croft and the Guardian of Light
+Lara Croft and the Temple of Osiris
+Lego Star Wars: The Skywalker Saga
+LEGO Marvel Super Heroes 2
+Little Big Planet 3
+Llamasoft: The Jeff Minter Story
+Lovers in a Dangerous Spacetime
+Magicka
+Madden NFL 21
+Madden NFL 22
+Madden NFL 23
+Merek's Market
+Mighty Goose
+Minecraft Dungeons
+Minigolf
+Mortal Kombat 11 (modo Co-Op Towers of Time)
+Mother Russia Bleeds
+Moving Out
+NBA 2K21
+NBA 2K22
+NBA 2K23
+Neon Chrome
+NHL 21
+NHL 22
+Nine Parchments
+Nidhogg 2
+Nobody Saves the World
+Omega Strike
+Orcs Must Die!
+Out of Space: Couch Edition
+Outbreak: Endless Nightmares
+Outbreak: Epidemic
+Outbreak: The New Nightmare
+Outward
+Outward: Definitive Edition
+Overcooked 2
+Overcooked! All You Can Eat
+Overruled!
+Pang Adventures
+Paprium
+Phogs!
+Pode
+Portal Knights
+Puyo Puyo Tetris 2
+Quake
+Raging Justice
+Rayman Legends
+Returnal
+RICO
+River City Girls 2
+Rogue Legacy 2
+Runner
+Rugby 22
+Salt and Sacrifice
+Salt and Sanctuary
+Samurai Gunn 2
+Sackboy: A Big Adventure
+Scott Pilgrim vs. The World: The Game – Complete Edition
+Sea of Stars
+Secret of Mana
+Shing!
+Skeletal Avenger
+Snipperclips - Cut it out, together!
+Sonic Origins Plus
+Sonic Superstars
+Spelunky
+Spelunky 2
+Spidersaurs
+Stardew Valley
+Steredenn: Binary Stars
+Street Fighter
+Street Fighter V: Champion Edition
+Streets of Rage 4
+Super Blood Hockey
+Super Bomberman R Online
+Tetris Effect
+The Angry 4
+Super Blood Hockey
+Super Bomberman R Online
+Tetris Effect
+The Angry 4
+The Binding of Isaac: Repentance
+The Dark Pictures Anthology
+The Dark Pictures Anthology: House of Ashes
+The House of the Dead: Remake
+The Last Oricru
+The Quarry
+Tiny Tina's Wonderlands
+Tiny Tina's Wonderland
+Tiny Troopers: Global Ops
+TMNT: The Cowabunga Collection
+TOGETHER
+Tools Up!
+Tony Hawk's Pro Skater 1 e 2
+Tower of Guns
+TowerFall Ascension
+Trine 4: The Nightmare Prince
+Trine Series
+Twin Robots: Ultimate Edition
+Ultimate Chicken Horse
+Ultimate Fishing Simulator 2
+Unravel Two
+Urban Flow
+Viking Squad
+Warhammer 40,000: Shootas, Blood & Teef
+Warhammer: Chaosbane – Slayer Edition
+Warhammer: Vermintide 2
+We Love Katamari REROLL + Royal Reverie
+Wizard of Legend
+Worms Rumble
+WRC 10
+WRC Generations (Tela dividida)
+Wulverblade
+WWE 2K23
+Yars: Recharged
+Zombie Vikings
