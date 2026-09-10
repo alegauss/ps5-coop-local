@@ -9,7 +9,6 @@
 
 ## Block B — Catalog site
 
-- 📋 **CL8** (deps: CL7 ✅) **with nearly two hundred titles on one page, finding a game means scrolling or Ctrl+F** — Instant name search is what makes a catalog this size usable at all. → §CL8
 - 📋 **CL9** (deps: CL3 ⏳, CL4 ⏳) **there is no way to filter by player count, genre or screen type** — The real question is what four of us can play tonight, and the grid cannot answer it. → §CL9
 - 📋 **CL10** (deps: CL7 ✅) **the grid has no ordering: not alphabetical, not by year, not by player count** — A fixed order buries the recent releases and forces a full sweep to compare. → §CL10
 - 📋 **CL11** (deps: CL3 ⏳) **opening a game leads nowhere: no detail view with its coop mode and the list's caveats** — Caveats like Zombies-only or split-screen-only decide the purchase and are lost today. → §CL11
@@ -27,7 +26,7 @@
 
 - 📋 **CL15** (deps: CL7 ✅) **the site has no identity: with no palette, type scale or grid it reads as a test page** — A PS5 catalog wants a dark surface, high contrast and the feel of a console shelf. → §CL15
 - 📋 **CL16** (deps: CL3 ⏳) **the grid cannot tell two-player coop from four-player, and that is what decides the night** — The fact that settles the choice has to be readable on the card, not two clicks away. → §CL16
-- 📋 **CL17** (deps: CL8) **a search that matches nothing returns a blank screen explaining nothing** — An empty screen reads as a fault; emptiness has to name its cause and offer a way out. → §CL17
+- 📋 **CL17** (deps: CL8 ✅) **a search that matches nothing returns a blank screen explaining nothing** — An empty screen reads as a fault; emptiness has to name its cause and offer a way out. → §CL17
 - 📋 **CL18** (deps: CL6 ⏳) **loading all 190 covers at once delays the first paint of the grid** — A grid that waits for its images wastes the seconds the user could have been reading. → §CL18
 
 ## Done when — Block A

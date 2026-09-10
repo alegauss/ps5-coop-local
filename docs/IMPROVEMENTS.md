@@ -33,13 +33,6 @@ the grid aligned. Each image records where it came from.
 
 ## Block B — Catalog site
 
-### §CL8 Search
-
-One field at the top, filtering on every keystroke, no submit button. It matches
-canonical names and aliases, ignores case and accents, and tolerates the one-character
-typo that names like Guacamelee and Chaosbane invite. The query lives in the URL, so a
-link pasted into the group chat opens already filtered.
-
 ### §CL9 Filters
 
 Three filters, in that order of importance: players (2, 3, 4, 5+), genre and screen

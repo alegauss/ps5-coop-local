@@ -12,6 +12,7 @@
 ## Block B — Catalog site
 
 - ✅ **CL7** **there is no page at all: the repository holds no site that shows the catalog** — The catalogue renders: a static page with no framework or build step reads games.json and lays all 184 titles out as one scrolling grid of cover cards (design recorded in `assets/site/app.js`).
+- ✅ **CL8** **with nearly two hundred titles on one page, finding a game means scrolling or Ctrl+F** — Filters on every keystroke across names and aliases, folding case, accents and punctuation, tolerating one typo; the query lives in the URL (design recorded in `assets/site/app.js`).
 
 ## Block C — Publishing and docs
 
