@@ -41,11 +41,4 @@ GitHub Pages from the main branch, with no build step, because the site is stati
 decision. Every push publishes. The link is the product: it has to open fast on a phone
 network and depend on nothing outside the repository.
 
-### §CL20 README
-
-What it is, the inclusion rule — local coop on one PS5 console —, where the list came
-from, how to run it in one line, and how to propose a game. The inclusion rule is the
-part that heads off the recurring argument about online coop, which is precisely what
-this catalog is not.
-
 ## Block D — Visual design and polish

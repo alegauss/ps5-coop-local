@@ -12,7 +12,6 @@
 ## Block C — Publishing and docs
 
 - ⏳ **CL19** (deps: CL7 ✅) **the site is published nowhere, so the list exists only on the developer's machine** — Pages still has to be switched to the GitHub Actions source in repository settings, which no workflow file can do, and this branch has to reach main. → §CL19
-- 📋 **CL20** (deps: —) **the repository never says what the project is, where the list came from, or how to run it** — With no README a cloner cannot tell a site from a dataset from a scratch note. → §CL20
 
 ## Block D — Visual design and polish
 
