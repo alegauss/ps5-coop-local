@@ -15,10 +15,10 @@ The conversion is mechanical on purpose. It parses; it does not curate:
 * Collection names survive it (CL5). "Trine Series" and "Bleed 1 e 2" name a set
   rather than a product, and picking the canonical title is a judgement about the
   PSN catalog that this script has no way to make.
-* ``players``, ``coop``, ``genre``, ``year``, ``publisher`` and ``cover`` are
-  emitted as null (CL3, CL4, CL6). The schema carries them from the first commit
-  so the readers can be written against a stable shape, but a value invented here
-  would be a guess wearing the costume of data.
+* ``genre``, ``year``, ``publisher`` and ``cover`` are emitted as null (CL4, CL6).
+  The schema carries them from the first commit so the readers can be written
+  against a stable shape, but a value invented here would be a guess wearing the
+  costume of data.
 
 What the source puts in parentheses is kept verbatim in ``source_note`` -- the
 "(modo Zombies)" and "(Tela dividida)" caveats are what CL11 surfaces, and they
@@ -34,10 +34,23 @@ at by string distance -- "Wonderland" and "Wonderlands" are one typo apart and
 
 Nothing is discarded by a merge. Every folded title stays in ``aliases``, because
 the source spelling is what somebody will type into the search box.
+
+Couch-coop metadata (CL3)
+-------------------------
+``max_players``, ``screen`` and ``scope`` come from ``data/coop.csv``, a worksheet
+carrying one row per id so the unanswered ones are visible rather than absent. The
+vocabulary is closed and checked on read: a screen or scope outside it is a typo,
+and a typo reaching the grid renders a badge nobody can filter on.
+
+A blank stays null. Local coop is not one field -- Streets of Rage 4 and Overcooked
+are both four players and play nothing alike -- and the number here is what decides
+a purchase, so an unverified entry is left for somebody with the store open rather
+than filled with a plausible guess.
 """
 
 from __future__ import annotations
 
+import csv
 import json
 import re
 import sys
@@ -47,12 +60,18 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "data" / "source-list.txt"
+COOP = ROOT / "data" / "coop.csv"
 TARGET = ROOT / "data" / "games.json"
 
 SCHEMA_VERSION = 1
 
 # Filled by later tasks; declared here so every reader sees one record shape.
-DEFERRED_FIELDS = ("players", "coop", "genre", "year", "publisher", "cover")
+DEFERRED_FIELDS = ("genre", "year", "publisher", "cover")
+
+# The couch-coop vocabulary (CL3). A value outside these sets is a typo in the
+# worksheet, and a typo that reaches the grid renders a badge nobody can filter on.
+SCREENS = {"split", "shared", "pass"}
+SCOPES = {"campaign", "side", "versus"}
 
 # A trailing "(...)" is the source's caveat about the entry, not part of its title.
 TRAILING_PAREN = re.compile(r"\s*\(([^()]*)\)\s*$")
@@ -80,6 +99,45 @@ def slugify(name: str) -> str:
     return re.sub(r"-{2,}", "-", re.sub(r"[^a-z0-9]+", "-", lowered)).strip("-")
 
 
+def read_coop(path: Path) -> dict[str, dict]:
+    """The curated couch-coop worksheet, keyed by game id.
+
+    A blank field is "not yet established" and stays None all the way to the JSON.
+    It is never defaulted to zero or to "shared": the question this catalog exists
+    to answer is how many people can play, and a fabricated answer is worse than an
+    honest gap, which CL21's validator can still refuse.
+    """
+    if not path.exists():
+        return {}
+
+    rows: dict[str, dict] = {}
+    text = "\n".join(
+        line for line in path.read_text(encoding="utf-8").splitlines()
+        if not line.lstrip().startswith("#")
+    )
+    for row in csv.DictReader(text.splitlines()):
+        game_id = (row.get("id") or "").strip()
+        if not game_id:
+            continue
+        if game_id in rows:
+            raise ValueError(f"{path.name} lists {game_id} twice")
+
+        players = (row.get("max_players") or "").strip()
+        screen = (row.get("screen") or "").strip()
+        scope = (row.get("scope") or "").strip()
+        if screen and screen not in SCREENS:
+            raise ValueError(f"{path.name}: {game_id} has screen {screen!r}, not one of {sorted(SCREENS)}")
+        if scope and scope not in SCOPES:
+            raise ValueError(f"{path.name}: {game_id} has scope {scope!r}, not one of {sorted(SCOPES)}")
+
+        rows[game_id] = {
+            "max_players": int(players) if players else None,
+            "screen": screen or None,
+            "scope": scope or None,
+        }
+    return rows
+
+
 def parse_line(raw: str) -> dict:
     """One source line to one record, splitting off a trailing parenthetical."""
     source = raw.strip()
@@ -92,6 +150,7 @@ def parse_line(raw: str) -> dict:
         name = name[: match.start()].strip()
 
     record = {"id": slugify(name), "name": name, "aliases": [], "source": source}
+    record.update({"max_players": None, "screen": None, "scope": None})
     record.update({field: None for field in DEFERRED_FIELDS})
     record["source_note"] = note
     return record
@@ -146,6 +205,14 @@ def read_entries(text: str) -> list[str]:
 
 def build(text: str) -> dict:
     games = reconcile([parse_line(entry) for entry in read_entries(text)])
+
+    coop = read_coop(COOP)
+    unknown = sorted(set(coop) - {g["id"] for g in games})
+    if unknown:
+        raise KeyError(f"{COOP.name} names id(s) the dataset does not have: {unknown}")
+    for game in games:
+        game.update(coop.get(game["id"], {}))
+
     return {
         "schema_version": SCHEMA_VERSION,
         "source": SOURCE.relative_to(ROOT).as_posix(),
@@ -181,6 +248,14 @@ def main() -> int:
     )
     for game in sorted(merged, key=lambda g: g["id"]):
         print(f"  {game['id']} <- {', '.join(game['aliases'])}", file=sys.stderr)
+
+    # Coverage is reported every run: the gap is the work, and a silent gap is a lie.
+    known = [g for g in dataset["games"] if g["max_players"] is not None]
+    print(
+        f"build-dataset: couch-coop known for {len(known)}/{dataset['count']}, "
+        f"{dataset['count'] - len(known)} still blank",
+        file=sys.stderr,
+    )
 
     # An id is the record's identity from here on; two of them is a bug, not a duplicate.
     clashes = [i for i, n in Counter(g["id"] for g in dataset["games"]).items() if n > 1]
