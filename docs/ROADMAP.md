@@ -17,7 +17,6 @@
 
 ## Block D — Visual design and polish
 
-- 📋 **CL17** (deps: CL8 ✅) **a search that matches nothing returns a blank screen explaining nothing** — An empty screen reads as a fault; emptiness has to name its cause and offer a way out. → §CL17
 - 📋 **CL18** (deps: CL6 ⏳) **loading all 190 covers at once delays the first paint of the grid** — A grid that waits for its images wastes the seconds the user could have been reading. → §CL18
 
 ## Done when — Block A

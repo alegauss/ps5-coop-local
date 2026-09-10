@@ -61,6 +61,9 @@ const toggle = document.getElementById("filters-toggle");
 const clear = document.getElementById("clear");
 const sortField = document.getElementById("sort");
 const counter = document.getElementById("count");
+const empty = document.getElementById("empty");
+const emptyLead = document.getElementById("empty-lead");
+const emptyActions = document.getElementById("empty-actions");
 const detail = document.getElementById("detail");
 const detailArt = document.getElementById("detail-art");
 const detailTitle = document.getElementById("detail-title");
@@ -150,6 +153,51 @@ function nearQuery(game, query) {
       withinOneEdit(key, query) ||
       key.split(" ").some((word) => withinOneEdit(word, query)),
   );
+}
+
+/** Levenshtein, abandoned once it passes `cap`. The full distance is never needed
+ *  -- a title six edits from the query is not a suggestion worth making -- and the
+ *  cap keeps this cheap enough to run across the whole catalogue. */
+function distance(a, b, cap) {
+  if (Math.abs(a.length - b.length) > cap) return cap + 1;
+  let previous = Array.from({ length: b.length + 1 }, (_, i) => i);
+  for (let i = 1; i <= a.length; i += 1) {
+    const current = [i];
+    let best = i;
+    for (let j = 1; j <= b.length; j += 1) {
+      current[j] = Math.min(
+        previous[j] + 1,
+        current[j - 1] + 1,
+        previous[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1),
+      );
+      best = Math.min(best, current[j]);
+    }
+    if (best > cap) return cap + 1;
+    previous = current;
+  }
+  return previous[b.length];
+}
+
+/** The title the query most likely meant, or null when nothing is close enough.
+ *  Compared against words as well as whole names, so "overcook" reaches
+ *  "Overcooked 2" without the rest of the title counting against it. */
+function nearestTitle(games, query) {
+  const cap = query.length <= 5 ? 2 : 3;
+  let best = null;
+  let bestScore = cap + 1;
+  for (const game of games) {
+    for (const key of game.keys) {
+      const score = Math.min(
+        distance(key, query, cap),
+        ...key.split(" ").map((word) => distance(word, query, cap)),
+      );
+      if (score < bestScore) {
+        bestScore = score;
+        best = game;
+      }
+    }
+  }
+  return best;
 }
 
 function passesFilters(game, state) {
@@ -349,6 +397,37 @@ function showCount(shown, total) {
   counter.textContent = `${shown} of ${total} ${total === 1 ? "game" : "games"}`;
 }
 
+const FILTER_PROSE = {
+  players: (v) => `${v} or more players`,
+  genre: (v) => `the ${v.replace(/-/g, " ")} genre`,
+  screen: (v) => SCREEN_PROSE[v] ?? v,
+};
+
+/** The filter whose removal brings back the most games. That is the one actually
+ *  responsible for the empty screen, which is not always the one added last. */
+function narrowest(games, state) {
+  let widest = null;
+  let most = 0;
+  for (const key of ["players", "genre", "screen"]) {
+    if (!state[key]) continue;
+    const without = select(games, { ...state, [key]: "" }).length;
+    if (without > most) {
+      most = without;
+      widest = { key, restores: without };
+    }
+  }
+  return widest;
+}
+
+function action(label, primary, onClick) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "empty__action" + (primary ? " empty__action--primary" : "");
+  button.textContent = label;
+  button.addEventListener("click", onClick);
+  return button;
+}
+
 /** Keep the address bar in step without pushing a history entry per keystroke,
  *  which would make Back walk the query backwards one letter at a time. */
 function syncUrl(state) {
@@ -432,9 +511,55 @@ async function main() {
     );
   };
 
+  const showEmpty = () => {
+    const active = ["players", "genre", "screen"].filter((key) => state[key]);
+    const parts = active.map((key) => FILTER_PROSE[key](state[key]));
+    if (state.q) parts.unshift(`\u201c${field.value.trim()}\u201d`);
+
+    emptyLead.textContent =
+      parts.length > 1
+        ? `Nothing matches ${parts.join(" and ")} together.`
+        : `Nothing matches ${parts[0] ?? "the current view"}.`;
+
+    const actions = [];
+    const near = state.q ? nearestTitle(games, state.q) : null;
+    if (near) {
+      actions.push(
+        action(`Did you mean ${near.name}?`, true, () => {
+          field.value = near.name;
+          state.q = fold(near.name);
+          apply();
+        }),
+      );
+    }
+
+    const widest = narrowest(games, state);
+    if (widest) {
+      actions.push(
+        action(
+          `Drop ${FILTER_PROSE[widest.key](state[widest.key])} (${widest.restores} back)`,
+          !near,
+          () => {
+            state[widest.key] = "";
+            draw();
+            apply();
+          },
+        ),
+      );
+    }
+
+    if (state.q || active.length) {
+      actions.push(action("Clear everything", false, () => clear.click()));
+    }
+    emptyActions.replaceChildren(...actions);
+    empty.hidden = false;
+  };
+
   const apply = () => {
     const shown = select(games, state);
     render(shown);
+    empty.hidden = true;
+    if (shown.length === 0) showEmpty();
     showCount(shown.length, games.length);
     syncUrl(state);
     const active = ["players", "genre", "screen"].filter((k) => state[k]).length;

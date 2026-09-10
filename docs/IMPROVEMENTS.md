@@ -57,13 +57,6 @@ the only defense a backend-less site has against its own data.
 
 ## Block D — Visual design and polish
 
-### §CL17 Empty state
-
-When nothing matches, say which combination emptied the list and offer the way back:
-drop the narrowest filter, or clear everything. If the search only just missed, suggest
-the nearest title. This is the ordinary case of filtering five players and a niche genre
-at once.
-
 ### §CL18 Image cost
 
 Lazy loading below the fold, declared dimensions on every card so the grid does not jump

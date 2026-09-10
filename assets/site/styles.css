@@ -611,3 +611,51 @@ body {
 .badge__screen--pass {
   background: #e0a458;
 }
+
+/* Empty state (CL17).
+ *
+ * An empty screen reads as a fault. This one names the combination that emptied
+ * the list and offers the way back, because filtering for five players and a
+ * niche genre at once is the ordinary case, not the edge one.
+ */
+
+.empty {
+  max-width: 46ch;
+  padding: var(--space-4) 0;
+}
+
+.empty__lead {
+  margin: 0;
+  color: var(--text);
+  font-size: var(--text-md);
+  line-height: 1.5;
+}
+
+.empty__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-top: var(--space-2);
+}
+
+.empty__action {
+  padding: 8px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: var(--text-sm);
+  cursor: pointer;
+}
+
+.empty__action--primary {
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+@media (max-width: 640px) {
+  .empty__action {
+    min-height: 44px;
+  }
+}
