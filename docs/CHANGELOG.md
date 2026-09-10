@@ -14,6 +14,7 @@
 - ✅ **CL7** **there is no page at all: the repository holds no site that shows the catalog** — The catalogue renders: a static page with no framework or build step reads games.json and lays all 184 titles out as one scrolling grid of cover cards (design recorded in `assets/site/app.js`).
 - ✅ **CL8** **with nearly two hundred titles on one page, finding a game means scrolling or Ctrl+F** — Filters on every keystroke across names and aliases, folding case, accents and punctuation, tolerating one typo; the query lives in the URL (design recorded in `assets/site/app.js`).
 - ✅ **CL9** **there is no way to filter by player count, genre or screen type** — Players, genre and screen filter the grid together, each reversible, all three carried in the URL, and a game whose value is unknown never satisfies a filter (design recorded in `assets/site/app.js`).
+- ✅ **CL10** **the grid has no ordering: not alphabetical, not by year, not by player count** — Alphabetical by default and ignoring a leading article, plus newest first and most players first, with unknown values sorted last rather than as zero (design recorded in `assets/site/app.js`).
 
 ## Block C — Publishing and docs
 

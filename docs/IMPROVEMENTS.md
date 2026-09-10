@@ -33,12 +33,6 @@ the grid aligned. Each image records where it came from.
 
 ## Block B — Catalog site
 
-### §CL10 Sorting
-
-Alphabetical by default, because it is the order a person can predict. Beyond it, newest
-first and most players first. Alphabetical ignores a leading article: The Quarry sorts
-under Q, or half the catalog piles up under T.
-
 ### §CL11 Game detail
 
 A side panel, not a new page: the grid stays behind it and closing costs no navigation.

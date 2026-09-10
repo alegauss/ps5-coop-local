@@ -7,8 +7,12 @@
  * discovering the game you wanted was on page three, and the whole point of the
  * catalogue is seeing what is there.
  *
- * Ordering is CL10 and the detail view CL11, and each layers onto one list rather
- * than around a half-built one.
+ * The detail view is CL11, and it layers onto one list rather than around a
+ * half-built one.
+ *
+ * Ordering (CL10) defaults to alphabetical, because it is the order a person can
+ * predict, and it ignores a leading article so The Quarry sorts under Q instead of
+ * half the catalogue piling up under T.
  *
  * The filters (CL9) are players, genre and screen, combinable and each reversible.
  * Player count reads as "at least this many": the question the catalogue exists to
@@ -37,6 +41,13 @@ const FUZZY_MIN = 4;
 /** Players, as "at least this many". 5 is the open-ended top of the range. */
 const PLAYER_STEPS = [2, 3, 4, 5];
 
+/** Dropped from the front of a title before it is sorted. Portuguese articles are
+ *  here too: the source list is Brazilian and CL5 left translated titles behind. */
+const LEADING_ARTICLE = /^(the|a|an|o|os|as|um|uma)\s+/i;
+
+/** Names sort by the reader's rules, not by code point: "Ãlvaro" belongs with A. */
+const COLLATOR = new Intl.Collator(undefined, { sensitivity: "base", numeric: true });
+
 const grid = document.getElementById("grid");
 const status = document.getElementById("status");
 const form = document.getElementById("search");
@@ -44,6 +55,7 @@ const field = document.getElementById("q");
 const panel = document.getElementById("filters");
 const toggle = document.getElementById("filters-toggle");
 const clear = document.getElementById("clear");
+const sortField = document.getElementById("sort");
 
 /** Lowercase, strip accents, and reduce punctuation to spaces, so "Leao" finds
  *  "Leão" and "guacamelee" is one edit from "guacamalee" rather than two -- with
@@ -149,8 +161,34 @@ function search(games, query) {
   return games.filter((game) => nearQuery(game, query));
 }
 
+function sortKey(name) {
+  return name.replace(LEADING_ARTICLE, "");
+}
+
+/** Descending on a number, with unknowns always last rather than sorted as zero:
+ *  CL3 and CL4 left blanks, and a blank is not a low score. Ties fall back to the
+ *  alphabetical order, so a re-sort is stable and predictable rather than
+ *  whatever order the previous filter happened to leave behind. */
+function byDescending(field) {
+  return (a, b) => {
+    const x = a[field];
+    const y = b[field];
+    if (x == null && y == null) return COLLATOR.compare(a.sortName, b.sortName);
+    if (x == null) return 1;
+    if (y == null) return -1;
+    return y - x || COLLATOR.compare(a.sortName, b.sortName);
+  };
+}
+
+const ORDERS = {
+  name: (a, b) => COLLATOR.compare(a.sortName, b.sortName),
+  year: byDescending("year"),
+  players: byDescending("max_players"),
+};
+
 function select(games, state) {
-  return search(games, state.q).filter((game) => passesFilters(game, state));
+  const chosen = search(games, state.q).filter((game) => passesFilters(game, state));
+  return chosen.sort(ORDERS[state.sort] ?? ORDERS.name);
 }
 
 /** Build one card. Kept as DOM calls rather than innerHTML so a game whose title
@@ -192,8 +230,12 @@ function render(games) {
  *  which would make Back walk the query backwards one letter at a time. */
 function syncUrl(state) {
   const url = new URL(window.location.href);
-  for (const key of ["q", "players", "genre", "screen"]) {
-    if (state[key]) url.searchParams.set(key, state[key]);
+  for (const key of ["q", "players", "genre", "screen", "sort"]) {
+    // "name" is the default order, so it is left out rather than pinned into
+    // every link the user copies.
+    if (state[key] && !(key === "sort" && state[key] === "name")) {
+      url.searchParams.set(key, state[key]);
+    }
     else url.searchParams.delete(key);
   }
   window.history.replaceState(null, "", url);
@@ -227,7 +269,10 @@ async function main() {
     return;
   }
 
-  for (const game of games) game.keys = searchKeys(game);
+  for (const game of games) {
+    game.keys = searchKeys(game);
+    game.sortName = sortKey(game.name);
+  }
 
   const params = new URL(window.location.href).searchParams;
   const state = {
@@ -235,6 +280,7 @@ async function main() {
     players: params.get("players") ?? "",
     genre: params.get("genre") ?? "",
     screen: params.get("screen") ?? "",
+    sort: ORDERS[params.get("sort")] ? params.get("sort") : "name",
   };
 
   // Offered from what the data actually holds, so a genre nobody has assigned
@@ -272,6 +318,7 @@ async function main() {
   };
 
   field.value = params.get("q") ?? "";
+  sortField.value = state.sort;
   draw();
   apply();
 
@@ -286,6 +333,11 @@ async function main() {
     const input = event.target;
     if (!(input instanceof HTMLInputElement)) return;
     state[input.name] = input.value;
+    apply();
+  });
+
+  sortField.addEventListener("change", () => {
+    state.sort = sortField.value;
     apply();
   });
 
