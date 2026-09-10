@@ -22,9 +22,14 @@ A gap is not the same as a game that does not belong. An entry whose co-op needs
 network has no honest player count to be missing: it is in data/excluded.csv and never
 reaches this file at all.
 
-``--strict`` promotes every gap to an error. That is the switch to throw when the
-curation is finished, and it is exactly the Block A criterion: the validator
-refuses a record missing a player count or a screen mode.
+``--strict`` promotes every gap to an error, and CI throws it (CL24): the curation
+is finished, so every one of the 168 records carries a player count, a screen mode,
+a scope and a genre. A blank is therefore no longer a fact nobody has established --
+it is a regression, and the publish fails on it.
+
+The plain run stays the default because it is the useful one while a title is being
+added: it prints what is still open instead of refusing to build. Run it with
+--strict before pushing and you learn what CI is about to say.
 """
 
 from __future__ import annotations
@@ -117,8 +122,8 @@ def main() -> int:
     parser.add_argument(
         "--strict",
         action="store_true",
-        help="treat an unfilled field as an error, not a gap -- the switch to throw "
-             "once CL3 and CL4 are finished",
+        help="treat an unfilled field as an error, not a gap -- what CI runs, so a "
+             "blank field fails the publish instead of shipping a hole",
     )
     args = parser.parse_args()
 

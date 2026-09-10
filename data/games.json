@@ -980,7 +980,7 @@
       "source": "Guts 'N Goals",
       "max_players": 4,
       "screen": "shared",
-      "scope": null,
+      "scope": "side",
       "genre": "sports",
       "year": 2021,
       "publisher": "Numskull Games",

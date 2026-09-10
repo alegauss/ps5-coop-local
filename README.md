@@ -111,8 +111,13 @@ reader recognises before they read the title, so a wrong one is worse than a bla
 
 A blank in a worksheet means *nobody has established this yet*. It never means zero,
 and nothing invents a value to fill it — an unknown player count is left unknown,
-because a wrong one sends somebody to buy the wrong game. The validator counts the
-blanks on every run, and `--strict` refuses them once the curation is finished.
+because a wrong one sends somebody to buy the wrong game.
+
+There are none left. Every one of the 168 entries carries a player count, a screen
+mode, a scope and a genre, so **CI validates with `--strict`** and a blank now fails
+the publish rather than being counted and shipped. Run `validate_dataset.py --strict`
+before pushing to see what CI will say; the plain run still just prints the count,
+which is what you want while a new title is half filled in.
 
 ## Proposing a game
 

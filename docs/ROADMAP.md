@@ -6,8 +6,6 @@
 
 ## Block C — Publishing and docs
 
-- 📋 **CL24** (deps: —) **CI validates without --strict, so a title added with a blank field publishes as a hole** — The switch has existed since CL21 and nothing runs it, one field is already blank, and a null field makes a game vanish from every filtered view without saying so. → §CL24
-
 ## Block D — Visual design and polish
 
 ## Done when — Block A
@@ -42,6 +40,10 @@
   analytics, no API. The grid has to render from files this repository serves, so a
   visitor on a phone network waits on one origin and nothing a third party does can
   break the page. Checked by reading index.html and assets/site for an off-origin URL.
+- **a record with a blank field fails the publish** The curation is finished, so a gap
+  is a regression rather than an unfilled fact, and an unfilled field silently drops a
+  game out of every filtered view. Checked by the validate step in
+  .github/workflows/pages.yml carrying --strict.
 
 ## Non-goals
 

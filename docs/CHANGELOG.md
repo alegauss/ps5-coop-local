@@ -27,6 +27,7 @@
 - ✅ **CL19** **the site is published nowhere, so the list exists only on the developer's machine** — https://alegauss.github.io/ps5-coop-local/ is live, and the grid loads from an 88 KB games.json and a 24 KB app.js with the covers lazy.
 - ✅ **CL21** **nothing validates the dataset: broken JSON or a missing field surfaces in the user's browser** — A validator refuses a repeated id, a missing field, an off-vocabulary genre, a player count below two, and a cover that is not there (design recorded in `scripts/validate_dataset.py`).
 - ✅ **CL20** **the repository never says what the project is, where the list came from, or how to run it** — A README states what the catalogue is, the one-console rule that settles the online argument, where the list came from, and how to run it in one line (design recorded in `README.md`).
+- ✅ **CL24** **CI validates without --strict, so a title added with a blank field publishes as a hole** — CI validates with --strict, so a record missing a field fails the publish; the last blank was the Guts 'N Goals scope, which is side (design recorded in `scripts/validate_dataset.py`).
 
 ## Block D — Visual design and polish
 
