@@ -44,6 +44,11 @@ jobs:
           python3 scripts/build_covers.py
           git diff --exit-code -- data/games.json assets/covers
 
+      - name: Validate the catalogue
+        # The site has no server to catch bad data at request time, so this is
+        # where a broken record is stopped.
+        run: python3 scripts/validate_dataset.py
+
       - uses: actions/configure-pages@v5
 
       - name: Upload the repository as the site

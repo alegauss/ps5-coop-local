@@ -23,6 +23,7 @@
 ## Block C — Publishing and docs
 
 - ✅ **CL19 (the workflow, not the setting)** **the site is published nowhere, so the list exists only on the developer's machine** — A workflow publishes the repository to Pages on every push to main with no build step, refusing to deploy a dataset that no longer matches its sources.
+- ✅ **CL21** **nothing validates the dataset: broken JSON or a missing field surfaces in the user's browser** — A validator refuses a repeated id, a missing field, an off-vocabulary genre, a player count below two, and a cover that is not there (design recorded in `scripts/validate_dataset.py`).
 
 ## Block D — Visual design and polish
 

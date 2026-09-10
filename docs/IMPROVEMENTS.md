@@ -48,11 +48,4 @@ from, how to run it in one line, and how to propose a game. The inclusion rule i
 part that heads off the recurring argument about online coop, which is precisely what
 this catalog is not.
 
-### §CL21 Catalog validation
-
-A checker that runs in the repository and refuses: a repeated id, a missing required
-field, a genre outside the vocabulary, a player count below two, and cover art pointing
-at a file that is not there. It runs before commit and in CI. It costs little and it is
-the only defense a backend-less site has against its own data.
-
 ## Block D — Visual design and polish
