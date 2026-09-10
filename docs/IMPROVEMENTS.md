@@ -33,13 +33,6 @@ the grid aligned. Each image records where it came from.
 
 ## Block B — Catalog site
 
-### §CL9 Filters
-
-Three filters, in that order of importance: players (2, 3, 4, 5+), genre and screen
-type. Combinable, visible at all times on desktop and behind one button on phones, and
-always reversible with a single clear. A filter that hides its own state is a filter the
-user forgets to switch off before concluding the catalog is small.
-
 ### §CL10 Sorting
 
 Alphabetical by default, because it is the order a person can predict. Beyond it, newest

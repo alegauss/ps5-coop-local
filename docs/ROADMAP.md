@@ -9,10 +9,9 @@
 
 ## Block B — Catalog site
 
-- 📋 **CL9** (deps: CL3 ⏳, CL4 ⏳) **there is no way to filter by player count, genre or screen type** — The real question is what four of us can play tonight, and the grid cannot answer it. → §CL9
 - 📋 **CL10** (deps: CL7 ✅) **the grid has no ordering: not alphabetical, not by year, not by player count** — A fixed order buries the recent releases and forces a full sweep to compare. → §CL10
 - 📋 **CL11** (deps: CL3 ⏳) **opening a game leads nowhere: no detail view with its coop mode and the list's caveats** — Caveats like Zombies-only or split-screen-only decide the purchase and are lost today. → §CL11
-- 📋 **CL12** (deps: CL9) **the page never says how many games exist, or how many survived the current filter** — Without a count the user cannot tell whether a filter worked or quietly broke. → §CL12
+- 📋 **CL12** (deps: CL9 ✅) **the page never says how many games exist, or how many survived the current filter** — Without a count the user cannot tell whether a filter worked or quietly broke. → §CL12
 - 📋 **CL13** (deps: CL7 ✅) **the layout is unverified on phones, which is where the list gets read in front of the TV** — The lookup happens with a controller in hand and a phone beside it, not at a desk. → §CL13
 - 📋 **CL14** (deps: CL7 ✅) **without a mouse nothing works: search never takes focus and the grid cannot be traversed** — Keyboard and screen-reader access are the floor for any public page, not an extra. → §CL14
 

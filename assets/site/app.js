@@ -7,8 +7,15 @@
  * discovering the game you wanted was on page three, and the whole point of the
  * catalogue is seeing what is there.
  *
- * The filters are CL9, ordering CL10 and the detail view CL11, and each layers onto
- * one list rather than around a half-built one.
+ * Ordering is CL10 and the detail view CL11, and each layers onto one list rather
+ * than around a half-built one.
+ *
+ * The filters (CL9) are players, genre and screen, combinable and each reversible.
+ * Player count reads as "at least this many": the question the catalogue exists to
+ * answer is what four of us can play tonight, and an exact match would hide an
+ * eight-player game from that search. A game whose value is unknown is excluded
+ * while that filter is on rather than assumed to qualify -- CL3 left 58 blanks and
+ * a blank is not a claim.
  *
  * Search (CL8) matches canonical names and every alias CL2 and CL5 folded in, so a
  * title the source spelled differently still answers to what the source said. It
@@ -27,10 +34,16 @@ const DATASET = "data/games.json";
  *  characters nearly every title is one edit from the query. */
 const FUZZY_MIN = 4;
 
+/** Players, as "at least this many". 5 is the open-ended top of the range. */
+const PLAYER_STEPS = [2, 3, 4, 5];
+
 const grid = document.getElementById("grid");
 const status = document.getElementById("status");
 const form = document.getElementById("search");
 const field = document.getElementById("q");
+const panel = document.getElementById("filters");
+const toggle = document.getElementById("filters-toggle");
+const clear = document.getElementById("clear");
 
 /** Lowercase, strip accents, and reduce punctuation to spaces, so "Leao" finds
  *  "Leão" and "guacamelee" is one edit from "guacamalee" rather than two -- with
@@ -76,6 +89,32 @@ function searchKeys(game) {
   return [game.name, ...(game.aliases ?? [])].map(fold);
 }
 
+/** One radio chip. A real input, so a group is arrow-key navigable and reaches a
+ *  screen reader as a group, without this file reimplementing either. */
+function chip(group, value, label, checked) {
+  const wrap = document.createElement("label");
+  wrap.className = "chip";
+
+  const input = document.createElement("input");
+  input.type = "radio";
+  input.name = group;
+  input.value = value;
+  input.checked = checked;
+
+  const text = document.createElement("span");
+  text.textContent = label;
+
+  wrap.append(input, text);
+  return wrap;
+}
+
+function fillChips(node, group, options, active) {
+  node.replaceChildren(
+    chip(group, "", "Any", !active),
+    ...options.map(([value, label]) => chip(group, value, label, active === value)),
+  );
+}
+
 function containsQuery(game, query) {
   return game.keys.some((key) => key.includes(query));
 }
@@ -90,6 +129,16 @@ function nearQuery(game, query) {
   );
 }
 
+function passesFilters(game, state) {
+  // An unknown value never satisfies a filter. CL3 and CL4 left blanks on purpose,
+  // and treating one as a match would put a game on screen on the strength of a
+  // fact nobody established.
+  if (state.players && !(game.max_players >= Number(state.players))) return false;
+  if (state.genre && game.genre !== state.genre) return false;
+  if (state.screen && game.screen !== state.screen) return false;
+  return true;
+}
+
 /** Typo tolerance is a fallback, not a widening. Run alongside the literal match
  *  it drags in neighbours -- "leao" would return the LEGO titles next to the one
  *  game actually spelled Leão -- so it only speaks when nothing matched at all. */
@@ -98,6 +147,10 @@ function search(games, query) {
   const found = games.filter((game) => containsQuery(game, query));
   if (found.length > 0 || query.length < FUZZY_MIN) return found;
   return games.filter((game) => nearQuery(game, query));
+}
+
+function select(games, state) {
+  return search(games, state.q).filter((game) => passesFilters(game, state));
 }
 
 /** Build one card. Kept as DOM calls rather than innerHTML so a game whose title
@@ -137,10 +190,12 @@ function render(games) {
 
 /** Keep the address bar in step without pushing a history entry per keystroke,
  *  which would make Back walk the query backwards one letter at a time. */
-function syncUrl(query) {
+function syncUrl(state) {
   const url = new URL(window.location.href);
-  if (query) url.searchParams.set("q", query);
-  else url.searchParams.delete("q");
+  for (const key of ["q", "players", "genre", "screen"]) {
+    if (state[key]) url.searchParams.set(key, state[key]);
+    else url.searchParams.delete(key);
+  }
   window.history.replaceState(null, "", url);
 }
 
@@ -174,19 +229,87 @@ async function main() {
 
   for (const game of games) game.keys = searchKeys(game);
 
-  const apply = (raw) => {
-    const query = fold(raw);
-    render(search(games, query));
-    syncUrl(query);
+  const params = new URL(window.location.href).searchParams;
+  const state = {
+    q: fold(params.get("q") ?? ""),
+    players: params.get("players") ?? "",
+    genre: params.get("genre") ?? "",
+    screen: params.get("screen") ?? "",
   };
 
-  // A link arriving with ?q= opens already filtered.
-  field.value = new URL(window.location.href).searchParams.get("q") ?? "";
-  apply(field.value);
+  // Offered from what the data actually holds, so a genre nobody has assigned
+  // never appears as a filter that can only return nothing.
+  const present = (key) =>
+    [...new Set(games.map((game) => game[key]).filter(Boolean))].sort();
 
-  field.addEventListener("input", () => apply(field.value));
+  const draw = () => {
+    fillChips(
+      document.getElementById("chips-players"),
+      "players",
+      PLAYER_STEPS.map((n) => [String(n), n === 5 ? "5+" : `${n}+`]),
+      state.players,
+    );
+    fillChips(
+      document.getElementById("chips-genre"),
+      "genre",
+      present("genre").map((g) => [g, g.replace(/-/g, " ")]),
+      state.genre,
+    );
+    fillChips(
+      document.getElementById("chips-screen"),
+      "screen",
+      present("screen").map((s) => [s, s]),
+      state.screen,
+    );
+  };
+
+  const apply = () => {
+    render(select(games, state));
+    syncUrl(state);
+    const active = ["players", "genre", "screen"].filter((k) => state[k]).length;
+    clear.hidden = active === 0 && !state.q;
+    toggle.textContent = active ? `Filters (${active})` : "Filters";
+  };
+
+  field.value = params.get("q") ?? "";
+  draw();
+  apply();
+
+  field.addEventListener("input", () => {
+    state.q = fold(field.value);
+    apply();
+  });
   // No submit button, so Enter must not reload the page and lose the filter.
   form.addEventListener("submit", (event) => event.preventDefault());
+
+  panel.addEventListener("change", (event) => {
+    const input = event.target;
+    if (!(input instanceof HTMLInputElement)) return;
+    state[input.name] = input.value;
+    apply();
+  });
+
+  clear.addEventListener("click", () => {
+    state.q = "";
+    state.players = state.genre = state.screen = "";
+    field.value = "";
+    draw();
+    apply();
+  });
+
+  // Collapsed by default only where the media query hides the panel; on desktop
+  // the attribute is never set, so the filters stay visible at all times.
+  const phone = window.matchMedia("(max-width: 640px)");
+  const collapse = () => {
+    panel.hidden = phone.matches;
+    toggle.setAttribute("aria-expanded", String(!phone.matches));
+  };
+  collapse();
+  phone.addEventListener("change", collapse);
+  toggle.addEventListener("click", () => {
+    panel.hidden = !panel.hidden;
+    toggle.setAttribute("aria-expanded", String(!panel.hidden));
+  });
 }
 
 main();

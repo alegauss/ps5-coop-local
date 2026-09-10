@@ -118,3 +118,123 @@ body {
   outline: 2px solid #6ea8fe;
   outline-offset: 2px;
 }
+
+/* Filters (CL9).
+ *
+ * Every active choice stays on screen. A filter that hides its own state is one
+ * the user forgets to switch off before concluding the catalogue is small.
+ */
+
+.filters {
+  margin-top: clamp(14px, 2.5vw, 20px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(12px, 2vw, 28px);
+  align-items: flex-start;
+}
+
+.filters__group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0; /* a fieldset will not shrink below its content without this */
+}
+
+.filters__legend {
+  padding: 0;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chip {
+  position: relative;
+}
+
+/* The radio itself is the control: it stays focusable and arrow-key navigable,
+ * and only its painted box is replaced. Nothing here is a div pretending. */
+.chip input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.chip span {
+  display: block;
+  padding: 6px 11px;
+  border: 1px solid #333944;
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.chip input:checked + span {
+  border-color: #6ea8fe;
+  background: #21324d;
+  color: var(--text);
+}
+
+.chip input:focus-visible + span {
+  outline: 2px solid #6ea8fe;
+  outline-offset: 2px;
+}
+
+.filters__clear {
+  align-self: flex-end;
+  padding: 6px 12px;
+  border: 1px solid #333944;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.filters__clear:hover {
+  color: var(--text);
+  border-color: #6ea8fe;
+}
+
+.filters__toggle {
+  display: none;
+}
+
+/* On a phone the three groups would push the grid off the screen, so they fold
+ * behind one button -- but the button says how many are active, so the state is
+ * never hidden even when the controls are. */
+@media (max-width: 640px) {
+  .filters__toggle {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 8px 14px;
+    border: 1px solid #333944;
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .filters[hidden] {
+    display: none;
+  }
+}
