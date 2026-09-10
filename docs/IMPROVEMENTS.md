@@ -33,13 +33,6 @@ the grid aligned. Each image records where it came from.
 
 ## Block B — Catalog site
 
-### §CL13 Phone reading
-
-Two cover columns on a phone, search pinned to the top while scrolling, filters in a
-sheet that rises from the bottom. Touch targets at 44 pixels, no information carried by
-hover, and the detail panel taking the full screen. This is the primary device, not the
-adaptation.
-
 ### §CL14 Keyboard access
 
 Focus order following the reading order, a focus ring visible against the dark ground,

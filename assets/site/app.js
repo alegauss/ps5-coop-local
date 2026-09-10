@@ -467,6 +467,18 @@ async function main() {
   toggle.addEventListener("click", () => {
     panel.hidden = !panel.hidden;
     toggle.setAttribute("aria-expanded", String(!panel.hidden));
+    // The sheet covers the thumb's half of the screen, so it has to be
+    // dismissable without hunting for the button that opened it.
+    if (!panel.hidden) panel.querySelector("input")?.focus();
+  });
+
+  // Escape closes the sheet, matching the detail panel rather than being the one
+  // overlay on the page that traps you.
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || panel.hidden || !phone.matches) return;
+    panel.hidden = true;
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.focus();
   });
 }
 

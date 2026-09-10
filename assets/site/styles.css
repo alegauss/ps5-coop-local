@@ -385,3 +385,96 @@ body {
   font-size: 0.85rem;
   font-variant-numeric: tabular-nums;
 }
+
+/* Phone reading (CL13).
+ *
+ * This is the primary device, not the adaptation: the lookup happens with a
+ * controller in one hand and a phone in the other, in front of the TV.
+ *
+ * Nothing above is hover-dependent, which matters here -- a touch screen has no
+ * hover, so any fact carried by it would simply not exist on this device.
+ */
+
+@media (max-width: 640px) {
+  /* Search stays reachable through a 184-card scroll, so finding the next game
+   * does not mean scrolling back to the top first. */
+  .search {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    margin: 0 calc(-1 * clamp(16px, 4vw, 40px));
+    padding: 10px clamp(16px, 4vw, 40px);
+    background: var(--bg);
+  }
+
+  .search__label {
+    /* Visible to a screen reader, but the placeholder already labels the field
+     * for a sighted reader and the sticky bar has no room for both. */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .search__input,
+  .filters__toggle {
+    min-height: 44px;
+  }
+
+  /* A sheet that rises from the bottom, which is where a thumb is. */
+  .filters {
+    position: fixed;
+    inset: auto 0 0 0;
+    z-index: 5;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin: 0;
+    padding: 18px clamp(16px, 4vw, 40px) calc(18px + env(safe-area-inset-bottom));
+    border-top: 1px solid #2a2f38;
+    border-radius: 16px 16px 0 0;
+    background: var(--surface);
+    box-shadow: 0 -12px 32px rgb(0 0 0 / 0.45);
+  }
+
+  .filters::before {
+    content: "";
+    display: block;
+    width: 36px;
+    height: 4px;
+    margin: -6px auto 14px;
+    border-radius: 999px;
+    background: #3d4450;
+  }
+
+  .chip span,
+  .sort,
+  .filters__clear {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+
+  .card__open {
+    /* The whole card is already far taller than 44px; this guarantees it even if
+     * a future cover ratio shrinks. */
+    min-height: 44px;
+  }
+
+  /* Full screen, because 380px of panel over a 390px phone is not a side panel,
+   * it is a broken one. */
+  .detail {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    border-left: 0;
+  }
+
+  .detail__close {
+    width: 44px;
+    height: 44px;
+  }
+}
