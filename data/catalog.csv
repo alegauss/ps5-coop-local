@@ -1,7 +1,10 @@
 # Grouping axes, one row per game id (CL4). Blank is not yet established, never a claim.
 #
-# genre      one of: beat-em-up platformer party shooter rpg sports racing puzzle survival fighting
-#            A closed vocabulary on purpose: thirty labels holding one game each filter nothing.
+# genre      one of: beat-em-up platformer party shooter rpg sports racing puzzle survival
+#            fighting adventure simulation
+#            A closed vocabulary on purpose: thirty labels holding one game each filter
+#            nothing. Adding one is CL23's bar: count what moves to it first. "adventure"
+#            took four, and the interactive dramas it took were mis-filed as survival.
 # year       the year the game came out -- the product this row names, in its earliest
 #            form. Cel Damage HD is 2014 and not 2001; Repentance is 2021 and not 2014.
 #            It was the PS5 release year until CL4, which is why it sat blank on all 184:
@@ -11,12 +14,12 @@
 #            for; the rest are filled here by hand. build_dataset.py prints what is left.
 # publisher  the label on the store page.
 id,genre,year,publisher
-a-way-out,,2018,Electronic Arts
+a-way-out,adventure,2018,Electronic Arts
 aegis-defenders,platformer,2018,Humble Bundle
 aew-fight-forever,sports,2023,THQ Nordic
 alienation,shooter,2016,Sony Interactive Entertainment
-arcade-paradise,,2022,Wired Productions
-as-dusk-falls,survival,2022,Xbox Game Studios
+arcade-paradise,simulation,2022,Wired Productions
+as-dusk-falls,adventure,2022,Xbox Game Studios
 balan-wonderworld,platformer,2021,Square Enix
 baldurs-gate-3,rpg,2023,Larian Studios
 biped,platformer,2020,META Publishing
@@ -33,7 +36,7 @@ chicory-a-colorful-tale,puzzle,2021,Finji
 children-of-morta,rpg,2019,11 bit studios
 contra-operation-galuga,shooter,2024,Konami
 contra-rogue-corps,shooter,2019,Konami
-crosskrush,,2020,Ratalaika Games
+crosskrush,puzzle,2020,Ratalaika Games
 cuphead,platformer,2017,Studio MDHR
 dandy-randy-dx,platformer,2022,Ratalaika Games
 darksiders-genesis,rpg,2019,THQ Nordic
@@ -142,7 +145,7 @@ sonic-superstars,platformer,2023,SEGA
 spelunky,platformer,2013,Mossmouth
 spelunky-2,platformer,2020,Mossmouth
 spidersaurs,shooter,2022,WayForward
-stardew-valley,survival,2016,ConcernedApe
+stardew-valley,simulation,2016,ConcernedApe
 steredenn-binary-stars,shooter,2015,Pixelnest Studio
 street-fighter-v-champion-edition,fighting,2020,Capcom
 streets-of-rage-4,beat-em-up,2020,Dotemu
@@ -151,11 +154,11 @@ super-bomberman-r,fighting,2017,Konami
 tetris-effect,puzzle,2021,Enhance
 the-angry-4,party,2021,4 Gladiators
 the-binding-of-isaac-repentance,rpg,2021,Nicalis
-the-dark-pictures-anthology-house-of-ashes,survival,2021,Bandai Namco Entertainment
-the-house-of-the-dead-remake,survival,2022,Forever Entertainment
+the-dark-pictures-anthology-house-of-ashes,adventure,2021,Bandai Namco Entertainment
+the-house-of-the-dead-remake,shooter,2022,Forever Entertainment
 the-king-of-fighters-xv,fighting,2022,SNK
 the-last-oricru,rpg,2022,Prime Matter
-the-quarry,survival,2022,2K
+the-quarry,adventure,2022,2K
 tiny-tinas-wonderlands,shooter,2022,2K
 tiny-troopers-global-ops,shooter,2023,Wired Productions
 tmnt-the-cowabunga-collection,beat-em-up,2022,Konami

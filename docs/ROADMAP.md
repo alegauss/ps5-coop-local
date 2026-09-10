@@ -2,12 +2,13 @@
 
 ## Block A — Game data
 
-- ⏳ **CL4** (deps: CL23) **games carry no genre, year or publisher, so there is no axis to group the grid by** — 5 years, 3 genres and 2 publishers are open; the genres are the three CL23 has to label, and the rest are fields no listing checked here answers. → §CL4
-- 📋 **CL23** (deps: —) **three real games fit none of the ten genre labels, so the grid leaves them out of every filter** — A Way Out is a coop cinematic adventure and Arcade Paradise an arcade management sim; calling either a platformer files it where nobody would look for it. → §CL23
+- ⏳ **CL4** (deps: CL23 ✅) **games carry no genre, year or publisher, so there is no axis to group the grid by** — Genre is done, but 5 years and 2 publishers are open: fields no listing checked here answers, on titles Steam does not carry. → §CL4
 
 ## Block B — Catalog site
 
 ## Block C — Publishing and docs
+
+- 📋 **CL24** (deps: —) **CI validates without --strict, so a title added with a blank field publishes as a hole** — The switch has existed since CL21 and nothing runs it, one field is already blank, and a null field makes a game vanish from every filtered view without saying so. → §CL24
 
 ## Block D — Visual design and polish
 

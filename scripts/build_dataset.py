@@ -116,10 +116,13 @@ SCHEMA_VERSION = 1
 GENERATED_COVER = "assets/covers/{id}.svg"
 
 # One genre per game, closed on purpose (CL4): an open vocabulary becomes thirty
-# labels holding one game each, which filters nothing.
+# labels holding one game each, which filters nothing. Twelve, not the original ten:
+# CL23 added the last two only after counting what would move to them, because a
+# label that holds one game is the failure this set is closed to avoid.
 GENRES = {
     "beat-em-up", "platformer", "party", "shooter", "rpg",
     "sports", "racing", "puzzle", "survival", "fighting",
+    "adventure", "simulation",
 }
 
 # The couch-coop vocabulary (CL3). A value outside these sets is a typo in the

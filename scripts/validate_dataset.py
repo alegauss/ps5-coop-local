@@ -43,9 +43,12 @@ REQUIRED = ("id", "name", "cover")
 # Present once the curation behind them is finished; see --strict.
 COMPLETENESS = ("max_players", "screen", "scope", "genre")
 
+# Kept in step with GENRES in build_dataset.py on purpose: the builder refuses a typo
+# on the way in, and this refuses one that reached the committed file some other way.
 GENRES = {
     "beat-em-up", "platformer", "party", "shooter", "rpg",
     "sports", "racing", "puzzle", "survival", "fighting",
+    "adventure", "simulation",
 }
 SCREENS = {"split", "shared", "pass"}
 SCOPES = {"campaign", "side", "versus"}
