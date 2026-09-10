@@ -12,9 +12,6 @@ What it does NOT do
 -------------------
 The conversion is mechanical on purpose. It parses; it does not curate:
 
-* Collection names survive it (CL5). "Trine Series" and "Bleed 1 e 2" name a set
-  rather than a product, and picking the canonical title is a judgement about the
-  PSN catalog that this script has no way to make.
 * ``cover`` is emitted as null (CL6). The schema carries it from the first commit
   so the readers can be written against a stable shape, but a value invented here
   would be a guess wearing the costume of data.
@@ -59,6 +56,19 @@ which has no PS5 release date to carry; the column stays so the answer has somew
 to land. And a handful of titles have no genre because the ten labels have no honest
 home for them: "A Way Out" is a co-op cinematic adventure, and calling it a
 platformer to avoid a blank would put it under a filter nobody would find it in.
+
+Canonical names (CL5)
+---------------------
+About a dozen source lines name a franchise or a bundle rather than a product, and a
+non-canonical name matches no cover, no store listing and nothing the user types.
+``data/canonical.csv`` resolves them: a rename recomputes the id from the new title,
+and a drop removes a line whose game exists on PS5 only inside an emulation
+collection.
+
+The source spelling always survives as an alias -- "King of Fighters" is what
+somebody will type long after the record says The King of Fighters XV. Where the
+canonical title already has its own entry, the two arrive at the same id and the
+reconciliation above folds them, so this file never has to know which case it is in.
 """
 
 from __future__ import annotations
@@ -75,6 +85,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "data" / "source-list.txt"
 COOP = ROOT / "data" / "coop.csv"
 CATALOG = ROOT / "data" / "catalog.csv"
+CANONICAL = ROOT / "data" / "canonical.csv"
 TARGET = ROOT / "data" / "games.json"
 
 SCHEMA_VERSION = 1
@@ -129,6 +140,55 @@ def read_rows(path: Path) -> list[dict]:
         if not line.lstrip().startswith("#")
     )
     return list(csv.DictReader(text.splitlines()))
+
+
+def read_canonical(path: Path) -> dict[str, dict]:
+    """The franchise-and-bundle rules, keyed by the id the raw source line derives."""
+    rules: dict[str, dict] = {}
+    for row in read_rows(path):
+        game_id = (row.get("id") or "").strip()
+        if not game_id:
+            continue
+        action = (row.get("action") or "").strip()
+        value = (row.get("value") or "").strip()
+        if action not in {"rename", "drop"}:
+            raise ValueError(f"{path.name}: {game_id} has action {action!r}, not rename or drop")
+        if action == "rename" and not value:
+            raise ValueError(f"{path.name}: {game_id} is a rename with no title to rename to")
+        if action == "drop" and value:
+            raise ValueError(f"{path.name}: {game_id} is a drop and cannot carry a title")
+        rules[game_id] = {"action": action, "value": value}
+    return rules
+
+
+def apply_canonical(games: list[dict], rules: dict[str, dict]) -> list[dict]:
+    """Resolve franchise names to products, before anything is reconciled.
+
+    A rename recomputes the id, because the id is derived from the title and nothing
+    else. The spelling the source used stays as an alias: "King of Fighters" is what
+    somebody will type even once the record says The King of Fighters XV. Where the
+    canonical title is already its own entry the two now share an id, and the
+    reconciliation that follows folds them like any other pair.
+    """
+    unknown = sorted(set(rules) - {g["id"] for g in games})
+    if unknown:
+        raise KeyError(f"{CANONICAL.name} names id(s) the source does not have: {unknown}")
+
+    resolved = []
+    for game in games:
+        rule = rules.get(game["id"])
+        if rule is None:
+            resolved.append(game)
+            continue
+        if rule["action"] == "drop":
+            continue
+        was = game["name"]
+        game["name"] = rule["value"]
+        game["id"] = slugify(rule["value"])
+        if was != game["name"] and was not in game["aliases"]:
+            game["aliases"].append(was)
+        resolved.append(game)
+    return resolved
 
 
 def read_catalog(path: Path) -> dict[str, dict]:
@@ -259,7 +319,8 @@ def read_entries(text: str) -> list[str]:
 
 
 def build(text: str) -> dict:
-    games = reconcile([parse_line(entry) for entry in read_entries(text)])
+    parsed = [parse_line(entry) for entry in read_entries(text)]
+    games = reconcile(apply_canonical(parsed, read_canonical(CANONICAL)))
 
     ids = {g["id"] for g in games}
     for path, reader in ((COOP, read_coop), (CATALOG, read_catalog)):
@@ -295,12 +356,15 @@ def main() -> int:
         f"{TARGET.relative_to(ROOT).as_posix()}",
         file=sys.stderr,
     )
-    # An exact repeat contributes no alias, so the two are counted apart.
-    aliased = sum(len(g["aliases"]) for g in merged)
+    # Three different things remove or rewrite a line, and lumping them together
+    # hides which one moved: a drop deletes a record, a fold merges two, a rename
+    # leaves the count alone and only changes what the record is called.
+    rules = read_canonical(CANONICAL)
+    dropped = sum(1 for r in rules.values() if r["action"] == "drop")
     print(
-        f"build-dataset: {entries - dataset['count']} line(s) folded -- "
-        f"{entries - dataset['count'] - aliased} exact repeat(s), "
-        f"{aliased} under another name",
+        f"build-dataset: {dropped} dropped, "
+        f"{entries - dropped - dataset['count']} folded, "
+        f"{sum(1 for r in rules.values() if r['action'] == 'rename')} renamed",
         file=sys.stderr,
     )
     for game in sorted(merged, key=lambda g: g["id"]):

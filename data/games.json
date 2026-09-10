@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "data/source-list.txt",
-  "count": 188,
+  "count": 184,
   "games": [
     {
       "id": "a-way-out",
@@ -158,27 +158,31 @@
       "source_note": null
     },
     {
-      "id": "bleed-1-e-2",
-      "name": "Bleed 1 e 2",
-      "aliases": [],
+      "id": "bleed-2",
+      "name": "Bleed 2",
+      "aliases": [
+        "Bleed 1 e 2"
+      ],
       "source": "Bleed 1 e 2",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": null,
+      "max_players": 2,
+      "screen": "shared",
+      "scope": "campaign",
+      "genre": "shooter",
       "year": null,
       "publisher": null,
       "cover": null,
       "source_note": null
     },
     {
-      "id": "bomberman",
-      "name": "Bomberman",
-      "aliases": [],
+      "id": "super-bomberman-r",
+      "name": "Super Bomberman R",
+      "aliases": [
+        "Bomberman"
+      ],
       "source": "Bomberman",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
+      "max_players": 4,
+      "screen": "shared",
+      "scope": "versus",
       "genre": "fighting",
       "year": null,
       "publisher": null,
@@ -522,9 +526,11 @@
       "source_note": null
     },
     {
-      "id": "disney-classic-games-aladdin-e-o-rei-leao",
-      "name": "Disney Classic Games: Aladdin e O Rei Leão",
-      "aliases": [],
+      "id": "disney-classic-games-aladdin-and-the-lion-king",
+      "name": "Disney Classic Games: Aladdin and The Lion King",
+      "aliases": [
+        "Disney Classic Games: Aladdin e O Rei Leão"
+      ],
       "source": "Disney Classic Games: Aladdin e O Rei Leão",
       "max_players": null,
       "screen": null,
@@ -742,20 +748,6 @@
       "genre": "sports",
       "year": null,
       "publisher": "Electronic Arts",
-      "cover": null,
-      "source_note": null
-    },
-    {
-      "id": "final-fight",
-      "name": "Final Fight",
-      "aliases": [],
-      "source": "Final Fight",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": null,
-      "year": null,
-      "publisher": null,
       "cover": null,
       "source_note": null
     },
@@ -1082,14 +1074,16 @@
       "source_note": null
     },
     {
-      "id": "king-of-fighters",
-      "name": "King of Fighters",
-      "aliases": [],
+      "id": "the-king-of-fighters-xv",
+      "name": "The King of Fighters XV",
+      "aliases": [
+        "King of Fighters"
+      ],
       "source": "King of Fighters",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": null,
+      "max_players": 2,
+      "screen": "shared",
+      "scope": "versus",
+      "genre": "fighting",
       "year": null,
       "publisher": null,
       "cover": null,
@@ -2064,24 +2058,12 @@
       "source_note": null
     },
     {
-      "id": "street-fighter",
-      "name": "Street Fighter",
-      "aliases": [],
-      "source": "Street Fighter",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": null,
-      "year": null,
-      "publisher": null,
-      "cover": null,
-      "source_note": null
-    },
-    {
       "id": "street-fighter-v-champion-edition",
       "name": "Street Fighter V: Champion Edition",
-      "aliases": [],
-      "source": "Street Fighter V: Champion Edition",
+      "aliases": [
+        "Street Fighter"
+      ],
+      "source": "Street Fighter",
       "max_players": 2,
       "screen": "shared",
       "scope": "versus",
@@ -2176,26 +2158,13 @@
       "source_note": null
     },
     {
-      "id": "the-dark-pictures-anthology",
-      "name": "The Dark Pictures Anthology",
-      "aliases": [],
-      "source": "The Dark Pictures Anthology",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": null,
-      "year": null,
-      "publisher": null,
-      "cover": null,
-      "source_note": null
-    },
-    {
       "id": "the-dark-pictures-anthology-house-of-ashes",
       "name": "The Dark Pictures Anthology: House of Ashes",
       "aliases": [
-        "House of Ashes"
+        "House of Ashes",
+        "The Dark Pictures Anthology"
       ],
-      "source": "The Dark Pictures Anthology: House of Ashes",
+      "source": "The Dark Pictures Anthology",
       "max_players": 5,
       "screen": "pass",
       "scope": "campaign",
@@ -2320,9 +2289,11 @@
       "source_note": null
     },
     {
-      "id": "tony-hawks-pro-skater-1-e-2",
-      "name": "Tony Hawk's Pro Skater 1 e 2",
-      "aliases": [],
+      "id": "tony-hawks-pro-skater-1-2",
+      "name": "Tony Hawk's Pro Skater 1 + 2",
+      "aliases": [
+        "Tony Hawk's Pro Skater 1 e 2"
+      ],
       "source": "Tony Hawk's Pro Skater 1 e 2",
       "max_players": 2,
       "screen": "shared",
@@ -2364,7 +2335,9 @@
     {
       "id": "trine-4-the-nightmare-prince",
       "name": "Trine 4: The Nightmare Prince",
-      "aliases": [],
+      "aliases": [
+        "Trine Series"
+      ],
       "source": "Trine 4: The Nightmare Prince",
       "max_players": 4,
       "screen": "shared",
@@ -2372,20 +2345,6 @@
       "genre": "platformer",
       "year": null,
       "publisher": "Modus Games",
-      "cover": null,
-      "source_note": null
-    },
-    {
-      "id": "trine-series",
-      "name": "Trine Series",
-      "aliases": [],
-      "source": "Trine Series",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": null,
-      "year": null,
-      "publisher": null,
       "cover": null,
       "source_note": null
     },

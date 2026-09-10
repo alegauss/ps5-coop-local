@@ -4,7 +4,7 @@
 
 - ⏳ **CL3** (deps: —) **no title says how many players fit on the couch, or whether the screen splits or is shared** — 58 titles still carry no player count or screen mode, so the couch question stays unanswerable for them until somebody checks the store. → §CL3
 - ⏳ **CL4** (deps: —) **games carry no genre, year or publisher, so there is no axis to group the grid by** — 14 titles have no genre the ten labels honestly fit, year is blank throughout, and 111 titles still have no publisher. → §CL4
-- 📋 **CL5** (deps: —) **entries like 'Bleed 1 e 2', 'Trine Series' and 'King of Fighters' name a collection, not a game** — A non-canonical name matches no cover, no PSN listing and nothing the user types. → §CL5
+- ⏳ **CL5** (deps: —) **entries like 'Bleed 1 e 2', 'Trine Series' and 'King of Fighters' name a collection, not a game** — Diablo III e IV still names two products at once, and Minigolf, Runner and TOGETHER match no store listing anybody has checked yet. → §CL5
 - 📋 **CL6** (deps: —) **no game has cover art, and a game grid without art is a text table** — Cover art is how a player recognizes a title; without it there are 190 lines to read. → §CL6
 
 ## Block B — Catalog site
