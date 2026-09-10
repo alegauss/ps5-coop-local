@@ -2,12 +2,18 @@
 # id the raw source line derives. Each one resolves to the exact title sold on PS5, or
 # drops out where all that exists is emulation inside another collection.
 #
-# action  rename | drop
-# value   the canonical title, for rename; empty for drop
+# action  rename | drop | split
+# value   the canonical title, for rename; two or more titles separated by | for split;
+#         empty for drop
 #
 # A rename keeps the source spelling as an alias, so searching what the list said still
 # finds the game. Where the canonical title is already its own entry, the two collapse
 # on the id they now share and the reconciliation in this same script folds them.
+#
+# A split is the only rule that makes the catalogue longer: it is for a line that names
+# two products the store sells apart, where a rename would silently lose one of them.
+# Every half keeps the source line and its spelling, so each row still says where it
+# came from.
 id,action,value,reason
 bleed-1-e-2,rename,Bleed 2,Bleed has no local coop; Bleed 2 is the entry a couch list means
 king-of-fighters,rename,The King of Fighters XV,the franchise name resolves to the PS5 release
@@ -18,3 +24,12 @@ trine-series,rename,Trine 4: The Nightmare Prince,folds into the Trine this list
 tony-hawks-pro-skater-1-e-2,rename,Tony Hawk's Pro Skater 1 + 2,the store spells it with a plus
 disney-classic-games-aladdin-e-o-rei-leao,rename,Disney Classic Games: Aladdin and The Lion King,the store title is not translated
 final-fight,drop,,"on PS5 only inside emulation collections, never as its own product"
+diablo-iii-e-iv,split,Diablo III|Diablo IV,the store sells the two apart and both have local coop
+cell-damage-hd,rename,Cel Damage HD,the source misspells the store title with a double l
+magicka,rename,Magicka 2,"Magicka is PC-only, and the PlayStation product is the sequel"
+orcs-must-die,rename,Orcs Must Die! 3,"the franchise name, and 3 is the PS5 release this list is old enough to mean"
+snipperclips-cut-it-out-together,drop,,a Nintendo Switch exclusive that PS5 has never had
+ibb-obb,drop,,"a PS3 release, and a PS5 plays neither PS3 discs nor PS3 downloads"
+minigolf,drop,,"no PS5 listing carries this name, and 3D MiniGolf and Party Golf fit it equally"
+runner,drop,,"no PS5 listing carries this name, and SpeedRunners and Lode Runner Legacy fit it equally"
+together,drop,,no PS5 listing carries this name at all

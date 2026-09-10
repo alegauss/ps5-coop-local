@@ -32,7 +32,10 @@ worksheets that read it, so the original claim stays visible next to the correct
 
 Those 195 lines are not 195 products. Four repeat verbatim, three name one game under
 two names, and about a dozen name a franchise or a bundle rather than something the
-store sells. Resolving that leaves 184 entries.
+store sells — "King of Fighters" is a series, "Diablo III e IV" is two games at once,
+and "Minigolf" is a listing nobody has been able to find. Resolving that leaves 180
+entries: `data/canonical.csv` renames what has a real title, splits what names more
+than one product, and drops what PS5 does not sell, each with its reason on the row.
 
 ## Running it
 
@@ -84,9 +87,10 @@ query hash, which no script here can reach without driving a browser. Every row 
 `data/covers.csv` records the store page its image came from, which is why a file
 without a source is refused outright.
 
-148 of the 184 games have one. The other 36 are titles Steam does not carry, or
+148 of the 180 games have one. The other 32 are titles Steam does not carry, or
 carries without a portrait capsule — the annual sports games, the PlayStation
-exclusives, a few delisted ones — and they keep the generated typographic card.
+exclusives, Diablo III, a few delisted ones — and they keep the generated
+typographic card.
 That split is printed on every run, and the matching is deliberately strict: the
 store's name has to equal the catalogue's name once typography is stripped, or the
 id has to be listed in the script's `ALIASES` with a reason. A cover is what a

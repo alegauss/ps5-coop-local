@@ -124,12 +124,8 @@ REJECT = {
     # The Steam listing predates the Remastered SKU, and no listing checked here
     # states when the console remaster shipped.
     "castle-crashers-remastered": "the page is the 2012 Steam release of the original",
-    # PC-only Magicka. The PlayStation product is Magicka 2, and the entry still says
-    # Magicka, so the packshot on this row is the wrong game's art.
-    "magicka": "the page is Magicka, which PlayStation never had",
-    # The 2011 PC original, which is not what PS5 sells under this name either.
-    "orcs-must-die": "the page is the 2011 PC original",
-    # Steam Early Access, and CL5 has not established that a PS5 release shipped.
+    # It shipped on PS5, which CL5 confirmed, but the Steam listing is still Early
+    # Access and an Early Access date is not a release date.
     "samurai-gunn-2": "the page is an Early Access listing",
 }
 

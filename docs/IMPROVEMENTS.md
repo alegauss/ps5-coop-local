@@ -25,26 +25,6 @@ which is the same axis and is sourceable -- scripts/fetch_years.py reads the sto
 data/covers.csv already records, and names the seventeen where the listing's date is not
 the product's.
 
-### §CL5 Canonical names
-
-About a dozen entries name a franchise or a bundle instead of a product: Bleed 1 e 2,
-Trine Series, King of Fighters, Street Fighter, Bomberman, Final Fight, Minigolf, Quake,
-Spelunky. Each resolves to the exact title sold on PS5 — Trine 4, The King of Fighters
-XV — or drops out, when all that exists is emulation inside another collection.
-
-Four more surfaced while CL3 and CL4 checked listings, and they fail differently from a
-franchise name: Snipperclips is Switch-only and ibb & obb was a PS3 release, so neither
-is a PS5 product at all; Cell Damage HD misspells Cel Damage HD; and Magicka names a
-PC-only game whose PlayStation release is Magicka 2. Samurai Gunn 2 was announced for
-PS5 and no listing checked here confirms it shipped. A drop settles the first two, a
-rename the next two, and the last needs the store open before either.
-
-Two of them already cost more than a blank. fetch_covers.py matches on an exact name, so
-Magicka and Orcs Must Die! matched the PC games those names really are -- and the row
-now carries the wrong game's packshot, which is the loudest field there is. The name is
-the root cause in both cases, so the rename fixes the cover too, and covers.csv has to
-be re-fetched for whichever ids move.
-
 ### §CL22 Entries with no local coop
 
 CL3 went looking for player counts and found twelve entries where the answer is not a
@@ -65,8 +45,8 @@ data/source-list.txt keeps the original claim either way. What has to be settled
 is whether a silent drop is enough, because the next person to paste a list will propose
 Fall Guys again and a removal that records no reason teaches them nothing.
 
-Note Orcs Must Die! also names the series rather than a product, so CL5 reaches it too;
-the drop and the rename must not both fire on one line.
+CL5 has since renamed Orcs Must Die! to Orcs Must Die! 3, the id to drop, and confirmed
+Samurai Gunn 2 shipped on PS5. None of the twelve waits on a name.
 
 On ship: --recorded-in data/canonical.csv, plus a criterion naming the inclusion rule.
 

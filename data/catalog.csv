@@ -8,7 +8,7 @@
 #            most of this list is PS4 software played through back-compat and has no PS5
 #            date at all, and the site's "Newest first" sort had nothing to sort on.
 #            scripts/fetch_years.py fills what data/covers.csv already has a store page
-#            for; the rest are filled here by hand, and 14 are still open.
+#            for; the rest are filled here by hand. build_dataset.py prints what is left.
 # publisher  the label on the store page.
 id,genre,year,publisher
 a-way-out,,2018,Electronic Arts
@@ -29,7 +29,7 @@ call-of-duty-black-ops-cold-war,shooter,2020,Activision
 cant-drive-this,party,2021,Pixel Maniacs
 castle-crashers-remastered,beat-em-up,,The Behemoth
 catty-batty-the-spirit-guide,platformer,2021,Sometimes You
-cell-damage-hd,shooter,2014,Finish Line Games
+cel-damage-hd,shooter,2014,Finish Line Games
 chicory-a-colorful-tale,puzzle,2021,Finji
 children-of-morta,rpg,2019,11 bit studios
 contra-operation-galuga,shooter,2024,Konami
@@ -44,7 +44,8 @@ death-squared,party,2017,SMG Studio
 death-tales,puzzle,2020,Arcade Distillery
 degrees-of-separation,puzzle,2019,Modus Games
 demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles,fighting,2021,SEGA
-diablo-iii-e-iv,rpg,,Blizzard Entertainment
+diablo-iii,rpg,2012,Blizzard Entertainment
+diablo-iv,rpg,2023,Blizzard Entertainment
 die-for-valhalla,rpg,2018,Monster Couch
 dirt-5,racing,2020,Codemasters
 disney-classic-games-aladdin-and-the-lion-king,platformer,2019,Nighthawk Interactive
@@ -80,7 +81,6 @@ helldivers,shooter,2015,Sony Interactive Entertainment
 hot-wheels-unleashed,racing,2021,Milestone
 human-fall-flat,puzzle,2016,Curve Games
 hyper-light-drifter,rpg,2016,Heart Machine
-ibb-obb,platformer,2014,Sparpweed
 ice-cream-surfer,puzzle,,Eastasiasoft
 jitsu-squad,beat-em-up,2022,ININ Games
 jydge,shooter,2017,10tons
@@ -96,11 +96,10 @@ lovers-in-a-dangerous-spacetime,shooter,2015,Asteroid Base
 madden-nfl-21,sports,2020,Electronic Arts
 madden-nfl-22,sports,2021,Electronic Arts
 madden-nfl-23,sports,2022,Electronic Arts
-magicka,rpg,,Paradox Interactive
+magicka-2,rpg,2015,Paradox Interactive
 mereks-market,party,2021,Digerati
 mighty-goose,shooter,2021,Playism
 minecraft-dungeons,shooter,2020,Xbox Game Studios
-minigolf,sports,,
 mortal-kombat-11,fighting,2019,Warner Bros. Games
 mother-russia-bleeds,beat-em-up,2016,Devolver Digital
 moving-out,party,2020,Team17
@@ -114,7 +113,7 @@ nidhogg-2,fighting,2017,Messhof
 nine-parchments,rpg,2017,Frozenbyte
 nobody-saves-the-world,rpg,2022,DrinkBox Studios
 omega-strike,shooter,,Ratalaika Games
-orcs-must-die,shooter,,
+orcs-must-die-3,shooter,,Robot Entertainment
 out-of-space-couch-edition,party,2020,Behaviour Interactive
 outbreak-endless-nightmares,survival,2021,Dead Drop Studios
 outbreak-epidemic,survival,2020,Dead Drop Studios
@@ -137,7 +136,6 @@ rico,shooter,2019,Rising Star Games
 river-city-girls-2,beat-em-up,2022,WayForward
 rogue-legacy-2,rpg,2022,Cellar Door Games
 rugby-22,sports,2022,Nacon
-runner,,,
 sackboy-a-big-adventure,platformer,2020,Sony Interactive Entertainment
 salt-and-sacrifice,rpg,2022,Ska Studios
 salt-and-sanctuary,rpg,2016,Ska Studios
@@ -147,7 +145,6 @@ sea-of-stars,rpg,2023,Sabotage Studio
 secret-of-mana,rpg,2018,Square Enix
 shing,beat-em-up,2020,Mass Creation
 skeletal-avenger,rpg,2021,10tons
-snipperclips-cut-it-out-together,party,,
 sonic-origins-plus,platformer,2023,SEGA
 sonic-superstars,platformer,2023,SEGA
 spelunky,platformer,2013,Mossmouth
@@ -171,7 +168,6 @@ the-quarry,survival,2022,2K
 tiny-tinas-wonderlands,shooter,2022,2K
 tiny-troopers-global-ops,shooter,2023,Wired Productions
 tmnt-the-cowabunga-collection,beat-em-up,2022,Konami
-together,,,
 tony-hawks-pro-skater-1-2,sports,2020,Activision
 tools-up,party,2019,All in! Games
 tower-of-guns,shooter,2014,Grip Digital

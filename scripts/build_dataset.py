@@ -65,10 +65,12 @@ it a platformer to avoid a blank would put it under a filter nobody would find i
 Canonical names (CL5)
 ---------------------
 About a dozen source lines name a franchise or a bundle rather than a product, and a
-non-canonical name matches no cover, no store listing and nothing the user types.
-``data/canonical.csv`` resolves them: a rename recomputes the id from the new title,
-and a drop removes a line whose game exists on PS5 only inside an emulation
-collection.
+non-canonical name matches no cover, no store listing and nothing the user types --
+or worse, matches the wrong game's, which is how "Magicka" and "Orcs Must Die!" ended
+up wearing a PC game's packshot. ``data/canonical.csv`` resolves them with three
+actions: a rename recomputes the id from the new title, a drop removes a line whose
+product PS5 does not sell, and a split turns one line into the several products it
+names at once.
 
 The source spelling always survives as an alias -- "King of Fighters" is what
 somebody will type long after the record says The King of Fighters XV. Where the
@@ -148,6 +150,14 @@ def read_rows(path: Path) -> list[dict]:
     return list(csv.DictReader(text.splitlines()))
 
 
+ACTIONS = {"rename", "drop", "split"}
+
+# A split's titles, in one CSV field. A pipe rather than a comma because the field is
+# already inside a comma-separated file, and rather than a semicolon because a game
+# title can contain one.
+SPLIT_ON = "|"
+
+
 def read_canonical(path: Path) -> dict[str, dict]:
     """The franchise-and-bundle rules, keyed by the id the raw source line derives."""
     rules: dict[str, dict] = {}
@@ -157,13 +167,23 @@ def read_canonical(path: Path) -> dict[str, dict]:
             continue
         action = (row.get("action") or "").strip()
         value = (row.get("value") or "").strip()
-        if action not in {"rename", "drop"}:
-            raise ValueError(f"{path.name}: {game_id} has action {action!r}, not rename or drop")
+        if action not in ACTIONS:
+            raise ValueError(
+                f"{path.name}: {game_id} has action {action!r}, not one of {sorted(ACTIONS)}"
+            )
         if action == "rename" and not value:
             raise ValueError(f"{path.name}: {game_id} is a rename with no title to rename to")
         if action == "drop" and value:
             raise ValueError(f"{path.name}: {game_id} is a drop and cannot carry a title")
-        rules[game_id] = {"action": action, "value": value}
+
+        titles = [t.strip() for t in value.split(SPLIT_ON)] if action == "split" else []
+        if action == "split" and (len(titles) < 2 or not all(titles)):
+            raise ValueError(
+                f"{path.name}: {game_id} is a split and needs two or more titles "
+                f"separated by {SPLIT_ON!r}, got {value!r}"
+            )
+
+        rules[game_id] = {"action": action, "value": value, "titles": titles}
     return rules
 
 
@@ -175,6 +195,12 @@ def apply_canonical(games: list[dict], rules: dict[str, dict]) -> list[dict]:
     somebody will type even once the record says The King of Fighters XV. Where the
     canonical title is already its own entry the two now share an id, and the
     reconciliation that follows folds them like any other pair.
+
+    A split is the one rule that makes the catalogue longer. "Diablo III e IV" is not
+    a franchise name that resolves to one product: it is two products the store sells
+    apart, and neither a rename nor a drop can say so without losing one of them. Each
+    half becomes its own record, and both keep the source line and its spelling, so
+    the two rows still say where they came from.
     """
     unknown = sorted(set(rules) - {g["id"] for g in games})
     if unknown:
@@ -188,6 +214,9 @@ def apply_canonical(games: list[dict], rules: dict[str, dict]) -> list[dict]:
             continue
         if rule["action"] == "drop":
             continue
+        if rule["action"] == "split":
+            resolved.extend(divide(game, rule["titles"]))
+            continue
         was = game["name"]
         game["name"] = rule["value"]
         game["id"] = slugify(rule["value"])
@@ -195,6 +224,25 @@ def apply_canonical(games: list[dict], rules: dict[str, dict]) -> list[dict]:
             game["aliases"].append(was)
         resolved.append(game)
     return resolved
+
+
+def divide(game: dict, titles: list[str]) -> list[dict]:
+    """One record into several, one per title a split names.
+
+    The aliases are copied rather than shared: two records holding the same list
+    would have one fold's aliases turn up on the other, which is a bug that would
+    only show once two split halves were merged with something else.
+    """
+    halves = []
+    for title in titles:
+        half = dict(game)
+        half["aliases"] = list(game["aliases"])
+        half["name"] = title
+        half["id"] = slugify(title)
+        if game["name"] not in half["aliases"]:
+            half["aliases"].append(game["name"])
+        halves.append(half)
+    return halves
 
 
 def read_catalog(path: Path) -> dict[str, dict]:
@@ -398,15 +446,18 @@ def main() -> int:
         f"{TARGET.relative_to(ROOT).as_posix()}",
         file=sys.stderr,
     )
-    # Three different things remove or rewrite a line, and lumping them together
-    # hides which one moved: a drop deletes a record, a fold merges two, a rename
-    # leaves the count alone and only changes what the record is called.
+    # Four different things remove, add or rewrite a line, and lumping them together
+    # hides which one moved: a drop deletes a record, a fold merges two, a split turns
+    # one into several, and a rename leaves the count alone and only changes what the
+    # record is called.
     rules = read_canonical(CANONICAL)
     dropped = sum(1 for r in rules.values() if r["action"] == "drop")
+    renamed = sum(1 for r in rules.values() if r["action"] == "rename")
+    added = sum(len(r["titles"]) - 1 for r in rules.values() if r["action"] == "split")
     print(
         f"build-dataset: {dropped} dropped, "
-        f"{entries - dropped - dataset['count']} folded, "
-        f"{sum(1 for r in rules.values() if r['action'] == 'rename')} renamed",
+        f"{entries - dropped + added - dataset['count']} folded, "
+        f"{added} added by a split, {renamed} renamed",
         file=sys.stderr,
     )
     for game in sorted(merged, key=lambda g: g["id"]):

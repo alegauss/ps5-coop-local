@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "source": "data/source-list.txt",
-  "count": 184,
+  "count": 180,
   "games": [
     {
       "id": "a-way-out",
@@ -312,9 +312,11 @@
       "source_note": null
     },
     {
-      "id": "cell-damage-hd",
-      "name": "Cell Damage HD",
-      "aliases": [],
+      "id": "cel-damage-hd",
+      "name": "Cel Damage HD",
+      "aliases": [
+        "Cell Damage HD"
+      ],
       "source": "Cell Damage HD",
       "max_players": 4,
       "screen": "split",
@@ -322,7 +324,7 @@
       "genre": "shooter",
       "year": 2014,
       "publisher": "Finish Line Games",
-      "cover": "assets/covers/cell-damage-hd.svg",
+      "cover": "assets/covers/cel-damage-hd.svg",
       "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
@@ -552,19 +554,39 @@
       "source_note": null
     },
     {
-      "id": "diablo-iii-e-iv",
-      "name": "Diablo III e IV",
-      "aliases": [],
+      "id": "diablo-iii",
+      "name": "Diablo III",
+      "aliases": [
+        "Diablo III e IV"
+      ],
       "source": "Diablo III e IV",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
+      "max_players": 4,
+      "screen": "shared",
+      "scope": "campaign",
       "genre": "rpg",
-      "year": null,
+      "year": 2012,
       "publisher": "Blizzard Entertainment",
-      "cover": "assets/covers/diablo-iii-e-iv.svg",
+      "cover": "assets/covers/diablo-iii.svg",
       "cover_2x": null,
       "cover_source": "generated",
+      "source_note": null
+    },
+    {
+      "id": "diablo-iv",
+      "name": "Diablo IV",
+      "aliases": [
+        "Diablo III e IV"
+      ],
+      "source": "Diablo III e IV",
+      "max_players": 2,
+      "screen": "shared",
+      "scope": "campaign",
+      "genre": "rpg",
+      "year": 2023,
+      "publisher": "Blizzard Entertainment",
+      "cover": "assets/covers/diablo-iv.webp",
+      "cover_2x": "assets/covers/diablo-iv@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/2344520/",
       "source_note": null
     },
     {
@@ -1146,22 +1168,6 @@
       "source_note": null
     },
     {
-      "id": "ibb-obb",
-      "name": "Ibb & Obb",
-      "aliases": [],
-      "source": "Ibb & Obb",
-      "max_players": 2,
-      "screen": "split",
-      "scope": "campaign",
-      "genre": "platformer",
-      "year": 2014,
-      "publisher": "Sparpweed",
-      "cover": "assets/covers/ibb-obb.webp",
-      "cover_2x": "assets/covers/ibb-obb@2x.webp",
-      "cover_source": "https://store.steampowered.com/app/95400/",
-      "source_note": null
-    },
-    {
       "id": "jitsu-squad",
       "name": "Jitsu Squad",
       "aliases": [],
@@ -1356,19 +1362,21 @@
       "source_note": null
     },
     {
-      "id": "magicka",
-      "name": "Magicka",
-      "aliases": [],
+      "id": "magicka-2",
+      "name": "Magicka 2",
+      "aliases": [
+        "Magicka"
+      ],
       "source": "Magicka",
       "max_players": 4,
       "screen": "shared",
       "scope": "campaign",
       "genre": "rpg",
-      "year": null,
+      "year": 2015,
       "publisher": "Paradox Interactive",
-      "cover": "assets/covers/magicka.webp",
-      "cover_2x": "assets/covers/magicka@2x.webp",
-      "cover_source": "https://store.steampowered.com/app/42910/",
+      "cover": "assets/covers/magicka-2.webp",
+      "cover_2x": "assets/covers/magicka-2@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/238370/",
       "source_note": null
     },
     {
@@ -1465,22 +1473,6 @@
       "cover": "assets/covers/minecraft-dungeons.webp",
       "cover_2x": "assets/covers/minecraft-dungeons@2x.webp",
       "cover_source": "https://store.steampowered.com/app/1672970/",
-      "source_note": null
-    },
-    {
-      "id": "minigolf",
-      "name": "Minigolf",
-      "aliases": [],
-      "source": "Minigolf",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": "sports",
-      "year": null,
-      "publisher": null,
-      "cover": "assets/covers/minigolf.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
       "source_note": null
     },
     {
@@ -1692,19 +1684,21 @@
       "source_note": null
     },
     {
-      "id": "orcs-must-die",
-      "name": "Orcs Must Die!",
-      "aliases": [],
+      "id": "orcs-must-die-3",
+      "name": "Orcs Must Die! 3",
+      "aliases": [
+        "Orcs Must Die!"
+      ],
       "source": "Orcs Must Die!",
       "max_players": null,
       "screen": null,
       "scope": null,
       "genre": "shooter",
       "year": null,
-      "publisher": null,
-      "cover": "assets/covers/orcs-must-die.webp",
-      "cover_2x": "assets/covers/orcs-must-die@2x.webp",
-      "cover_source": "https://store.steampowered.com/app/102600/",
+      "publisher": "Robot Entertainment",
+      "cover": "assets/covers/orcs-must-die-3.webp",
+      "cover_2x": "assets/covers/orcs-must-die-3@2x.webp",
+      "cover_source": "https://store.steampowered.com/app/1522820/",
       "source_note": null
     },
     {
@@ -2046,22 +2040,6 @@
       "source_note": null
     },
     {
-      "id": "runner",
-      "name": "Runner",
-      "aliases": [],
-      "source": "Runner",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": null,
-      "year": null,
-      "publisher": null,
-      "cover": "assets/covers/runner.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
-      "source_note": null
-    },
-    {
       "id": "rugby-22",
       "name": "Rugby 22",
       "aliases": [],
@@ -2219,22 +2197,6 @@
       "cover": "assets/covers/skeletal-avenger.webp",
       "cover_2x": "assets/covers/skeletal-avenger@2x.webp",
       "cover_source": "https://store.steampowered.com/app/1277500/",
-      "source_note": null
-    },
-    {
-      "id": "snipperclips-cut-it-out-together",
-      "name": "Snipperclips - Cut it out, together!",
-      "aliases": [],
-      "source": "Snipperclips - Cut it out, together!",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": "party",
-      "year": null,
-      "publisher": null,
-      "cover": "assets/covers/snipperclips-cut-it-out-together.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
       "source_note": null
     },
     {
@@ -2578,22 +2540,6 @@
       "cover": "assets/covers/tmnt-the-cowabunga-collection.webp",
       "cover_2x": "assets/covers/tmnt-the-cowabunga-collection@2x.webp",
       "cover_source": "https://store.steampowered.com/app/1659600/",
-      "source_note": null
-    },
-    {
-      "id": "together",
-      "name": "TOGETHER",
-      "aliases": [],
-      "source": "TOGETHER",
-      "max_players": null,
-      "screen": null,
-      "scope": null,
-      "genre": null,
-      "year": null,
-      "publisher": null,
-      "cover": "assets/covers/together.svg",
-      "cover_2x": null,
-      "cover_source": "generated",
       "source_note": null
     },
     {

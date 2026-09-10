@@ -131,12 +131,8 @@ ALIASES = {
 REJECT = {
     # The couch list means Housemarque's PS4 shooter, not "Marsmare: Alienation".
     "alienation",
-    # CL5 has not resolved these to a single product yet, so there is nothing to
-    # look up: whatever a search returns would be a guess dressed as a fact.
-    "diablo-iii-e-iv",
-    "minigolf",
-    "runner",
-    "together",
+    # Battle.net only; Steam sells Diablo IV and has never sold III.
+    "diablo-iii",
     # Steam's "Omega Strikers" is a different game by a different studio.
     "omega-strike",
     # R Online was a delisted battle-royale spin-off, not Super Bomberman R.
