@@ -15,6 +15,7 @@
 - ✅ **CL8** **with nearly two hundred titles on one page, finding a game means scrolling or Ctrl+F** — Filters on every keystroke across names and aliases, folding case, accents and punctuation, tolerating one typo; the query lives in the URL (design recorded in `assets/site/app.js`).
 - ✅ **CL9** **there is no way to filter by player count, genre or screen type** — Players, genre and screen filter the grid together, each reversible, all three carried in the URL, and a game whose value is unknown never satisfies a filter (design recorded in `assets/site/app.js`).
 - ✅ **CL10** **the grid has no ordering: not alphabetical, not by year, not by player count** — Alphabetical by default and ignoring a leading article, plus newest first and most players first, with unknown values sorted last rather than as zero (design recorded in `assets/site/app.js`).
+- ✅ **CL11** **opening a game leads nowhere: no detail view with its coop mode and the list's caveats** — A side panel carries the cover, players, screen, scope and genre, and surfaces the source's caveat that Zombies or split screen is the only co-op (design recorded in `assets/site/app.js`).
 
 ## Block C — Publishing and docs
 

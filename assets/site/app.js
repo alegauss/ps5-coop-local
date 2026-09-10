@@ -7,8 +7,12 @@
  * discovering the game you wanted was on page three, and the whole point of the
  * catalogue is seeing what is there.
  *
- * The detail view is CL11, and it layers onto one list rather than around a
- * half-built one.
+ * The detail view (CL11) is a native <dialog> positioned as a side panel, so the
+ * grid stays behind it and Escape, the focus trap and the inert background come
+ * from the platform instead of from this file getting them subtly wrong. It is
+ * where the source list's parenthetical finally surfaces: that Call of Duty is
+ * local co-op only in Zombies, and WRC Generations only in split screen, is the
+ * fact that decides the purchase, and nothing else in the interface keeps it.
  *
  * Ordering (CL10) defaults to alphabetical, because it is the order a person can
  * predict, and it ignores a leading article so The Quarry sorts under Q instead of
@@ -56,6 +60,12 @@ const panel = document.getElementById("filters");
 const toggle = document.getElementById("filters-toggle");
 const clear = document.getElementById("clear");
 const sortField = document.getElementById("sort");
+const detail = document.getElementById("detail");
+const detailArt = document.getElementById("detail-art");
+const detailTitle = document.getElementById("detail-title");
+const detailFacts = document.getElementById("detail-facts");
+const detailNote = document.getElementById("detail-note");
+const detailClose = document.getElementById("detail-close");
 
 /** Lowercase, strip accents, and reduce punctuation to spaces, so "Leao" finds
  *  "Leão" and "guacamelee" is one edit from "guacamalee" rather than two -- with
@@ -197,6 +207,13 @@ function card(game) {
   const item = document.createElement("li");
   item.className = "card";
 
+  // A button, not a click handler on the li: the panel has to open from the
+  // keyboard too, and a button is already in the tab order and announces itself.
+  const open = document.createElement("button");
+  open.type = "button";
+  open.className = "card__open";
+  open.addEventListener("click", () => openDetail(game));
+
   const art = document.createElement("img");
   art.className = "card__art";
   art.src = game.cover;
@@ -214,8 +231,67 @@ function card(game) {
   name.className = "card__name";
   name.textContent = game.name;
 
-  item.append(art, name);
+  open.append(art, name);
+  item.append(open);
   return item;
+}
+
+const SCREEN_PROSE = {
+  split: "split screen",
+  shared: "one shared screen",
+  pass: "pass the controller",
+};
+
+const SCOPE_PROSE = {
+  campaign: "the full campaign",
+  side: "side modes only",
+  versus: "versus only",
+};
+
+/** Rows are added only where the value is known. An "unknown" row would fill the
+ *  panel with the fact that nobody has checked, which is not what the reader came
+ *  for -- the absence of the row already says it. */
+function facts(game) {
+  const rows = [
+    ["Players", game.max_players ? `up to ${game.max_players} on one console` : null],
+    ["Screen", SCREEN_PROSE[game.screen] ?? null],
+    ["Co-op covers", SCOPE_PROSE[game.scope] ?? null],
+    ["Genre", game.genre ? game.genre.replace(/-/g, " ") : null],
+    ["Released", game.year ? String(game.year) : null],
+    ["Publisher", game.publisher ?? null],
+    ["Also known as", game.aliases?.length ? game.aliases.join(", ") : null],
+  ];
+
+  const list = document.createDocumentFragment();
+  for (const [label, value] of rows) {
+    if (!value) continue;
+    const dt = document.createElement("dt");
+    dt.textContent = label;
+    const dd = document.createElement("dd");
+    dd.textContent = value;
+    list.append(dt, dd);
+  }
+  return list;
+}
+
+function openDetail(game) {
+  detailArt.src = game.cover;
+  detailTitle.textContent = game.name;
+  detailFacts.replaceChildren(facts(game));
+
+  if (game.source_note) {
+    const lead = document.createElement("em");
+    lead.textContent = "The list says";
+    // Quoted rather than rewritten: the note is the source's own words, often in
+    // Portuguese, and paraphrasing it would quietly restate somebody else's claim.
+    const body = document.createTextNode(`\u201c${game.source_note}\u201d`);
+    detailNote.replaceChildren(lead, body);
+    detailNote.hidden = false;
+  } else {
+    detailNote.hidden = true;
+  }
+
+  detail.showModal();
 }
 
 function render(games) {
@@ -351,6 +427,19 @@ async function main() {
 
   // Collapsed by default only where the media query hides the panel; on desktop
   // the attribute is never set, so the filters stay visible at all times.
+  detailClose.addEventListener("click", () => detail.close());
+  // Clicking the backdrop closes it. The dialog element is the full-height panel,
+  // so anything outside its box is backdrop.
+  detail.addEventListener("click", (event) => {
+    const box = detail.getBoundingClientRect();
+    const outside =
+      event.clientX < box.left ||
+      event.clientX > box.right ||
+      event.clientY < box.top ||
+      event.clientY > box.bottom;
+    if (outside) detail.close();
+  });
+
   const phone = window.matchMedia("(max-width: 640px)");
   const collapse = () => {
     panel.hidden = phone.matches;
