@@ -17,8 +17,6 @@
 
 ## Block D — Visual design and polish
 
-- 📋 **CL18** (deps: CL6 ⏳) **loading all 190 covers at once delays the first paint of the grid** — A grid that waits for its images wastes the seconds the user could have been reading. → §CL18
-
 ## Done when — Block A
 
 - **Every entry is a real PS5 product** No duplicate id, no franchise name standing in

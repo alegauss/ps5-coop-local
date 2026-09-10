@@ -15,6 +15,7 @@
       "year": null,
       "publisher": "Electronic Arts",
       "cover": "assets/covers/a-way-out.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -30,6 +31,7 @@
       "year": null,
       "publisher": "THQ Nordic",
       "cover": "assets/covers/aew-fight-forever.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -45,6 +47,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/aegis-defenders.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -60,6 +63,7 @@
       "year": null,
       "publisher": "Sony Interactive Entertainment",
       "cover": "assets/covers/alienation.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -75,6 +79,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/arcade-paradise.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -90,6 +95,7 @@
       "year": null,
       "publisher": "Xbox Game Studios",
       "cover": "assets/covers/as-dusk-falls.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -105,6 +111,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/astroneer.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -120,6 +127,7 @@
       "year": null,
       "publisher": "Larian Studios",
       "cover": "assets/covers/baldurs-gate-3.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": "BG3"
     },
@@ -135,6 +143,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/balan-wonderworld.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -150,6 +159,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/biped.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -165,6 +175,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/blackwind.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -182,6 +193,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/bleed-2.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -199,6 +211,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/super-bomberman-r.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -214,6 +227,7 @@
       "year": null,
       "publisher": "2K",
       "cover": "assets/covers/borderlands-3.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -229,6 +243,7 @@
       "year": null,
       "publisher": "Devolver Digital",
       "cover": "assets/covers/broforce.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -244,6 +259,7 @@
       "year": null,
       "publisher": "Activision",
       "cover": "assets/covers/call-of-duty-black-ops-cold-war.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": "modo Zombies"
     },
@@ -259,6 +275,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/cant-drive-this.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -274,6 +291,7 @@
       "year": null,
       "publisher": "The Behemoth",
       "cover": "assets/covers/castle-crashers-remastered.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -289,6 +307,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/catty-batty-the-spirit-guide.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -304,6 +323,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/cell-damage-hd.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -319,6 +339,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/children-of-morta.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -334,6 +355,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/chicory-a-colorful-tale.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -349,6 +371,7 @@
       "year": null,
       "publisher": "Konami",
       "cover": "assets/covers/contra-operation-galuga.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -364,6 +387,7 @@
       "year": null,
       "publisher": "Konami",
       "cover": "assets/covers/contra-rogue-corps.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -379,6 +403,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/crosskrush.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -394,6 +419,7 @@
       "year": null,
       "publisher": "Studio MDHR",
       "cover": "assets/covers/cuphead.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -409,6 +435,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/dandy-randy-dx.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -424,6 +451,7 @@
       "year": null,
       "publisher": "THQ Nordic",
       "cover": "assets/covers/darksiders-genesis.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -439,6 +467,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/dcs-justice-league-cosmic-chaos.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -454,6 +483,7 @@
       "year": null,
       "publisher": "Sony Interactive Entertainment",
       "cover": "assets/covers/dead-nation.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -469,6 +499,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/death-squared.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -484,6 +515,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/death-tales.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -499,6 +531,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/degrees-of-separation.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -514,6 +547,7 @@
       "year": null,
       "publisher": "SEGA",
       "cover": "assets/covers/demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -529,6 +563,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/diablo-iii-e-iv.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -544,6 +579,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/die-for-valhalla.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -559,6 +595,7 @@
       "year": null,
       "publisher": "Codemasters",
       "cover": "assets/covers/dirt-5.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -576,6 +613,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/disney-classic-games-aladdin-and-the-lion-king.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -591,6 +629,7 @@
       "year": null,
       "publisher": "Larian Studios",
       "cover": "assets/covers/divinity-original-sin.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -606,6 +645,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/dodgeball-academia.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -621,6 +661,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/dont-starve-together.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -636,6 +677,7 @@
       "year": null,
       "publisher": "Modus Games",
       "cover": "assets/covers/double-dragon-gaiden-rise-of-the-dragons.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -651,6 +693,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/dungeon-defenders-awakened.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -666,6 +709,7 @@
       "year": null,
       "publisher": "Electronic Arts",
       "cover": "assets/covers/ea-sports-ufc-4.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -681,6 +725,7 @@
       "year": null,
       "publisher": "D3 Publisher",
       "cover": "assets/covers/earth-defense-force-6.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -696,6 +741,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/eight-dragons.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -711,6 +757,7 @@
       "year": null,
       "publisher": "Devolver Digital",
       "cover": "assets/covers/enter-the-gungeon.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -726,6 +773,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/escape-academy.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -741,6 +789,7 @@
       "year": null,
       "publisher": "Codemasters",
       "cover": "assets/covers/f1-2021.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -756,6 +805,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/fall-guys-ultimate-knockout.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -771,6 +821,7 @@
       "year": null,
       "publisher": "Electronic Arts",
       "cover": "assets/covers/fifa-21.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -786,6 +837,7 @@
       "year": null,
       "publisher": "Electronic Arts",
       "cover": "assets/covers/fifa-22.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -801,6 +853,7 @@
       "year": null,
       "publisher": "Electronic Arts",
       "cover": "assets/covers/fifa-23.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -816,6 +869,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/final-vendetta.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -831,6 +885,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/fightn-rage.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -846,6 +901,7 @@
       "year": null,
       "publisher": "Curve Games",
       "cover": "assets/covers/for-the-king.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -861,6 +917,7 @@
       "year": null,
       "publisher": "Epic Games",
       "cover": "assets/covers/fortnite.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": "modo tela dividida para Duos e Esquadrões"
     },
@@ -876,6 +933,7 @@
       "year": null,
       "publisher": "Skybound Games",
       "cover": "assets/covers/gang-beasts.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -891,6 +949,7 @@
       "year": null,
       "publisher": "Warner Bros. Games",
       "cover": "assets/covers/gauntlet-slayer-edition.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -906,6 +965,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/gigabash.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -921,6 +981,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/graven.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -936,6 +997,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/guacamelee-2.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -951,6 +1013,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/gungungun.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -966,6 +1029,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/guts-n-goals.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -981,6 +1045,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/haven.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -996,6 +1061,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/heavenly-bodies.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1011,6 +1077,7 @@
       "year": null,
       "publisher": "Sony Interactive Entertainment",
       "cover": "assets/covers/helldivers.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1026,6 +1093,7 @@
       "year": null,
       "publisher": "Milestone",
       "cover": "assets/covers/hot-wheels-unleashed.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1041,6 +1109,7 @@
       "year": null,
       "publisher": "Curve Games",
       "cover": "assets/covers/human-fall-flat.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1056,6 +1125,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/hyper-light-drifter.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1071,6 +1141,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/ice-cream-surfer.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1086,6 +1157,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/ibb-obb.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1101,6 +1173,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/jitsu-squad.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1116,6 +1189,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/jydge.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1131,6 +1205,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/keywe.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1146,6 +1221,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/kitaria-fables.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1163,6 +1239,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/the-king-of-fighters-xv.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1178,6 +1255,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/lara-croft-and-the-guardian-of-light.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1193,6 +1271,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/lara-croft-and-the-temple-of-osiris.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1208,6 +1287,7 @@
       "year": null,
       "publisher": "Warner Bros. Games",
       "cover": "assets/covers/lego-star-wars-the-skywalker-saga.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1223,6 +1303,7 @@
       "year": null,
       "publisher": "Warner Bros. Games",
       "cover": "assets/covers/lego-marvel-super-heroes-2.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1238,6 +1319,7 @@
       "year": null,
       "publisher": "Sony Interactive Entertainment",
       "cover": "assets/covers/little-big-planet-3.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1253,6 +1335,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/llamasoft-the-jeff-minter-story.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1268,6 +1351,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/lovers-in-a-dangerous-spacetime.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1283,6 +1367,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/magicka.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1298,6 +1383,7 @@
       "year": null,
       "publisher": "Electronic Arts",
       "cover": "assets/covers/madden-nfl-21.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1313,6 +1399,7 @@
       "year": null,
       "publisher": "Electronic Arts",
       "cover": "assets/covers/madden-nfl-22.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1328,6 +1415,7 @@
       "year": null,
       "publisher": "Electronic Arts",
       "cover": "assets/covers/madden-nfl-23.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1343,6 +1431,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/mereks-market.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1358,6 +1447,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/mighty-goose.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1373,6 +1463,7 @@
       "year": null,
       "publisher": "Xbox Game Studios",
       "cover": "assets/covers/minecraft-dungeons.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1388,6 +1479,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/minigolf.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1403,6 +1495,7 @@
       "year": null,
       "publisher": "Warner Bros. Games",
       "cover": "assets/covers/mortal-kombat-11.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": "modo Co-Op Towers of Time"
     },
@@ -1418,6 +1511,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/mother-russia-bleeds.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1433,6 +1527,7 @@
       "year": null,
       "publisher": "Team17",
       "cover": "assets/covers/moving-out.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1448,6 +1543,7 @@
       "year": null,
       "publisher": "2K",
       "cover": "assets/covers/nba-2k21.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1463,6 +1559,7 @@
       "year": null,
       "publisher": "2K",
       "cover": "assets/covers/nba-2k22.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1478,6 +1575,7 @@
       "year": null,
       "publisher": "2K",
       "cover": "assets/covers/nba-2k23.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1493,6 +1591,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/neon-chrome.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1508,6 +1607,7 @@
       "year": null,
       "publisher": "Electronic Arts",
       "cover": "assets/covers/nhl-21.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1523,6 +1623,7 @@
       "year": null,
       "publisher": "Electronic Arts",
       "cover": "assets/covers/nhl-22.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1538,6 +1639,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/nine-parchments.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1553,6 +1655,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/nidhogg-2.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1568,6 +1671,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/nobody-saves-the-world.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1583,6 +1687,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/omega-strike.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1598,6 +1703,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/orcs-must-die.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1613,6 +1719,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/out-of-space-couch-edition.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1628,6 +1735,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/outbreak-endless-nightmares.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1643,6 +1751,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/outbreak-epidemic.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1658,6 +1767,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/outbreak-the-new-nightmare.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1675,6 +1785,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/outward-definitive-edition.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1690,6 +1801,7 @@
       "year": null,
       "publisher": "Team17",
       "cover": "assets/covers/overcooked-2.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1705,6 +1817,7 @@
       "year": null,
       "publisher": "Team17",
       "cover": "assets/covers/overcooked-all-you-can-eat.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1720,6 +1833,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/overruled.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1735,6 +1849,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/pang-adventures.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1750,6 +1865,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/paprium.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1765,6 +1881,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/phogs.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1780,6 +1897,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/pode.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1795,6 +1913,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/portal-knights.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1810,6 +1929,7 @@
       "year": null,
       "publisher": "SEGA",
       "cover": "assets/covers/puyo-puyo-tetris-2.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1825,6 +1945,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/quake.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1840,6 +1961,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/raging-justice.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1855,6 +1977,7 @@
       "year": null,
       "publisher": "Ubisoft",
       "cover": "assets/covers/rayman-legends.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1870,6 +1993,7 @@
       "year": null,
       "publisher": "Sony Interactive Entertainment",
       "cover": "assets/covers/returnal.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1885,6 +2009,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/rico.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1900,6 +2025,7 @@
       "year": null,
       "publisher": "WayForward",
       "cover": "assets/covers/river-city-girls-2.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1915,6 +2041,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/rogue-legacy-2.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1930,6 +2057,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/runner.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1945,6 +2073,7 @@
       "year": null,
       "publisher": "Nacon",
       "cover": "assets/covers/rugby-22.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1960,6 +2089,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/salt-and-sacrifice.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1975,6 +2105,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/salt-and-sanctuary.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -1990,6 +2121,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/samurai-gunn-2.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2005,6 +2137,7 @@
       "year": null,
       "publisher": "Sony Interactive Entertainment",
       "cover": "assets/covers/sackboy-a-big-adventure.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2020,6 +2153,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/scott-pilgrim-vs-the-world-the-game-complete-edition.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2035,6 +2169,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/sea-of-stars.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2050,6 +2185,7 @@
       "year": null,
       "publisher": "Square Enix",
       "cover": "assets/covers/secret-of-mana.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2065,6 +2201,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/shing.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2080,6 +2217,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/skeletal-avenger.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2095,6 +2233,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/snipperclips-cut-it-out-together.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2110,6 +2249,7 @@
       "year": null,
       "publisher": "SEGA",
       "cover": "assets/covers/sonic-origins-plus.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2125,6 +2265,7 @@
       "year": null,
       "publisher": "SEGA",
       "cover": "assets/covers/sonic-superstars.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2140,6 +2281,7 @@
       "year": null,
       "publisher": "Mossmouth",
       "cover": "assets/covers/spelunky.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2155,6 +2297,7 @@
       "year": null,
       "publisher": "Mossmouth",
       "cover": "assets/covers/spelunky-2.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2170,6 +2313,7 @@
       "year": null,
       "publisher": "WayForward",
       "cover": "assets/covers/spidersaurs.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2185,6 +2329,7 @@
       "year": null,
       "publisher": "ConcernedApe",
       "cover": "assets/covers/stardew-valley.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2200,6 +2345,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/steredenn-binary-stars.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2217,6 +2363,7 @@
       "year": null,
       "publisher": "Capcom",
       "cover": "assets/covers/street-fighter-v-champion-edition.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2232,6 +2379,7 @@
       "year": null,
       "publisher": "Dotemu",
       "cover": "assets/covers/streets-of-rage-4.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2247,6 +2395,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/super-blood-hockey.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2262,6 +2411,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/super-bomberman-r-online.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2277,6 +2427,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/tetris-effect.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2292,6 +2443,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/the-angry-4.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2307,6 +2459,7 @@
       "year": null,
       "publisher": "Nicalis",
       "cover": "assets/covers/the-binding-of-isaac-repentance.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2325,6 +2478,7 @@
       "year": null,
       "publisher": "Bandai Namco Entertainment",
       "cover": "assets/covers/the-dark-pictures-anthology-house-of-ashes.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2340,6 +2494,7 @@
       "year": null,
       "publisher": "Forever Entertainment",
       "cover": "assets/covers/the-house-of-the-dead-remake.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2355,6 +2510,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/the-last-oricru.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2370,6 +2526,7 @@
       "year": null,
       "publisher": "2K",
       "cover": "assets/covers/the-quarry.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2387,6 +2544,7 @@
       "year": null,
       "publisher": "2K",
       "cover": "assets/covers/tiny-tinas-wonderlands.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2402,6 +2560,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/tiny-troopers-global-ops.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2417,6 +2576,7 @@
       "year": null,
       "publisher": "Konami",
       "cover": "assets/covers/tmnt-the-cowabunga-collection.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2432,6 +2592,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/together.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2447,6 +2608,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/tools-up.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2464,6 +2626,7 @@
       "year": null,
       "publisher": "Activision",
       "cover": "assets/covers/tony-hawks-pro-skater-1-2.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2479,6 +2642,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/tower-of-guns.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2494,6 +2658,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/towerfall-ascension.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2511,6 +2676,7 @@
       "year": null,
       "publisher": "Modus Games",
       "cover": "assets/covers/trine-4-the-nightmare-prince.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2526,6 +2692,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/twin-robots-ultimate-edition.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2541,6 +2708,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/ultimate-chicken-horse.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2556,6 +2724,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/ultimate-fishing-simulator-2.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2571,6 +2740,7 @@
       "year": null,
       "publisher": "Electronic Arts",
       "cover": "assets/covers/unravel-two.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2586,6 +2756,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/urban-flow.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2601,6 +2772,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/viking-squad.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2616,6 +2788,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/warhammer-40-000-shootas-blood-teef.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2631,6 +2804,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/warhammer-chaosbane-slayer-edition.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2646,6 +2820,7 @@
       "year": null,
       "publisher": "Fatshark",
       "cover": "assets/covers/warhammer-vermintide-2.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2661,6 +2836,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/we-love-katamari-reroll-royal-reverie.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2676,6 +2852,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/wizard-of-legend.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2691,6 +2868,7 @@
       "year": null,
       "publisher": "Team17",
       "cover": "assets/covers/worms-rumble.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2706,6 +2884,7 @@
       "year": null,
       "publisher": "Nacon",
       "cover": "assets/covers/wrc-10.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2721,6 +2900,7 @@
       "year": null,
       "publisher": "Nacon",
       "cover": "assets/covers/wrc-generations.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": "Tela dividida"
     },
@@ -2736,6 +2916,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/wulverblade.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2751,6 +2932,7 @@
       "year": null,
       "publisher": "2K",
       "cover": "assets/covers/wwe-2k23.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2766,6 +2948,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/yars-recharged.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     },
@@ -2781,6 +2964,7 @@
       "year": null,
       "publisher": null,
       "cover": "assets/covers/zombie-vikings.svg",
+      "cover_2x": null,
       "cover_source": "generated",
       "source_note": null
     }

@@ -56,10 +56,3 @@ at a file that is not there. It runs before commit and in CI. It costs little an
 the only defense a backend-less site has against its own data.
 
 ## Block D — Visual design and polish
-
-### §CL18 Image cost
-
-Lazy loading below the fold, declared dimensions on every card so the grid does not jump
-when an image lands, and covers in two sizes served by screen density. The first visible
-covers get priority; the rest can arrive as the page scrolls. The target is a usable
-grid before the last image.

@@ -38,6 +38,12 @@
 
 const DATASET = "data/games.json";
 
+/** Roughly the first two rows at desktop widths. These load eagerly and at high
+ *  priority; everything after them waits for the scroll. The number only has to be
+ *  in the right neighbourhood -- too low costs a visible pop on load, too high
+ *  puts 184 covers back in front of the first paint. */
+const EAGER_COVERS = 16;
+
 /** Below this length a one-character tolerance matches far too much: at three
  *  characters nearly every title is one edit from the query. */
 const FUZZY_MIN = 4;
@@ -252,7 +258,7 @@ function select(games, state) {
 
 /** Build one card. Kept as DOM calls rather than innerHTML so a game whose title
  *  contains markup characters cannot become markup. */
-function card(game) {
+function card(game, index) {
   const item = document.createElement("li");
   item.className = "card";
 
@@ -274,10 +280,19 @@ function card(game) {
   art.alt = "";
   art.width = 200;
   art.height = 300;
-  // CL18 owns loading strategy; this is the one-line version that stops 184
-  // covers from competing with the first paint.
-  art.loading = "lazy";
+  // The covers above the fold are the page; the rest can arrive as it scrolls.
+  // Priority is set as well as loading, because "lazy" only defers the request --
+  // it does not stop the eager ones from queueing behind each other.
+  const early = index < EAGER_COVERS;
+  art.loading = early ? "eager" : "lazy";
+  art.fetchPriority = early ? "high" : "low";
   art.decoding = "async";
+  // Two sizes by screen density, once real packshots land. The generated cards
+  // are vector, so they have no second size and get no srcset -- pointing a 2x
+  // descriptor at the same SVG would just be noise.
+  if (game.cover_2x) {
+    art.srcset = `${game.cover} 1x, ${game.cover_2x} 2x`;
+  }
 
   const name = document.createElement("span");
   name.className = "card__name";
@@ -377,7 +392,7 @@ function openDetail(game) {
 
 function render(games) {
   const fragment = document.createDocumentFragment();
-  for (const game of games) fragment.append(card(game));
+  games.forEach((game, index) => fragment.append(card(game, index)));
   grid.replaceChildren(fragment);
   grid.hidden = false;
   status.hidden = true;

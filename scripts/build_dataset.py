@@ -234,12 +234,19 @@ def read_covers(path: Path) -> dict[str, dict]:
         if not game_id:
             continue
         file = (row.get("file") or "").strip()
+        file2x = (row.get("file2x") or "").strip()
         source = (row.get("source") or "").strip()
         if file and not source:
             raise ValueError(f"{path.name}: {game_id} has a cover with no source")
         if source and not file:
             raise ValueError(f"{path.name}: {game_id} has a source with no cover")
-        rows[game_id] = {"cover": file or None, "cover_source": source or None}
+        if file2x and not file:
+            raise ValueError(f"{path.name}: {game_id} has a 2x cover with no 1x")
+        rows[game_id] = {
+            "cover": file or None,
+            "cover_2x": file2x or None,
+            "cover_source": source or None,
+        }
     return rows
 
 
@@ -289,7 +296,7 @@ def parse_line(raw: str) -> dict:
     record = {"id": slugify(name), "name": name, "aliases": [], "source": source}
     record.update({"max_players": None, "screen": None, "scope": None})
     record.update({"genre": None, "year": None, "publisher": None})
-    record.update({"cover": None, "cover_source": None})
+    record.update({"cover": None, "cover_2x": None, "cover_source": None})
     record["source_note"] = note
     return record
 
