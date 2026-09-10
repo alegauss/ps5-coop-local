@@ -1,0 +1,9 @@
+# Python bytecode. It was tracked by accident, and it is not a harmless stray here:
+# the Pages workflow uploads the repository root as the site, so anything committed is
+# something the site serves.
+__pycache__/
+*.py[cod]
+
+# Local server and editor noise.
+.DS_Store
+Thumbs.db
