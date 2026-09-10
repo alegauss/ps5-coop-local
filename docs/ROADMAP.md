@@ -2,7 +2,6 @@
 
 ## Block A — Game data
 
-- 📋 **CL1** (deps: —) **the game list exists only as pasted text, with no data file the interface can read** — With no structured dataset no screen can sort, filter or count the titles. → §CL1
 - 📋 **CL2** (deps: —) **the list repeats titles and mixes variants of the same game, and nothing reconciles them** — A duplicate inflates the count and returns the same card twice in search. → §CL2
 - 📋 **CL3** (deps: —) **no title says how many players fit on the couch, or whether the screen splits or is shared** — Player count is the first filter anyone applies when picking a game with people over. → §CL3
 - 📋 **CL4** (deps: —) **games carry no genre, year or publisher, so there is no axis to group the grid by** — Genre is what separates a beat 'em up from a party game across two hundred titles. → §CL4
@@ -11,7 +10,7 @@
 
 ## Block B — Catalog site
 
-- 📋 **CL7** (deps: CL1) **there is no page at all: the repository holds no site that shows the catalog** — It is the deliverable — seeing the whole local-coop list in a browser. → §CL7
+- 📋 **CL7** (deps: CL1 ✅) **there is no page at all: the repository holds no site that shows the catalog** — It is the deliverable — seeing the whole local-coop list in a browser. → §CL7
 - 📋 **CL8** (deps: CL7) **with nearly two hundred titles on one page, finding a game means scrolling or Ctrl+F** — Instant name search is what makes a catalog this size usable at all. → §CL8
 - 📋 **CL9** (deps: CL3, CL4) **there is no way to filter by player count, genre or screen type** — The real question is what four of us can play tonight, and the grid cannot answer it. → §CL9
 - 📋 **CL10** (deps: CL7) **the grid has no ordering: not alphabetical, not by year, not by player count** — A fixed order buries the recent releases and forces a full sweep to compare. → §CL10
@@ -24,7 +23,7 @@
 
 - 📋 **CL19** (deps: CL7) **the site is published nowhere, so the list exists only on the developer's machine** — The point of a catalog is sending the link to whoever is coming over to play. → §CL19
 - 📋 **CL20** (deps: —) **the repository never says what the project is, where the list came from, or how to run it** — With no README a cloner cannot tell a site from a dataset from a scratch note. → §CL20
-- 📋 **CL21** (deps: CL1) **nothing validates the dataset: broken JSON or a missing field surfaces in the user's browser** — A static site has no server to catch bad data, so it has to be refused before shipping. → §CL21
+- 📋 **CL21** (deps: CL1 ✅) **nothing validates the dataset: broken JSON or a missing field surfaces in the user's browser** — A static site has no server to catch bad data, so it has to be refused before shipping. → §CL21
 
 ## Block D — Visual design and polish
 

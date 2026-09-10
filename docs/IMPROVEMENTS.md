@@ -2,13 +2,6 @@
 
 ## Block A — Game data
 
-### §CL1 Game dataset
-
-The catalog starts as a comma-separated blob of roughly 190 entries. That text is the
-source, not the format: one record per game — stable id, canonical name, player count,
-couch-coop type, genre, year and cover art — is what the grid, the search and the
-filters read. The original text stays versioned alongside it as traceable provenance.
-
 ### §CL2 Duplicate reconciliation
 
 Super Blood Hockey, Super Bomberman R Online, Tetris Effect and The Angry 4 each appear
