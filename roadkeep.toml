@@ -52,3 +52,8 @@ held = 60
 # This build takes two booleans here, `enforced` and `pinned`, both default false.
 # An earlier `wired = "0.2.450"` named a roadkeep the index does not carry, and a
 # key this build refuses outright, which stopped every command; the defaults stand.
+
+[project]
+name = "PS5 Local Co-op"
+description = "A catalogue of PS5 games two people can play on one console, in one room."
+icon = "🛋️"
