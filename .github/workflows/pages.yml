@@ -6,7 +6,7 @@
 #
 # One-time repository setting: Settings -> Pages -> Build and deployment ->
 # Source: "GitHub Actions". It is set, and the site is live at
-# https://alegauss.github.io/ps5-coop-local/ -- but it cannot be set from a workflow
+# https://alegauss.com/ps5-coop-local/ -- but it cannot be set from a workflow
 # file, so a fork starts with it unset and every run here fails on configure-pages
 # with "Get Pages site failed" until somebody selects it. That is what the two failed
 # runs on 10 September were, and the error names the cause plainly enough to trust.
